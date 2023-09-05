@@ -1,8 +1,10 @@
-
+import { Navbar } from './components';
 
 const App = () => {
   return (
-    <div className='font-poppins'>App</div>
+    <div>
+      <Navbar />
+    </div>
   )
 };
 

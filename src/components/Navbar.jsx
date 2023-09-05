@@ -45,6 +45,9 @@ const Navbar = () => {
                     </button>
                 </div>
                 
+                {/* FOR MOBILE */}
+
+                
             </div>
         </nav>
     )

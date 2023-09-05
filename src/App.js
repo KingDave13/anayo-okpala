@@ -2,7 +2,7 @@
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className='font-poppins'>App</div>
   )
 };
 

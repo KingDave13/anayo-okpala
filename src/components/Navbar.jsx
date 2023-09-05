@@ -23,7 +23,7 @@ const Navbar = () => {
                 </Link>
 
                 <div className='flex justify-between gap-36'>
-                    <ul className='list-none hidden sm:flex flex-row 
+                    <ul className='list-none hidden md:flex flex-row 
                     gap-14'>
                         {navLinks.map((link) => (
                             <li key={link.id}
@@ -40,7 +40,7 @@ const Navbar = () => {
                         ))}
                     </ul>
                     
-                    <button className='hidden sm:flex bg-secondary 
+                    <button className='hidden md:flex bg-secondary 
                     text-[17px] py-3 px-14 text-primary rounded-[3px]'>
                         Get a Quote
                     </button>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 
                 {/* FOR MOBILE */}
 
-                <div className='sm:hidden flex flex-1 justify-end 
+                <div className='md:hidden flex flex-1 justify-end 
                 items-center'>
                 <img 
                 src={toggle ? close : menu}
@@ -59,7 +59,7 @@ const Navbar = () => {
                 />
 
                 <div className={`${!toggle ? 'hidden' 
-                : 'flex'} p-6 black-gradient absolute top-10 right-0 
+                : 'flex'} p-6 bg-white absolute top-10 right-0 
                 mx-4 my-8 min-w-[140px] z-10 rounded-xl flex-col`}>
                     <ul className='list-none flex justify-end 
                     items-start 
@@ -69,8 +69,8 @@ const Navbar = () => {
                         key={link.id}
                         className={`${
                             active === link.title
-                            ? 'text-white'
-                            : 'text-secondary'
+                            ? 'text-secondary'
+                            : 'text-primary'
                         } font-poppins font-medium cursor-pointer 
                         text-[16px]`}
                         onClick={() => {
@@ -83,8 +83,12 @@ const Navbar = () => {
                     ))}
                     </ul>
 
-                    <button className='bg-secondary text-[16px] py-1 px-3
-                    text-white rounded-[5px] mt-5'>
+                    <button className='bg-primary text-[16px] py-1 px-3
+                    text-white rounded-[5px] mt-5'
+                    onClick={() => {
+                        setToggle(!toggle);
+                    }}
+                    >
                         Get a Quote
                     </button>
                 </div>

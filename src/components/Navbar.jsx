@@ -60,7 +60,7 @@ const Navbar = () => {
 
                 <div className={`${!toggle ? 'hidden' 
                 : 'flex'} p-6 black-gradient absolute top-10 right-0 
-                mx-4 my-8 min-w-[140px] z-10 rounded-xl`}>
+                mx-4 my-8 min-w-[140px] z-10 rounded-xl flex-col`}>
                     <ul className='list-none flex justify-end 
                     items-start 
                     flex-col gap-4'>
@@ -83,8 +83,8 @@ const Navbar = () => {
                     ))}
                     </ul>
 
-                    <button className='hidden sm:flex bg-secondary 
-                    text-[17px] py-3 px-14 text-primary rounded-[3px]'>
+                    <button className='bg-secondary text-[16px] py-1 px-3
+                    text-white rounded-[5px] mt-5'>
                         Get a Quote
                     </button>
                 </div>

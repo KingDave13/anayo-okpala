@@ -5,7 +5,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <div>
+        <div className='bg-primary'>
         <Navbar />
+        </div>
       </div>
     </BrowserRouter>
   )

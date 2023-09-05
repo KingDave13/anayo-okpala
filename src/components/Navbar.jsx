@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav className={`${styles.paddingX} w-full flex items-center
         fixed py-6 top-0 z-20 bg-primary`}>
             <div className='w-full flex justify-between items-center
-            mx-auto'>
+            max-w-7xl mx-auto'>
                 <Link to='/'
                     onClick={() => {
                     setActive('');
@@ -22,7 +22,7 @@ const Navbar = () => {
                     className='w-[130px] h-auto'/>
                 </Link>
 
-                <ul className='list-none sm:flex flex-row gap-10'>
+                <ul className='list-none sm:flex flex-row gap-14'>
                     {navLinks.map((link) => (
                         <li key={link.id}
                         className={`${
@@ -37,6 +37,11 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
+                
+                <button className='bg-secondary text-[17px] py-3 
+                px-14 text-primary rounded-[3px]'>
+                    Get a Quote
+                </button>
             </div>
         </nav>
     )

@@ -23,7 +23,8 @@ const Navbar = () => {
                 </Link>
 
                 <div className='flex justify-between gap-36'>
-                    <ul className='list-none sm:flex flex-row gap-14'>
+                    <ul className='list-none hidden sm:flex flex-row 
+                    gap-14'>
                         {navLinks.map((link) => (
                             <li key={link.id}
                             className={`${
@@ -39,26 +40,29 @@ const Navbar = () => {
                         ))}
                     </ul>
                     
-                    <button className='bg-secondary text-[17px] py-3 
-                    px-14 text-primary rounded-[3px]'>
+                    <button className='hidden sm:flex bg-secondary 
+                    text-[17px] py-3 px-14 text-primary rounded-[3px]'>
                         Get a Quote
                     </button>
                 </div>
                 
                 {/* FOR MOBILE */}
 
-                <div className='sm:hidden flex flex-1 justify-end items-center'>
+                <div className='sm:hidden flex flex-1 justify-end 
+                items-center'>
                 <img 
                 src={toggle ? close : menu}
                 alt='menu'
-                className='w-[28px] h-[28px] object-contain cursor-pointer'
+                className='w-[28px] h-[28px] object-contain 
+                cursor-pointer'
                 onClick={() => setToggle(!toggle)}
                 />
 
                 <div className={`${!toggle ? 'hidden' 
                 : 'flex'} p-6 black-gradient absolute top-10 right-0 
                 mx-4 my-8 min-w-[140px] z-10 rounded-xl`}>
-                    <ul className='list-none flex justify-end items-start 
+                    <ul className='list-none flex justify-end 
+                    items-start 
                     flex-col gap-4'>
                     {navLinks.map((link) => (
                         <li
@@ -67,7 +71,8 @@ const Navbar = () => {
                             active === link.title
                             ? 'text-white'
                             : 'text-secondary'
-                        } font-poppins font-medium cursor-pointer text-[16px]`}
+                        } font-poppins font-medium cursor-pointer 
+                        text-[16px]`}
                         onClick={() => {
                             setToggle(!toggle);
                             setActive(link.title);
@@ -77,6 +82,11 @@ const Navbar = () => {
                         </li>
                     ))}
                     </ul>
+
+                    <button className='hidden sm:flex bg-secondary 
+                    text-[17px] py-3 px-14 text-primary rounded-[3px]'>
+                        Get a Quote
+                    </button>
                 </div>
                 </div>
             </div>

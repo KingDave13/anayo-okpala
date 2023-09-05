@@ -19,7 +19,7 @@ const Navbar = () => {
                     window.scrollTo(0, 0);
                     }}>
                     <img src={logo} alt='logo'
-                    className='w-[124px] h-auto'/>
+                    className='w-[130px] h-auto'/>
                 </Link>
 
                 <ul className='list-none sm:flex flex-row gap-10'>
@@ -28,12 +28,12 @@ const Navbar = () => {
                         className={`${
                             active === link.title
                             ? 'text-white'
-                            : 'text-secondary'
-                          } hover:text-white text-[18px] font-medium 
+                            : 'text-white'
+                          } hover:text-white text-[18px] 
                             cursor-pointer`}
                           onClick={() => setActive(link.title)}
                         >
-
+                            <a href={`#${link.id}`}>{link.title}</a>
                         </li>
                     ))}
                 </ul>

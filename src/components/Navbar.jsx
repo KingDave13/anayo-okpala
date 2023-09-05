@@ -22,26 +22,29 @@ const Navbar = () => {
                     className='w-[130px] h-auto'/>
                 </Link>
 
-                <ul className='list-none sm:flex flex-row gap-14'>
-                    {navLinks.map((link) => (
-                        <li key={link.id}
-                        className={`${
-                            active === link.title
-                            ? 'text-white'
-                            : 'text-white'
-                          } hover:text-white text-[18px] 
-                            cursor-pointer`}
-                          onClick={() => setActive(link.title)}
-                        >
-                            <a href={`#${link.id}`}>{link.title}</a>
-                        </li>
-                    ))}
-                </ul>
+                <div className='flex justify-between gap-36'>
+                    <ul className='list-none sm:flex flex-row gap-14'>
+                        {navLinks.map((link) => (
+                            <li key={link.id}
+                            className={`${
+                                active === link.title
+                                ? 'border-b-[4px] rounded-[1px] border-b-secondary text-white'
+                                : 'text-white'
+                            } hover:text-white text-[18px] 
+                                cursor-pointer py-2 font-normal`}
+                            onClick={() => setActive(link.title)}
+                            >
+                                <a href={`#${link.id}`}>{link.title}</a>
+                            </li>
+                        ))}
+                    </ul>
+                    
+                    <button className='bg-secondary text-[17px] py-3 
+                    px-14 text-primary rounded-[3px]'>
+                        Get a Quote
+                    </button>
+                </div>
                 
-                <button className='bg-secondary text-[17px] py-3 
-                px-14 text-primary rounded-[3px]'>
-                    Get a Quote
-                </button>
             </div>
         </nav>
     )

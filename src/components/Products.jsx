@@ -5,7 +5,7 @@ import { SectionWrapper } from '../hoc'
 
 const Products = () => {
   return (
-    <section className='relative w-full min-h-[600px] mx-auto flex 
+    <section className='relative w-full min-h-[800px] mx-auto flex 
     justify-center'>
         <div className='absolute w-full max-w-[95rem] mx-auto flex 
         mb-16 justify-center'>

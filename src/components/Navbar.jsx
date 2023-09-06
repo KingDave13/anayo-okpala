@@ -40,7 +40,7 @@ const Navbar = () => {
                         ))}
                     </ul>
                     
-                    <button className='hidden md:flex bg-secondary 
+                    <button className='hidden md:flex bg-secondary grow
                     text-[17px] py-3 px-14 text-primary rounded-[3px]'>
                         Get a Quote
                     </button>
@@ -84,7 +84,7 @@ const Navbar = () => {
                     ))}
                     </ul>
 
-                    <button className='bg-primary text-[16px] py-1 px-3
+                    <button className='bg-secondary text-[16px] py-1 px-3
                     text-white rounded-[5px] mt-5 ss:text-[20px]'
                     onClick={() => {
                         setToggle(!toggle);

@@ -1,12 +1,13 @@
 import { BrowserRouter } from 'react-router-dom';
-import { Navbar } from './components';
+import { Navbar, Hero } from './components';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div>
         <div className='bg-primary'>
-        <Navbar />
+          <Navbar />
+          <Hero />
         </div>
       </div>
     </BrowserRouter>

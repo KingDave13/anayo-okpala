@@ -23,7 +23,7 @@ const Navbar = () => {
                 </Link>
 
                 <div className='flex justify-between gap-36'>
-                    <ul className='list-none hidden sm:flex flex-row 
+                    <ul className='list-none hidden md:flex flex-row 
                     gap-14'>
                         {navLinks.map((link) => (
                             <li key={link.id}
@@ -40,7 +40,7 @@ const Navbar = () => {
                         ))}
                     </ul>
                     
-                    <button className='hidden sm:flex bg-secondary grow
+                    <button className='hidden md:flex bg-secondary 
                     text-[17px] py-3 px-14 text-primary rounded-[3px]'>
                         Get a Quote
                     </button>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 
                 {/* FOR MOBILE */}
 
-                <div className='sm:hidden flex flex-1 justify-end 
+                <div className='md:hidden flex flex-1 justify-end 
                 items-center'>
                 <img 
                 src={toggle ? close : menu}

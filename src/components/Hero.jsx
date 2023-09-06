@@ -7,15 +7,15 @@ import { hero, Ellipse } from '../assets';
 const Hero = () => {
   return (
     <section className='font-instrument-sans relative w-full
-     min-h-[850px] mx-auto flex items-center flex top-[100px]'>
-        <div className='absolute items-center
-        max-w-7xl mx-auto flex flex-row items-start gap-5'
+     min-h-[850px] mx-auto flex items-center flex top-[80px]'>
+        <div className='absolute items-center justify-between w-full
+        max-w-[95rem] mx-auto flex flex-row items-start gap-5'
         >
             <motion.div variants={textVariant()}
             className={`${layout.sectionInfo} mb-28`}
             >
                 <h1 className='text-secondary font-bold text-[65px]
-                leading-[80px] tracking-tight'>
+                leading-[80px] tracking-tight max-w-[750px]'>
                     No. 1 <span className='text-white'>
                     Home accessories and general </span> 
                     industrial materials supplier.

@@ -14,15 +14,24 @@ const Hero = () => {
             <motion.div variants={textVariant()}
             className={`${layout.sectionInfo}`}
             >
-                <h1 className='text-secondary font-bold text-[72px]'>
+                <h1 className='text-secondary font-bold text-[65px]
+                leading-[80px] tracking-tight'>
                     No. 1 <span className='text-white'>
-                    Home accessories and general &nbsp;</span> 
-                    industrial materials supplier
+                    Home accessories and general </span> 
+                    industrial materials supplier.
                 </h1>
+
+                <p className='mt-10 text-white text-[24px] max-w-[650px]'>
+                 We are the number one suppliers of top quality industrial
+                 materials for various applications including mattress 
+                 making, PVCs and lots more.
+                </p>
             </motion.div>
 
             <motion.div variants={fadeIn()}>
-                <img src={hero}/>
+                <img src={hero} alt='hero'
+                className=' h-[600px] w-auto'
+                />
             </motion.div>
         </div>
     </section>  

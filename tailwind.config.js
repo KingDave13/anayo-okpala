@@ -12,7 +12,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        'product-sans': ["Product Sans", "sans-serif"],
+        'instrument-sans': ["Instrument Sans", "sans-serif"],
       },
     },
     screens: {

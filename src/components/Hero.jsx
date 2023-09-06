@@ -6,8 +6,8 @@ import { hero } from '../assets';
 
 const Hero = () => {
   return (
-    <section className='relative bg-primary w-full h-screen mx-auto flex
-    items-center'>
+    <section className='font-instrument-sans relative bg-primary w-full
+     h-screen mx-auto flex items-center'>
         <div className='absolute items-center
         max-w-7xl mx-auto flex flex-row items-start gap-5'
         >

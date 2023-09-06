@@ -4,7 +4,7 @@ import { Navbar, Hero } from './components';
 const App = () => {
   return (
     <BrowserRouter>
-      <div>
+      <div className='font-instrument-sans'>
         <div className='bg-primary relative'>
           <Navbar />
           <Hero />

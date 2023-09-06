@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 
 const About = () => {
   return (
-    <section className='relative w-full min-h-[850px] mx-auto flex 
+    <section className='relative w-full min-h-[600px] mx-auto flex 
     items-center flex overflow-hidden'>
         <div className='absolute items-center justify-between w-full
         max-w-[95rem] mx-auto flex flex-row items-start gap-5 mb-16'

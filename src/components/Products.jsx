@@ -16,7 +16,7 @@ const Products = () => {
                     Our products
                 </h1>
                 
-                <div className='flex relative'>
+                <div className='flex relative justify-center'>
                     <div className='bg-secondary w-[150px]
                     h-[13px]' />
                 </div>

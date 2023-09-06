@@ -2,12 +2,12 @@ import styles, { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-import { hero } from '../assets';
+import { hero, Ellipse } from '../assets';
 
 const Hero = () => {
   return (
-    <section className='font-instrument-sans relative bg-primary w-full
-     h-screen mx-auto flex items-center'>
+    <section className='font-instrument-sans relative w-full
+     min-h-[850px] mx-auto flex items-center flex top-[100px]'>
         <div className='absolute items-center
         max-w-7xl mx-auto flex flex-row items-start gap-5'
         >

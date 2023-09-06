@@ -6,22 +6,22 @@ import { hero, Ellipse } from '../assets';
 
 const Hero = () => {
   return (
-    <section className='font-instrument-sans relative w-full
-     min-h-[850px] mx-auto flex items-center flex top-[80px]'>
+    <section className='relative w-full min-h-[800px] mx-auto flex 
+    items-center flex top-[80px] overflow-hidden'>
         <div className='absolute items-center justify-between w-full
-        max-w-[95rem] mx-auto flex flex-row items-start gap-5'
+        max-w-[95rem] mx-auto flex flex-row items-start gap-5 mb-16'
         >
             <motion.div variants={textVariant()}
-            className={`${layout.sectionInfo} mb-28`}
+            className={`${layout.sectionInfo} mb-24`}
             >
                 <h1 className='text-secondary font-bold text-[65px]
-                leading-[80px] tracking-tight max-w-[750px]'>
+                leading-[78px] tracking-tight max-w-[750px]'>
                     No. 1 <span className='text-white'>
-                    Home accessories and general </span> 
+                    home accessories and general </span> 
                     industrial materials supplier.
                 </h1>
 
-                <p className='mt-10 text-white text-[24px] max-w-[650px]'>
+                <p className='mt-8 text-white text-[20px] max-w-[620px]'>
                  We are the number one suppliers of top quality industrial
                  materials for various applications including mattress 
                  making, PVCs and lots more.
@@ -40,10 +40,10 @@ const Hero = () => {
                     hover:text-white'>
                         Get in Touch
                     </button>
-                </div>
+                </div>           
             </motion.div>
 
-            <motion.div variants={fadeIn()}>
+            <motion.div variants={fadeIn('right', 'spring', 0.3)}>
                 <img src={hero} alt='hero'
                 className=' h-[600px] w-auto'
                 />
@@ -53,4 +53,4 @@ const Hero = () => {
   )
 };
 
-export default SectionWrapper(Hero, '');
+export default SectionWrapper(Hero, 'home');

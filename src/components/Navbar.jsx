@@ -22,9 +22,9 @@ const Navbar = () => {
                     className='w-[130px] h-auto'/>
                 </Link>
 
-                <div className='flex justify-between gap-36'>
+                <div className='flex justify-between gap-40'>
                     <ul className='list-none hidden md:flex flex-row 
-                    gap-14'>
+                    gap-16'>
                         {navLinks.map((link) => (
                             <li key={link.id}
                             className={`${

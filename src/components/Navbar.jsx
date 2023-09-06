@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <nav className={`${styles.paddingX} w-full flex items-center
-        fixed py-6 top-0 z-20 bg-primary`}>
+        fixed py-8 top-0 z-20 bg-primary`}>
             <div className='w-full flex justify-between items-center
             max-w-7xl mx-auto'>
                 <Link to='/'
@@ -41,7 +41,7 @@ const Navbar = () => {
                     </ul>
                     
                     <button className='hidden md:flex bg-secondary grow
-                    text-[17px] py-3 px-14 text-primary rounded-[3px]'>
+                    text-[17px] py-3 px-14 text-primary rounded-[3px] font-medium'>
                         Get a Quote
                     </button>
                 </div>
@@ -63,8 +63,7 @@ const Navbar = () => {
                 mx-4 my-8 min-w-[140px] z-10 rounded-xl flex-col
                 ss:mx-16 ss:my-10 ss:min-w-[220px]`}>
                     <ul className='list-none flex justify-end 
-                    items-start 
-                    flex-col gap-4'>
+                    items-start flex-col gap-4'>
                     {navLinks.map((link) => (
                         <li
                         key={link.id}
@@ -73,7 +72,8 @@ const Navbar = () => {
                             ? 'text-secondary'
                             : 'text-primary'
                         } font-poppins font-medium cursor-pointer 
-                        text-[16px] ss:text-[20px]`}
+                        text-[16px] ss:text-[20px] w-full 
+                        hover:bg-dimWhite`}
                         onClick={() => {
                             setToggle(!toggle);
                             setActive(link.title);

@@ -60,18 +60,17 @@ const Values = () => {
                                 {...value}
                             />
                         ))}
-                    </motion.div>
-
-                    <div className='flex mt-12 justify-center items-center gap-1
-                    cursor-pointer grow2'>
-                        <p className='font-medium text-primary'>
-                            See more about us
-                        </p>
-            
-                        <BsArrowRightShort className='text-[30px] text-primary'/>
-                    </div> 
+                    </motion.div> 
                 </div>
-                     
+
+                 <div className='flex mt-16 justify-center items-center 
+                 gap-1 cursor-pointer grow2 flex-row'>
+                    <p className='font-medium text-primary'>
+                        See more about us
+                    </p>
+        
+                    <BsArrowRightShort className='text-[30px] text-primary'/>
+                </div>   
             </motion.div>          
         </div>
     </section>

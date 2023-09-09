@@ -100,7 +100,8 @@ const Products = () => {
                             transition={{ ease: 'easeInOut' }} 
                         >
                             <HiChevronLeft className='w-14 h-14 rounded-full
-                            bg-secondary bg-opacity-30 p-3 text-primary' />
+                            bg-secondary bg-opacity-30 p-3 text-primary
+                            hover:bg-opacity-70' />
                         </motion.div>
                     </div>
 
@@ -114,7 +115,8 @@ const Products = () => {
                             transition={{ ease: 'easeInOut' }}
                         >
                             <HiChevronRight className='w-14 h-14 rounded-full
-                            bg-secondary bg-opacity-30 p-3 text-primary' />
+                            bg-secondary bg-opacity-30 p-3 text-primary
+                            hover:bg-opacity-70' />
                         </motion.div>
                     </div>
                 </motion.div>

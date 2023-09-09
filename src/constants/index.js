@@ -5,6 +5,10 @@ import {
   vector,
   vector2,
   vector3,
+  pic1,
+  pic2,
+  pic3,
+  pic4,
 } from '../assets';
 
 export const navLinks = [
@@ -64,5 +68,32 @@ export const values = [
     title: 'Security',
     description: 'Security is also one of our watchwords as we prioritize absolute security of transactions between us and our customers.',
     image: vector3
+  },
+];
+
+export const testimonials = [
+  {
+    testimonial: "I trust Anayo Okpala Global Concept because their excellent customer service and quality products blow my mind everytime!",
+    image: pic1,
+    name: "Hassan Jamal",
+    designation: "Agro-Economist",
+  },
+  {
+    testimonial: "I trust Anayo Okpala Global Concept because their excellent customer service and quality products blow my mind everytime!",
+    image: pic2,
+    name: "Anita Chika Aniedu",
+    designation: "Entrepreneur",
+  },
+  {
+    testimonial: "I trust Anayo Okpala Global Concept because their excellent customer service and quality products blow my mind everytime!",
+    image: pic3,
+    name: "Ebiere Alfred Johnson",
+    designation: "CEO, Ebiere Innovations",
+  },
+  {
+    testimonial: "I trust Anayo Okpala Global Concept because their excellent customer service and quality products blow my mind everytime!",
+    image: pic4,
+    name: "Olajide Babatunde",
+    designation: "Techpreneur",
   },
 ];

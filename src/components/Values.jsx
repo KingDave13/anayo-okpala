@@ -12,7 +12,7 @@ const ValueCard = ({ index, title, description, image}) => {
             <motion.div
                 variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
                 className='w-full bg-dimWhite p-[5px] rounded-[20px]
-                cursor-pointer'
+                cursor-pointer shadow-xl'
             >
                 <div options={{ max: 45, scale: 1, speed: 450 }}
                 className='flex flex-col justify-evenly p-7'>

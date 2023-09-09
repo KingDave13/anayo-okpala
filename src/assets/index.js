@@ -11,6 +11,10 @@ import vector from './Vector.png';
 import vector2 from './Vector2.png';
 import vector3 from './Vector3.png';
 import map from './map.png';
+import pic1 from './pic1.png';
+import pic2 from './pic2.png';
+import pic3 from './pic3.png';
+import pic4 from './pic4.png';
 
 export {
     logo,
@@ -26,4 +30,8 @@ export {
     vector2,
     vector3,
     map,
+    pic1,
+    pic2,
+    pic3,
+    pic4,
 }

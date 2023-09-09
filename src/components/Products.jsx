@@ -1,10 +1,55 @@
+import { useState } from 'react';
 import styles, { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
+import { products } from '../constants';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
+const ProductCard = ({ title, description, image }) => {
+    return (
+        <div className='xs:w-[250px] w-full'>
+            <motion.div
+                variants={fadeIn('right', 'spring', 0.75)}
+                className='w-full flex'
+            >
+                <div className='flex flex-col rounded-[20px]
+                shadow-card'>
+                    <img src={image} alt='product' className='w-full'/>
+                    <div className='flex flex-col'>
+                        <h1 className='font-bold text-[24px] text-white'>
+                            {title}
+                        </h1>
+                        <p className='max-w-[500px] text-white'>
+                            {description}
+                        </p>
+                    </div>
+                    <div className='flex mt-8 gap-5'>
+                        <button className='bg-secondary text-[17px] py-3 
+                        px-14 text-primary rounded-[3px] font-medium 
+                        border-none hover:text-white'>
+                            Order Now
+                        </button>
+
+                        <button className='border-[1px] border-secondary 
+                        text-[17px] py-3 px-14 text-secondary rounded-[3px] 
+                        font-medium hover:text-white'>
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </motion.div>
+        </div>
+    )
+};
+
 const Products = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const handleClick = (index) => {
+        setCurrentIndex(index);
+    }
+
   return (
     <section className='relative w-full min-h-[800px] mx-auto flex 
     justify-center'>
@@ -22,20 +67,34 @@ const Products = () => {
                     h-[13px]' />
                 </div>
 
-                <div className='flex mt-8 gap-5'>
-                    <button className='bg-secondary text-[17px] py-3 
-                    px-14 text-primary rounded-[3px] font-medium 
-                    border-none hover:text-white'>
-                        Order Now
-                    </button>
+                <motion.div className='flex'>
+                    {products.map((product, index) => (
+                        index === currentIndex && (
+                            <ProductCard 
+                                key={product.title} 
+                                index={index} 
+                                title={product.title} 
+                                description={product.description} 
+                                image={product.image} 
+                            />
+                        )
+                    ))}
+                </motion.div>
 
-                    <button className='border-[1px] border-secondary 
-                    text-[17px] py-3 px-14 text-secondary rounded-[3px] 
-                    font-medium hover:text-white'>
-                        View Details
-                    </button>
-                </div>           
-            </motion.div>
+                <div className='flex'>
+                    <div className='flex' 
+                        onClick={() => handleClick(currentIndex === 0 ? 
+                        products.length - 1 : currentIndex - 1)}>
+                        <HiChevronLeft />
+                    </div>
+
+                    <div className='flex'
+                        onClick={() => handleClick(currentIndex === 
+                        products.length - 1 ? 0 : currentIndex + 1)}>
+                        <HiChevronRight />
+                    </div>
+                </div>
+            </motion.div>          
         </div>
     </section> 
   )

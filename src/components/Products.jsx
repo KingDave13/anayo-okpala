@@ -8,7 +8,7 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 const ProductCard = ({ title, description, image }) => {
     return (
-        <div className='xs:w-[250px] w-full'>
+        <div className='w-full flex flex-1'>
             <motion.div
                 variants={fadeIn('right', 'spring', 0.75)}
                 className='w-full flex'
@@ -16,26 +16,29 @@ const ProductCard = ({ title, description, image }) => {
                 <div className='flex flex-col rounded-[20px]
                 shadow-card'>
                     <img src={image} alt='product' className='w-full'/>
-                    <div className='flex flex-col'>
-                        <h1 className='font-bold text-[24px] text-white'>
-                            {title}
-                        </h1>
-                        <p className='max-w-[500px] text-white'>
-                            {description}
-                        </p>
-                    </div>
-                    <div className='flex mt-8 gap-5'>
-                        <button className='bg-secondary text-[17px] py-3 
-                        px-14 text-primary rounded-[3px] font-medium 
-                        border-none hover:text-white'>
-                            Order Now
-                        </button>
+                    <div className='absolute flex flex-col bottom-14
+                    left-26'>
+                        <div className='flex flex-col'>
+                            <h1 className='font-bold text-[24px] text-white'>
+                                {title}
+                            </h1>
+                            <p className='max-w-[500px] text-white'>
+                                {description}
+                            </p>
+                        </div>
+                        <div className='flex mt-8 gap-5'>
+                            <button className='bg-secondary text-[17px] py-3 
+                            px-14 text-primary rounded-[3px] font-medium 
+                            border-none hover:text-white'>
+                                Order Now
+                            </button>
 
-                        <button className='border-[1px] border-secondary 
-                        text-[17px] py-3 px-14 text-secondary rounded-[3px] 
-                        font-medium hover:text-white'>
-                            View Details
-                        </button>
+                            <button className='border-[1px] border-secondary 
+                            text-[17px] py-3 px-14 text-secondary rounded-[3px] 
+                            font-medium hover:text-white'>
+                                View Details
+                            </button>
+                        </div>
                     </div>
                 </div>
             </motion.div>

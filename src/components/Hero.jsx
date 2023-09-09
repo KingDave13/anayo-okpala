@@ -2,7 +2,7 @@ import styles, { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-import { hero, Ellipse } from '../assets';
+import { hero } from '../assets';
 
 const Hero = () => {
   return (

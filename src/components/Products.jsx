@@ -88,10 +88,6 @@ const Products = () => {
                             )
                         ))}
                     </div>
-                    
-                    <div>
-                        <p>View All</p>
-                    </div>
 
                     <div className='flex absolute left-0'>
                         <motion.div
@@ -102,8 +98,8 @@ const Products = () => {
                                 products.length - 1 : currentIndex - 1)}
                             transition={{ ease: 'easeInOut' }} 
                         >
-                            <HiChevronLeft className='w-16 h-16 rounded-full
-                            bg-secondary bg-opacity-30 p-2 text-primary' />
+                            <HiChevronLeft className='w-14 h-14 rounded-full
+                            bg-secondary bg-opacity-30 p-3 text-primary' />
                         </motion.div>
                     </div>
 
@@ -116,11 +112,17 @@ const Products = () => {
                                 products.length - 1 ? 0 : currentIndex + 1)}
                             transition={{ ease: 'easeInOut' }}
                         >
-                            <HiChevronRight className='w-16 h-16 rounded-full
-                            bg-secondary bg-opacity-30 p-2 text-primary' />
+                            <HiChevronRight className='w-14 h-14 rounded-full
+                            bg-secondary bg-opacity-30 p-3 text-primary' />
                         </motion.div>
                     </div>
-                </motion.div>        
+                </motion.div>
+
+                <div className='flex flex-row mt-10'>
+                    <p className='font-medium text-primary'>
+                        View All
+                    </p>
+                </div>      
             </motion.div>          
         </div>
     </section> 

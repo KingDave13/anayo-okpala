@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import { Navbar, Hero, About, Products } from './components';
+import { Navbar, Hero, About, Products, Values } from './components';
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
         <div className='relative bg-dimWhite'>
           <Products/>
         </div>
-        
+        <Values />
 
       </div>
     </BrowserRouter>

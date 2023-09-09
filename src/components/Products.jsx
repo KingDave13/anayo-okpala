@@ -11,22 +11,24 @@ const ProductCard = ({ title, description, image }) => {
         <div className='w-full flex flex-1'>
             <motion.div
                 variants={fadeIn('right', 'spring', 0.75)}
-                className='w-full flex'
+                className='w-full flex relative justify-center'
             >
-                <div className='flex flex-col rounded-[20px]
-                shadow-card'>
-                    <img src={image} alt='product' className='w-full'/>
-                    <div className='absolute flex flex-col bottom-14
-                    left-26'>
+                <div className='flex flex-col items-center w-[70%]
+                relative'>
+                    <img src={image} alt='product' 
+                    className='rounded-[20px] shadow-md'
+                    />
+                    <div className='absolute bottom-0 left-0 p-10 
+                    flex flex-col'>
                         <div className='flex flex-col'>
                             <h1 className='font-bold text-[24px] text-white'>
                                 {title}
                             </h1>
-                            <p className='max-w-[500px] text-white'>
+                            <p className='max-w-[500px] text-white mt-3'>
                                 {description}
                             </p>
                         </div>
-                        <div className='flex mt-8 gap-5'>
+                        <div className='flex mt-4 gap-5'>
                             <button className='bg-secondary text-[17px] py-3 
                             px-14 text-primary rounded-[3px] font-medium 
                             border-none hover:text-white'>
@@ -59,7 +61,8 @@ const Products = () => {
         <div className='absolute w-full max-w-[95rem] mx-auto flex 
         mb-16 justify-center'>
             <motion.div variants={textVariant()}
-            className={`${styles.paddingX} flex flex-col justify-center`}>
+            className={`${styles.paddingX} flex flex-col justify-center 
+            items-center`}>
                 <h1 className='text-primary font-bold text-[65px]
                 tracking-tight'>
                     Our products
@@ -70,7 +73,7 @@ const Products = () => {
                     h-[13px]' />
                 </div>
 
-                <motion.div className='flex'>
+                <motion.div className='flex mt-10'>
                     {products.map((product, index) => (
                         index === currentIndex && (
                             <ProductCard 

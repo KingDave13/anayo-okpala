@@ -2,6 +2,9 @@ import {
   product1,
   product2,
   product3,
+  vector,
+  vector2,
+  vector3,
 } from '../assets';
 
 export const navLinks = [
@@ -49,17 +52,17 @@ export const values = [
     name: 'quality',
     title: 'Quality',
     description: 'Our products are of the best quality available in the market so you can be assured of the best when dealing with us.',
-    icon: 
+    image: vector
   },
   {
     name: 'reliability',
     title: 'Reliability',
     description: 'You can always bank on us to always be apprised and be fully stocked with all the best items, round the clock, all year.',
-    icon: 
+    image: vector2
   },{
     name: 'security',
     title: 'Security',
     description: 'Security is also one of our watchwords as we prioritize absolute security of transactions between us and our customers.',
-    icon: 
+    image: vector3
   },
 ];

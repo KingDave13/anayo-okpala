@@ -87,29 +87,29 @@ const Products = () => {
                     ))}
                 </motion.div>
 
-                <div className='flex absolute w-full'>
+                <div className='flex absolute gap-3'>
                     <motion.div
-                        className='bg-secondary rounded-full 
-                        p-5 cursor-pointer'
+                        className='cursor-pointer'
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         onClick={() => handleClick(currentIndex === 0 ? 
                             products.length - 1 : currentIndex - 1)}
                         transition={{ ease: 'easeInOut' }} 
                     >
-                        <HiChevronLeft className='w-8 h-8' />
+                        <HiChevronLeft className='w-16 h-16 rounded-full
+                         bg-secondary p-2 text-primary' />
                     </motion.div>
 
                     <motion.div
-                        className='flex bg-secondary rounded-full p-5 
-                        cursor-pointer'
+                        className='cursor-pointer'
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         onClick={() => handleClick(currentIndex ===
                             products.length - 1 ? 0 : currentIndex + 1)}
                         transition={{ ease: 'easeInOut' }}
                     >
-                        <HiChevronRight className='w-8 h-8' />
+                        <HiChevronRight className='w-16 h-16 rounded-full
+                         bg-secondary p-2 text-primary' />
                     </motion.div>
                 </div>
             </motion.div>          

@@ -119,7 +119,7 @@ const Products = () => {
                     </div>
                 </motion.div>
 
-                <div className='flex flex-row mt-8 justify-center items-center gap-1
+                <div className='flex flex-row mt-12 justify-center items-center gap-1
                 cursor-pointer grow2'>
                     <p className='font-medium text-primary'>
                         View All

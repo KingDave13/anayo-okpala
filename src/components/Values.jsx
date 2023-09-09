@@ -5,15 +5,16 @@ import { SectionWrapper } from '../hoc'
 import { values } from '../constants';
 import { BsArrowRightShort } from 'react-icons/bs';
 
-const ValueCard = ({ title, description, image}) => {
+const ValueCard = ({ index, title, description, image}) => {
     return (
         <div className='w-full flex'>
             <motion.div
-                variants={fadeIn('right', 'spring', 0.75)}
+                variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
                 className='w-full bg-dimWhite p-[5px] rounded-[20px]
                 cursor-pointer'
             >
-                <div className='flex flex-col justify-evenly p-7'>
+                <div options={{ max: 45, scale: 1, speed: 450 }}
+                className='flex flex-col justify-evenly p-7'>
                     <img src={image} alt='value' 
                     className='object-contain w-8'
                     />
@@ -50,9 +51,8 @@ const Values = () => {
                     h-[13px]' />
                 </div>
 
-                <motion.div className='flex mt-16 items-center flex-row
-                gap-5 flex-wrap'>
-                    <div>
+                <div>
+                    <motion.div className='flex mt-16 gap-12'>
                         {values.map((value, index) => (
                             <ValueCard 
                                 key={value.title} 
@@ -60,17 +60,18 @@ const Values = () => {
                                 {...value}
                             />
                         ))}
-                    </div>
-                </motion.div>
+                    </motion.div>
 
-                <div className='flex flex-row mt-8 justify-center items-center gap-1
-                cursor-pointer grow2'>
-                    <p className='font-medium text-primary'>
-                        See more about us
-                    </p>
-           
-                    <BsArrowRightShort className='text-[30px] text-primary'/>
-                </div>      
+                    <div className='flex mt-12 justify-center items-center gap-1
+                    cursor-pointer grow2'>
+                        <p className='font-medium text-primary'>
+                            See more about us
+                        </p>
+            
+                        <BsArrowRightShort className='text-[30px] text-primary'/>
+                    </div> 
+                </div>
+                     
             </motion.div>          
         </div>
     </section>

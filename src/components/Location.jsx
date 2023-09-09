@@ -25,7 +25,8 @@ const Location = () => {
             </motion.div>
 
             <div className='flex justify-center mt-10'>
-                <motion.div variants={fadeIn('right', 'spring', 0.3)}>
+                <motion.div variants={fadeIn('right', 'spring', 0.3)}
+                className='flex flex-col justify-center'>
                     <h1 className='text-primary text-[30px] font-medium
                     mb-8'>
                         We are closer to you than you think!
@@ -33,8 +34,9 @@ const Location = () => {
                     {/* <div className='mt-8 w-[200px]'>
                     <img src={map} className='object-contain' alt='map'/>
                     </div> */}
-                    <h1>
-                        No. 5 Address Street, Location Road
+                    <h1 className='text-primary text-[20px] leading-[22px]
+                    flex justify-center text-center'>
+                        No. 5 Address Street, Location Road <br></br>
                         Map Town, Nigeria.
                     </h1>
                 </motion.div>

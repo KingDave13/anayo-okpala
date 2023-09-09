@@ -2,6 +2,7 @@ import styles, { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
+import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 const Products = () => {
   return (

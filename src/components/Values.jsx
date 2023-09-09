@@ -1,4 +1,5 @@
 import styles, { layout } from '../styles';
+import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
@@ -7,7 +8,7 @@ import { BsArrowRightShort } from 'react-icons/bs';
 
 const ValueCard = ({ index, title, description, image}) => {
     return (
-        <div className='w-full flex'>
+        <Tilt className='w-full flex'>
             <motion.div
                 variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
                 className='w-full bg-dimWhite p-[5px] rounded-[20px]
@@ -28,7 +29,7 @@ const ValueCard = ({ index, title, description, image}) => {
                     </p>
                 </div>
             </motion.div>
-        </div>
+        </Tilt>
     )
 };
 

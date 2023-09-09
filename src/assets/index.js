@@ -10,6 +10,7 @@ import product3 from './product3.png';
 import vector from './Vector.png';
 import vector2 from './Vector2.png';
 import vector3 from './Vector3.png';
+import map from './map.png';
 
 export {
     logo,
@@ -24,4 +25,5 @@ export {
     vector,
     vector2,
     vector3,
+    map,
 }

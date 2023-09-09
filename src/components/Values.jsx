@@ -35,8 +35,8 @@ const ValueCard = ({ index, title, description, image}) => {
 
 const Values = () => {
   return (
-    <section className='relative w-full min-h-[700px] mx-auto flex 
-    justify-center'>
+    <section className='relative w-full min-h-[650px] mx-auto flex 
+    justify-center items-center'>
         <div className='absolute w-full max-w-[95rem] mx-auto flex 
         mb-16 justify-center'>
             <motion.div variants={textVariant()}

@@ -18,13 +18,13 @@ const ProductCard = ({ title, description, image }) => {
                     <img src={image} alt='product' 
                     className='rounded-[20px] shadow-md'
                     />
-                    <div className='absolute bottom-0 left-0 p-10 
+                    <div className='absolute bottom-0 left-0 p-8 
                     flex flex-col'>
                         <div className='flex flex-col'>
                             <h1 className='font-bold text-[24px] text-white'>
                                 {title}
                             </h1>
-                            <p className='max-w-[500px] text-white mt-3'>
+                            <p className='max-w-[450px] text-white mt-3'>
                                 {description}
                             </p>
                         </div>
@@ -73,7 +73,7 @@ const Products = () => {
                     h-[13px]' />
                 </div>
 
-                <motion.div className='flex mt-10'>
+                <motion.div className='flex mt-16'>
                     {products.map((product, index) => (
                         index === currentIndex && (
                             <ProductCard 
@@ -87,18 +87,30 @@ const Products = () => {
                     ))}
                 </motion.div>
 
-                <div className='flex'>
-                    <div className='flex' 
+                <div className='flex absolute w-full'>
+                    <motion.div
+                        className='bg-secondary rounded-full 
+                        p-5 cursor-pointer'
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
                         onClick={() => handleClick(currentIndex === 0 ? 
-                        products.length - 1 : currentIndex - 1)}>
-                        <HiChevronLeft />
-                    </div>
+                            products.length - 1 : currentIndex - 1)}
+                        transition={{ ease: 'easeInOut' }} 
+                    >
+                        <HiChevronLeft className='w-8 h-8' />
+                    </motion.div>
 
-                    <div className='flex'
-                        onClick={() => handleClick(currentIndex === 
-                        products.length - 1 ? 0 : currentIndex + 1)}>
-                        <HiChevronRight />
-                    </div>
+                    <motion.div
+                        className='flex bg-secondary rounded-full p-5 
+                        cursor-pointer'
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        onClick={() => handleClick(currentIndex ===
+                            products.length - 1 ? 0 : currentIndex + 1)}
+                        transition={{ ease: 'easeInOut' }}
+                    >
+                        <HiChevronRight className='w-8 h-8' />
+                    </motion.div>
                 </div>
             </motion.div>          
         </div>

@@ -141,6 +141,10 @@
   -webkit-backdrop-filter: blur(4px)
 }
 
+.your-tilt-container {
+  transition: transform 0.1s ease-in-out;
+}
+
 .hash-span {
   margin-top: -70px;
   padding-bottom: 70px;

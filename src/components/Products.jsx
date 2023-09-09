@@ -11,7 +11,7 @@ const ProductCard = ({ title, description, image }) => {
     return (
         <div className='w-full flex flex-1'>
             <motion.div
-                variants={fadeIn('right', 'spring', 0.75)}
+                variants={fadeIn('down', 'spring', 0.2, 1)}
                 className='w-full flex relative justify-center'
             >
                 <div className='flex flex-col items-center w-[70%]

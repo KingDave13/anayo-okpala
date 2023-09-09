@@ -2,7 +2,7 @@ import { SectionWrapper } from '../hoc';
 import { cloth } from '../assets';
 import styles, { layout } from '../styles';
 import { motion } from 'framer-motion';
-import { fadeIn, textVariant } from '../utils/motion';
+import { slideIn, textVariant } from '../utils/motion';
 
 const About = () => {
   return (
@@ -43,7 +43,8 @@ const About = () => {
                 </div>           
             </motion.div>
 
-            <motion.div variants={fadeIn('right', 'spring', 0.3)}>
+            <motion.div 
+            variants={slideIn('right', 'tween', 0.2, 0.5)}>
                 <img src={cloth} alt='cloth'
                 className=' h-[400px] w-auto'
                 />

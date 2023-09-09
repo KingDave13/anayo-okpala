@@ -14,7 +14,7 @@ const About = () => {
             <motion.div variants={textVariant()}
             className={`${layout.sectionInfo}`}
             >
-                <h1 className='text-primary font-bold text-[65px]
+                <h1 className='text-primary font-bold text-[60px]
                 tracking-tight'>
                     Who we are
                 </h1>

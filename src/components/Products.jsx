@@ -62,8 +62,8 @@ const Products = () => {
         mb-16 justify-center'>
             <motion.div variants={textVariant()}
             className={`${styles.paddingX} flex flex-col justify-center 
-            items-center`}>
-                <h1 className='text-primary font-bold text-[65px]
+            items-center relative`}>
+                <h1 className='text-primary font-bold text-[60px]
                 tracking-tight'>
                     Our products
                 </h1>
@@ -73,45 +73,54 @@ const Products = () => {
                     h-[13px]' />
                 </div>
 
-                <motion.div className='flex mt-16'>
-                    {products.map((product, index) => (
-                        index === currentIndex && (
-                            <ProductCard 
-                                key={product.title} 
-                                index={index} 
-                                title={product.title} 
-                                description={product.description} 
-                                image={product.image} 
-                            />
-                        )
-                    ))}
-                </motion.div>
+                <motion.div className='flex mt-16 items-center flex-col
+                relative justify-center'>
+                    <div className='relative'>
+                        {products.map((product, index) => (
+                            index === currentIndex && (
+                                <ProductCard 
+                                    key={product.title} 
+                                    index={index} 
+                                    title={product.title} 
+                                    description={product.description} 
+                                    image={product.image} 
+                                />
+                            )
+                        ))}
+                    </div>
+                    
+                    <div>
+                        <p>View All</p>
+                    </div>
 
-                <div className='flex absolute gap-3'>
-                    <motion.div
-                        className='cursor-pointer'
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={() => handleClick(currentIndex === 0 ? 
-                            products.length - 1 : currentIndex - 1)}
-                        transition={{ ease: 'easeInOut' }} 
-                    >
-                        <HiChevronLeft className='w-16 h-16 rounded-full
-                         bg-secondary p-2 text-primary' />
-                    </motion.div>
+                    <div className='flex absolute left-0'>
+                        <motion.div
+                            className='cursor-pointer'
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            onClick={() => handleClick(currentIndex === 0 ? 
+                                products.length - 1 : currentIndex - 1)}
+                            transition={{ ease: 'easeInOut' }} 
+                        >
+                            <HiChevronLeft className='w-16 h-16 rounded-full
+                            bg-secondary bg-opacity-30 p-2 text-primary' />
+                        </motion.div>
+                    </div>
 
-                    <motion.div
-                        className='cursor-pointer'
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={() => handleClick(currentIndex ===
-                            products.length - 1 ? 0 : currentIndex + 1)}
-                        transition={{ ease: 'easeInOut' }}
-                    >
-                        <HiChevronRight className='w-16 h-16 rounded-full
-                         bg-secondary p-2 text-primary' />
-                    </motion.div>
-                </div>
+                    <div className='flex absolute right-0'>
+                        <motion.div
+                            className='cursor-pointer'
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            onClick={() => handleClick(currentIndex ===
+                                products.length - 1 ? 0 : currentIndex + 1)}
+                            transition={{ ease: 'easeInOut' }}
+                        >
+                            <HiChevronRight className='w-16 h-16 rounded-full
+                            bg-secondary bg-opacity-30 p-2 text-primary' />
+                        </motion.div>
+                    </div>
+                </motion.div>        
             </motion.div>          
         </div>
     </section> 

@@ -6,12 +6,12 @@ import { map } from '../assets';
 
 const Location = () => {
   return (
-    <section className='relative w-full min-h-[700px] mx-auto flex'>
+    <section className='relative w-full min-h-[800px] mx-auto flex'>
         <div className='absolute w-full
         max-w-[95rem] mx-auto flex flex-col gap-5 mb-16'
         >
             <motion.div variants={textVariant()}
-            className={`${layout.sectionInfo} mb-5`}
+            className={`${layout.sectionInfo}`}
             >
                 <h1 className='text-primary font-bold text-[60px]
                 tracking-tight'>
@@ -24,18 +24,18 @@ const Location = () => {
                 </div>                  
             </motion.div>
 
-            <div className='flex justify-center mt-10'>
+            <div className='flex justify-center mt-4'>
                 <motion.div variants={fadeIn('right', 'spring', 0.3)}
-                className='flex flex-col justify-center'>
-                    <h1 className='text-primary text-[30px] font-medium
-                    mb-8'>
+                className='flex flex-col justify-center items-center'>
+                    <h1 className='text-primary text-[28px] font-medium
+                    mb-6'>
                         We are closer to you than you think!
                     </h1>
-                    {/* <div className='mt-8 w-[200px]'>
-                    <img src={map} className='object-contain' alt='map'/>
-                    </div> */}
-                    <h1 className='text-primary text-[20px] leading-[22px]
-                    flex justify-center text-center'>
+                    <img src={map} className='object-contain w-[900px]
+                    border-[10px] border-[#99999]'
+                        alt='map'/>
+                    <h1 className='text-primary text-[18px] leading-[22px]
+                    flex justify-center text-center mt-3'>
                         No. 5 Address Street, Location Road <br></br>
                         Map Town, Nigeria.
                     </h1>

@@ -149,11 +149,17 @@
 
 .grow {
   transition: all .2s ease-in-out;
-  flex-grow: 0;
 }
 .grow:hover {
   transform: scale(1.02);
   background-color: darkorange;
+}
+
+.grow2 {
+  transition: all .2s ease-in-out;
+}
+.grow2:hover {
+  transform: scale(1.02);
 }
 
 .feedback-card:hover {

@@ -5,6 +5,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
 import { products } from '../constants';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
+import { BsArrowRightShort } from 'react-icons/bs';
 
 const ProductCard = ({ title, description, image }) => {
     return (
@@ -31,13 +32,13 @@ const ProductCard = ({ title, description, image }) => {
                         <div className='flex mt-4 gap-5'>
                             <button className='bg-secondary text-[17px] py-3 
                             px-14 text-primary rounded-[3px] font-medium 
-                            border-none hover:text-white'>
+                            border-none hover:text-white grow2'>
                                 Order Now
                             </button>
 
                             <button className='border-[1px] border-secondary 
                             text-[17px] py-3 px-14 text-secondary rounded-[3px] 
-                            font-medium hover:text-white'>
+                            font-medium hover:text-white grow2'>
                                 View Details
                             </button>
                         </div>
@@ -118,10 +119,13 @@ const Products = () => {
                     </div>
                 </motion.div>
 
-                <div className='flex flex-row mt-10'>
+                <div className='flex flex-row mt-8 justify-center items-center gap-1
+                cursor-pointer grow2'>
                     <p className='font-medium text-primary'>
                         View All
                     </p>
+                    
+                    <BsArrowRightShort className='text-[30px] text-primary'/>
                 </div>      
             </motion.div>          
         </div>

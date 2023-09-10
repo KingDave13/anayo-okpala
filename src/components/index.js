@@ -5,5 +5,6 @@ import Products from './Products';
 import Values from './Values';
 import Location from './Location';
 import Testimonials from './Testimonials';
+import CTA from './CTA';
 
-export { Navbar, Hero, About, Products, Values, Location, Testimonials }
+export { Navbar, Hero, About, Products, Values, Location, Testimonials, CTA }

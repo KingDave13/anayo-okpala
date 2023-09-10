@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import 
-{ Navbar, Hero, About, Products, Values, Location, Testimonials } 
+{ Navbar, Hero, About, Products, Values, Location, Testimonials, CTA } 
 from './components';
 
 const App = () => {
@@ -27,6 +27,9 @@ const App = () => {
           <Location/>
         </div>
         <Testimonials />
+        <div className='relative bg-dimWhite'>
+          <CTA/>
+        </div>
       </div>
     </BrowserRouter>
   )

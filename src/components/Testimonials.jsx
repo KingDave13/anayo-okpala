@@ -9,7 +9,9 @@ const TestCard = ({ index, testimonial, image, name, designation }) => {
         <motion.div
         variants={fadeIn('', 'spring', index * 0.5, 0.75)}
         className='bg-dimWhite pt-16 pb-16 p-10 rounded-3xl xs:w-[500px] 
-        w-full relative shadow-md hover:shadow-xl cursor-pointer '
+        w-full relative cursor-pointer'
+        whileHover={{ boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)', 
+        transition: { duration: 0.2, ease: 'easeInOut' } }}
         >
             <p className='text-secondary font-bold text-[48px] font-poppins
             absolute'>

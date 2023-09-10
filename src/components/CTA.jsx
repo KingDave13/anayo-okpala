@@ -10,38 +10,37 @@ const CTA = () => {
         <div className={`${styles.padding} bg-primary flex max-w-[95rem] 
         mx-auto items-center justify-center w-full rounded-3xl`}>
             <motion.div variants={textVariant()}
-            className='flex flex-start relative w-full'>
-                <div className='flex flex-col'>
-                    <h1 className='text-white font-bold text-[30px] mb-5
-                    leading-[40px] max-w-[600px]'>
-                        Buy from the <span className='text-secondary'>
-                        right </span> and &nbsp;
-                        <span className='text-secondary'>
-                        most reliable supplier! </span>
-                    </h1>
+            className='flex flex-start flex-col relative w-full'>
+                <h1 className='text-white font-bold text-[30px] mb-5
+                leading-[40px] max-w-[600px]'>
+                    Buy from the <span className='text-secondary'>
+                    right </span> and <span className='text-secondary'>
+                    most reliable supplier! </span>
+                </h1>
+                
+                <p className='text-white text-[17px] max-w-[650px]'>
+                Quality is guaranteed when you buy from Anaya 
+                Okpala Global Concept! Don’t buy inferior 
+                materials anymore; switch to the good side today!
+                </p>
 
-                    <p className='text-white text-[17px] max-w-[600px]'>
-                    Quality is guaranteed when you buy from Anaya 
-                    Okpala Global Concept! Don’t buy inferior 
-                    materials anymore; switch to the good side today!
-                    </p>
+                <div className='mt-5'>
+                    <button className='bg-secondary grow2 mr-5
+                    text-[16px] py-2 px-12 text-primary rounded-[3px]
+                    font-normal border-none hover:text-white'>
+                        Contact Us
+                    </button>
 
-                    <div className='flex mt-5 gap-5'>
-                        <button className='bg-secondary grow
-                        text-[17px] py-3 px-6 text-primary rounded-[3px]
-                        font-medium border-none hover:text-white'>
-                            Contact Us
-                        </button>
-
-                        <button className='border-[1px] 
-                        grow border-secondary text-[17px] py-3 px-6 
-                        text-secondary rounded-[3px] font-medium
-                        hover:text-white'>
-                            View Products
-                        </button>
-                    </div>
+                    <button className='border-[1px] grow2 
+                    border-secondary text-[16px] py-2 px-12 
+                    text-secondary rounded-[3px] font-normal
+                    hover:text-white'>
+                        View Products
+                    </button>
                 </div>
-            </motion.div>                  
+            </motion.div>
+            
+                            
         </div>
     </section>
   )

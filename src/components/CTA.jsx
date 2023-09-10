@@ -2,13 +2,14 @@ import styles from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import { man } from '../assets';
 
 const CTA = () => {
   return (
     <section className='relative w-full min-h-[500px] mx-auto flex
     items-center'>
         <div className={`${styles.padding} bg-primary flex max-w-[95rem] 
-        mx-auto items-center justify-center w-full rounded-3xl`}>
+        mx-auto items-center w-full rounded-3xl relative`}>
             <motion.div variants={textVariant()}
             className='flex flex-start flex-col relative w-full'>
                 <h1 className='text-white font-bold text-[30px] mb-5
@@ -39,8 +40,10 @@ const CTA = () => {
                     </button>
                 </div>
             </motion.div>
-            
-                            
+
+            <motion.div className='absolute'>
+                <img src={man} />
+            </motion.div>                
         </div>
     </section>
   )

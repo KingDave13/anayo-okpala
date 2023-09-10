@@ -3,6 +3,7 @@ import styles, { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { testimonials } from '../constants';
+import { quote } from '../assets';
 
 const TestCard = ({ index, testimonial, image, name, designation }) => {
     return (
@@ -13,10 +14,10 @@ const TestCard = ({ index, testimonial, image, name, designation }) => {
         whileHover={{ boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)', 
         transition: { duration: 0.2, ease: 'easeInOut' } }}
         >
-            <p className='text-secondary font-bold text-[48px] font-poppins
-            absolute'>
-                "
-            </p>
+            <img src={quote}
+                className='absolute object-contain w-16 h-auto top-[-35px]
+                right-7' 
+            />
 
             <div className=''>
                 <p className='text-primary text-[18px] font-normal'>

@@ -7,7 +7,7 @@ import { man } from '../assets';
 const CTA = () => {
   return (
     <section className='relative w-full min-h-[500px] mx-auto flex
-    items-center overflow-hidden'>
+    items-center'>
         <div className={`${styles.padding} bg-primary flex max-w-[95rem] 
         mx-auto items-center w-full rounded-3xl relative`}>
             <motion.div variants={textVariant()}
@@ -42,7 +42,7 @@ const CTA = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('left', 'spring', 0.3)}
-            className='absolute mr-3 right-0'>
+            className='absolute mr-14 right-0 bottom-0'>
                 <img src={man} className='object-contain w-[280px]'/>
             </motion.div>                
         </div>

@@ -51,12 +51,11 @@ const TestCard = ({ index, testimonial, image, name, designation }) => {
 
 const Testimonials = () => {
   return (
-    <section className='relative w-full min-h-[900px] mx-auto flex'>
+    <section className='relative w-full min-h-[900px] mx-auto flex
+    items-center'>
         <div className='max-w-[95rem] mx-auto flex flex-col mb-10'
         >
-            <motion.div variants={textVariant()}
-            className={`${layout.sectionInfo}`}
-            >
+            <motion.div variants={textVariant()}>
                 <h1 className='text-primary font-bold text-[60px]
                 tracking-tight'>
                     Testimonials
@@ -68,7 +67,7 @@ const Testimonials = () => {
                 </div>                  
             </motion.div>
 
-            <div className='flex gap-14 flex-wrap justify-center'>
+            <div className='flex gap-14 flex-wrap justify-center mt-20'>
                 {testimonials.map((test, index) => (
                 <TestCard 
                     key={test.name} 

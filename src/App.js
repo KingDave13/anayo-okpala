@@ -27,8 +27,10 @@ const App = () => {
           <Location/>
         </div>
         <Testimonials />
-        <div className='relative bg-dimWhite'>
-          <CTA/>
+        <div className='relative bg-white'>
+          <div className='relative bg-dimWhite'>
+            <CTA/>
+          </div>
         </div>
       </div>
     </BrowserRouter>

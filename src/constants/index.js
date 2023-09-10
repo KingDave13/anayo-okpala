@@ -11,6 +11,9 @@ import {
   pic4,
 } from '../assets';
 
+import { BsTwitter, BsInstagram, BsFacebook } from 'react-icons/bs';
+import { FaLinkedinIn } from 'react-icons/fa';
+
 export const navLinks = [
   {
     id: "home",
@@ -95,5 +98,28 @@ export const testimonials = [
     image: pic4,
     name: "Olajide Babatunde",
     designation: "Techpreneur",
+  },
+];
+
+export const socialMedia = [
+  {
+    id: "social-media-1",
+    Icon: BsTwitter,
+    link: "https://twitter.com/DavidOkaliwe"
+  },
+  {
+    id: "social-media-2",
+    Icon: BsInstagram,
+    link: "https://www.linkedin.com/in/david-okaliwe-229666234/"
+  },
+  {
+    id: "social-media-3",
+    Icon: BsFacebook,
+    link: "https://github.com/KingDave13"
+  },
+  {
+    id: "social-media-4",
+    Icon: FaLinkedinIn,
+    link: "https://github.com/KingDave13"
   },
 ];

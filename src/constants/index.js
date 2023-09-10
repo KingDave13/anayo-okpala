@@ -123,3 +123,44 @@ export const socialMedia = [
     link: "https://github.com/KingDave13"
   },
 ];
+
+export const footerLinks = [
+  {
+    title: "Company",
+    links: [
+      {
+        name: "About",
+        link: "https://www.hoobank.com/content/",
+      },
+      {
+        name: "Contact",
+        link: "https://www.hoobank.com/how-it-works/",
+      },
+      {
+        name: "Products",
+        link: "https://www.hoobank.com/create/",
+      },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      {
+        name: "Cookies",
+        link: "https://www.hoobank.com/help-center/",
+      },
+      {
+        name: "Privacy Policy",
+        link: "https://www.hoobank.com/partners/",
+      },
+      {
+        name: "Security",
+        link: "https://www.hoobank.com/suggestions/",
+      },
+      {
+        name: "Terms of Use",
+        link: "https://www.hoobank.com/blog/",
+      },
+    ],
+  },
+];

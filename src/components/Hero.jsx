@@ -1,8 +1,102 @@
+import { useState, useEffect } from 'react';
 import styles, { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { hero } from '../assets';
+
+const Counter = () => {
+    const [count1, setCount1] = useState(0);
+    const [count2, setCount2] = useState(0);
+    const [count3, setCount3] = useState(0);
+  
+    const target1 = 50;
+    const target2 = 1000;
+    const target3 = 10;
+  
+    useEffect(() => {
+      const duration = 2000;
+  
+      // Calculate the increment for each step
+      const increment1 = (target1 / duration) * 10;
+      const increment2 = (target2 / duration) * 10;
+      const increment3 = (target3 / duration) * 10;
+  
+      // Start counting animation
+      const interval1 = setInterval(() => {
+        if (count1 < target1) {
+          setCount1((prevCount) => Math.min(prevCount + increment1, target1));
+        } else {
+          clearInterval(interval1);
+        }
+      }, 10);
+  
+      const interval2 = setInterval(() => {
+        if (count2 < target2) {
+          setCount2((prevCount) => Math.min(prevCount + increment2, target2));
+        } else {
+          clearInterval(interval2);
+        }
+      }, 10);
+  
+      const interval3 = setInterval(() => {
+        if (count3 < target3) {
+          setCount3((prevCount) => Math.min(prevCount + increment3, target3));
+        } else {
+          clearInterval(interval3);
+        }
+      }, 10);
+  
+      return () => {
+        clearInterval(interval1);
+        clearInterval(interval2);
+        clearInterval(interval3);
+      };
+    }, []);
+  
+    return (
+      <motion.div variants={textVariant()} 
+      className='flex bottom-0 right-0 pb-1 absolute items-center'>
+        <div className='flex flex-col justify-center items-center'>
+            <h1 className='text-secondary font-bold text-[40px] 
+                tracking-tight'>
+                {Math.round(count1)}+
+            </h1>
+            <p className='text-white text-[15px]'>
+                Quality Products
+            </p>
+        </div>
+  
+        <div className='flex relative m-12'>
+            <div className='bg-secondary w-[1px] h-[55px]' />
+        </div>
+  
+        <div className='flex flex-col justify-center items-center'>
+            <h1 className='text-secondary font-bold text-[40px] 
+                tracking-tight'>
+                {Math.round(count2)}+
+            </h1>
+            <p className='text-white text-[15px]'>
+                Satisfied Customers
+            </p>
+        </div>
+  
+        <div className='flex relative m-12'>
+            <div className='bg-secondary w-[1px] h-[55px]' />
+        </div>
+  
+        <div className='flex flex-col justify-center items-center'>
+            <h1 className='text-secondary font-bold text-[40px]
+                tracking-tight'>
+                {Math.round(count3)}+
+            </h1>
+            <p className='text-white text-[15px]'>
+                Years of Service
+            </p>
+        </div>
+      </motion.div>
+    );
+  };
 
 const Hero = () => {
   return (
@@ -50,46 +144,7 @@ const Hero = () => {
             </motion.div>          
         </div>
 
-        <motion.div variants={textVariant()}
-            className='flex bottom-0 right-0 pb-1 absolute items-center'>
-                <div className='flex flex-col justify-center items-center'>
-                    <h1 className='text-secondary font-bold text-[40px]
-                    tracking-tight'>
-                        50+
-                    </h1>
-                    <p className='text-white text-[15px]'>
-                        Quality Products
-                    </p>
-                </div>
-
-                <div className='flex relative m-12'>
-                    <div className='bg-secondary w-[1px] h-[55px]' />
-                </div> 
-
-                <div className='flex flex-col justify-center items-center'>
-                    <h1 className='text-secondary font-bold text-[40px]
-                    tracking-tight'>
-                        1000+
-                    </h1>
-                    <p className='text-white text-[15px]'>
-                        Satisfied Customers
-                    </p>
-                </div>
-
-                <div className='flex relative m-12'>
-                    <div className='bg-secondary w-[1px] h-[55px]' />
-                </div>
-
-                <div className='flex flex-col justify-center items-center'>
-                    <h1 className='text-secondary font-bold text-[40px]
-                    tracking-tight'>
-                        10+
-                    </h1>
-                    <p className='text-white text-[15px]'>
-                        Years of Service
-                    </p>
-                </div>
-        </motion.div>
+        <Counter />
     </section>  
   )
 };

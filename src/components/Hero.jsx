@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { hero } from '../assets';
+import { useNavigate } from 'react-router-dom';
 
 const Counter = () => {
     const [count1, setCount1] = useState(0);
@@ -99,6 +100,8 @@ const Counter = () => {
   };
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className='relative w-full min-h-[890px] mx-auto flex 
     items-center flex overflow-hidden'>
@@ -124,7 +127,9 @@ const Hero = () => {
                 <div className='flex flex-row mt-5 gap-5'>
                     <button className='bg-secondary grow
                     text-[17px] py-3 px-14 text-primary rounded-[3px]
-                    font-medium border-none hover:text-white'>
+                    font-medium border-none hover:text-white'
+                    onClick={() => navigate('/AboutPage')}
+                    >
                         Learn More
                     </button>
 

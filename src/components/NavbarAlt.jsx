@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles';
 import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { logo2, menu, close } from '../assets';
 
 const Navbar = () => {
     const [active, setActive] = useState('');
@@ -10,15 +10,15 @@ const Navbar = () => {
 
     return (
         <nav className={`${styles.paddingX} w-full flex items-center
-            fixed py-8 top-0 z-20 bg-primary`}>
+            fixed py-8 top-0 z-20 bg-white`}>
             <div className='w-full flex justify-between items-center
             max-w-[95rem] mx-auto'>
-                <Link to='/'
+                <Link to='/AboutPage'
                     onClick={() => {
                     setActive('');
                     window.scrollTo(0, 0);
                     }}>
-                    <img src={logo} alt='logo'
+                    <img src={logo2} alt='logo'
                     className='w-[130px] h-auto'/>
                 </Link>
 
@@ -29,8 +29,8 @@ const Navbar = () => {
                             <li key={link.id}
                             className={`${
                                 active === link.title
-                                ? 'border-b-[4px] rounded-[1px] border-b-secondary text-white'
-                                : 'text-white'
+                                ? 'border-b-[4px] rounded-[1px] border-b-secondary text-primary'
+                                : 'text-primary'
                             } hover:text-secondary text-[17px] 
                                 cursor-pointer py-2 font-medium`}
                             onClick={() => setActive(link.title)}
@@ -40,8 +40,8 @@ const Navbar = () => {
                         ))}
                     </ul>
                     
-                    <button className='hidden md:flex bg-secondary grow
-                    text-[17px] py-3 px-14 text-primary rounded-[3px] font-medium'>
+                    <button className='hidden md:flex bg-primary grow
+                    text-[17px] py-3 px-14 text-white rounded-[3px] font-medium'>
                         Get a Quote
                     </button>
                 </div>

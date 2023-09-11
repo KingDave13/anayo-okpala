@@ -1,12 +1,21 @@
-import React from 'react'
-import { SectionWrapper } from '../hoc';
+import { 
+  NavbarAlt, 
+  CTA, 
+  Footer, 
+  Hero2, 
+  AboutMain, 
+  Mission } 
+  from '../components';
 
 const AboutPage = () => {
   return (
     <div>
-      
+      <NavbarAlt />
+      <Hero2 />
+      <CTA />
+      <Footer />
     </div>
   )
 };
 
-export default SectionWrapper(AboutPage, '');
+export default AboutPage;

@@ -8,6 +8,9 @@ import Location from './Location';
 import Testimonials from './Testimonials';
 import CTA from './CTA';
 import Footer from './Footer';
+import Hero2 from './Hero2';
+import AboutMain from './AboutMain';
+import Mission from './Mission';
 
 export { 
     Navbar, 
@@ -20,4 +23,7 @@ export {
     CTA, 
     Footer,
     NavbarAlt,
+    Hero2,
+    AboutMain,
+    Mission,
  }

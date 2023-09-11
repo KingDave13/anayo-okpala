@@ -25,7 +25,7 @@ const Location = () => {
                 </div>                  
             </motion.div>
 
-            <div className='flex justify-center mt-4'>
+            <div className='flex flex-col items-center justify-center'>
                 <motion.div variants={zoomIn(0.3, 0.7)}
                 className='flex flex-col justify-center items-center'>
                     <h1 className='text-primary text-[25px] font-medium
@@ -45,34 +45,38 @@ const Location = () => {
                         border-[10px] border-[#99999] cursor-pointer'
                         alt='map'/>
                     </Tilt>
-                    
-                    <div className='flex items-center justify-between mt-3'>
-                        <div className='flex flex-col mr-14'>
+                </motion.div>
+
+                <motion.div variants={textVariant()}
+                    className='flex items-center justify-between mt-5
+                    max-w-[50rem]'>
+                        <div className='flex flex-col mr-16'>
                             <h1 className='text-primary text-[18px]
                             font-bold'>
                                 Head Office
                             </h1>
-                            <p className='text-primary text-[14px]'>
+                            <p className='text-primary text-[16px]
+                            leading-[18px]'>
                                 No. 101 Ibrahim Taiwo Road by <br></br>
                                 Sani Ungogo, Kano State, Nigeria.
                             </p>
                         </div>
 
-                        <div className='flex mr-14'>
-                            <div className='bg-primary w-[1px] 
-                            h-[55px]' />
+                        <div className='flex mr-16'>
+                            <div className='bg-primary w-[2px] 
+                            h-[60px]' />
                         </div>
-                        <div className='flex justify-end flex-col'>
+                        <div className='flex justify-end flex-col text-right'>
                             <h1 className='text-primary text-[18px]
                             font-bold'>
                                 Branch Office
                             </h1>
-                            <p className='text-primary text-[14px]'>
+                            <p className='text-primary text-[16px]
+                            leading-[18px]'>
                                 No. 9 Festing Road Sabon Gari, <br></br>
                                 Kano State, Nigeria.
                             </p>
                         </div>     
-                    </div>
                 </motion.div>
             </div>
         </div>

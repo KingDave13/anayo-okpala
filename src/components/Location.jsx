@@ -28,8 +28,8 @@ const Location = () => {
             <div className='flex justify-center mt-4'>
                 <motion.div variants={zoomIn(0.3, 0.7)}
                 className='flex flex-col justify-center items-center'>
-                    <h1 className='text-primary text-[28px] font-medium
-                    mb-6'>
+                    <h1 className='text-primary text-[25px] font-medium
+                    mb-3 tracking-tight'>
                         We are closer to you than you think!
                     </h1>
 
@@ -46,11 +46,33 @@ const Location = () => {
                         alt='map'/>
                     </Tilt>
                     
-                    <h1 className='text-primary text-[18px] leading-[22px]
-                    flex justify-center text-center mt-3'>
-                        No. 5 Address Street, Location Road <br></br>
-                        Map Town, Nigeria.
-                    </h1>
+                    <div className='flex items-center justify-between mt-3'>
+                        <div className='flex flex-col mr-14'>
+                            <h1 className='text-primary text-[18px]
+                            font-bold'>
+                                Head Office
+                            </h1>
+                            <p className='text-primary text-[14px]'>
+                                No. 101 Ibrahim Taiwo Road by <br></br>
+                                Sani Ungogo, Kano State, Nigeria.
+                            </p>
+                        </div>
+
+                        <div className='flex mr-14'>
+                            <div className='bg-primary w-[1px] 
+                            h-[55px]' />
+                        </div>
+                        <div className='flex justify-end flex-col'>
+                            <h1 className='text-primary text-[18px]
+                            font-bold'>
+                                Branch Office
+                            </h1>
+                            <p className='text-primary text-[14px]'>
+                                No. 9 Festing Road Sabon Gari, <br></br>
+                                Kano State, Nigeria.
+                            </p>
+                        </div>     
+                    </div>
                 </motion.div>
             </div>
         </div>

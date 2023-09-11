@@ -12,7 +12,7 @@ const Hero = () => {
         max-w-[95rem] mx-auto flex flex-row items-start gap-5'
         >
             <motion.div variants={textVariant()}
-            className={`${layout.sectionInfo} mb-24`}
+            className={`${layout.sectionInfo}`}
             >
                 <h1 className='text-secondary font-bold text-[65px]
                 leading-[78px] tracking-tight max-w-[750px]'>
@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
 
         <motion.div variants={textVariant()}
-            className='flex bottom-0 right-0 pb-2 absolute items-center'>
+            className='flex bottom-0 right-0 pb-1 absolute items-center'>
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='text-secondary font-bold text-[40px]
                     tracking-tight'>

@@ -21,6 +21,11 @@ const AboutPage = () => {
       </div>
       
       <AboutMain />
+
+      <div className='bg-dimWhite'>
+        <Mission />
+      </div>
+
       <CTA />
 
       <div className='bg-dimWhite'>

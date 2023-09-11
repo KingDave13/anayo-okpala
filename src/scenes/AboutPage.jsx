@@ -20,8 +20,12 @@ const AboutPage = () => {
         </div>
       </div>
       
+      <AboutMain />
       <CTA />
-      <Footer />
+
+      <div className='bg-dimWhite'>
+        <Footer />
+      </div>
     </div>
   )
 };

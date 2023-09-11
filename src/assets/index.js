@@ -17,7 +17,8 @@ import pic3 from './pic3.png';
 import pic4 from './pic4.png';
 import quote from './quote.png';
 import man from './man.png';
-import logo2 from './logo.svg'
+import logo2 from './logo.svg';
+import frame from './frame.png';
 
 export {
     logo,
@@ -39,5 +40,6 @@ export {
     pic4,
     quote,
     man,
-    logo2
+    logo2,
+    frame,
 }

@@ -1,10 +1,13 @@
 import { SectionWrapper } from '../hoc';
 import { cloth } from '../assets';
-import styles, { layout } from '../styles';
+import { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '../utils/motion';
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
+    const navigate = useNavigate();
+
   return (
     <section className='relative w-full min-h-[700px] mx-auto flex 
     items-center flex overflow-hidden'>
@@ -37,7 +40,8 @@ const About = () => {
                 <div className='mt-8'>
                     <button className='bg-primary grow
                     text-[17px] py-3 px-14 text-white rounded-[3px]
-                    font-medium border-none hover:text-primary'>
+                    font-medium border-none hover:text-primary'
+                    onClick={() => navigate('/AboutPage')}>
                         Learn More
                     </button>
                 </div>           

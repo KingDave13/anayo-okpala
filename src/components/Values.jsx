@@ -5,6 +5,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
 import { values } from '../constants';
 import { BsArrowRightShort } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 
 const ValueCard = ({ index, title, description, image}) => {
     return (
@@ -34,6 +35,8 @@ const ValueCard = ({ index, title, description, image}) => {
 };
 
 const Values = () => {
+    const navigate = useNavigate();
+
   return (
     <section className='relative w-full min-h-[650px] mx-auto flex 
     justify-center items-center'>
@@ -66,7 +69,8 @@ const Values = () => {
 
                  <div className='flex mt-16 justify-center items-center 
                  gap-1 cursor-pointer grow2 flex-row'>
-                    <p className='font-medium text-primary'>
+                    <p className='font-medium text-primary'
+                    onClick={() => navigate('/AboutPage')}>
                         See more about us
                     </p>
         

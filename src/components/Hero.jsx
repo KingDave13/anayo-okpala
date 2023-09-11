@@ -50,25 +50,35 @@ const Hero = () => {
             </motion.div>
 
             <motion.div variants={textVariant()}
-            className='flex bottom-0 right-0 absolute'>
+            className='flex bottom-0 right-0 absolute items-center'>
                 <div className='flex flex-col justify-center items-center'>
-                    <h1 className='text-secondary font-bold text-[50px]
+                    <h1 className='text-secondary font-bold text-[45px]
                     tracking-tight'>
                         50+
                     </h1>
-                    <p className='text-white text-[17px]'>
+                    <p className='text-white text-[15px]'>
                         Quality Products
                     </p>
                 </div>
+
+                <div className='flex relative m-14'>
+                    <div className='bg-secondary w-[2px] h-[55px]' />
+                </div> 
+
                 <div className='flex flex-col justify-center items-center'>
-                    <h1 className='text-secondary font-bold text-[50px]
+                    <h1 className='text-secondary font-bold text-[45px]
                     tracking-tight'>
                         1000+
                     </h1>
-                    <p className='text-white text-[17px]'>
+                    <p className='text-white text-[15px]'>
                         Satisfied Customers
                     </p>
                 </div>
+
+                <div className='flex relative m-14'>
+                    <div className='bg-secondary w-[2px] h-[55px]' />
+                </div>
+
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='text-secondary font-bold text-[50px]
                     tracking-tight'>

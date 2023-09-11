@@ -41,14 +41,14 @@ const Location = () => {
                       speed: 1000,
                       transition: true,
                     }}>
-                        <img src={map} className='object-contain w-[900px]
+                        <img src={map} className='object-contain w-[850px]
                         border-[10px] border-[#99999] cursor-pointer'
                         alt='map'/>
                     </Tilt>
                 </motion.div>
 
                 <motion.div variants={textVariant()}
-                    className='flex items-center justify-between mt-5
+                    className='flex items-center justify-between mt-10
                     max-w-[50rem]'>
                         <div className='flex flex-col mr-16'>
                             <h1 className='text-primary text-[18px]

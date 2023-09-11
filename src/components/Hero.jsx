@@ -6,10 +6,10 @@ import { hero } from '../assets';
 
 const Hero = () => {
   return (
-    <section className='relative w-full min-h-[900px] mx-auto flex 
-    items-center flex top-[80px] overflow-hidden'>
+    <section className='relative w-full min-h-[890px] mx-auto flex 
+    items-center flex overflow-hidden'>
         <div className='relative items-center justify-between w-full
-        max-w-[95rem] mx-auto flex flex-row items-start gap-5 mb-16'
+        max-w-[95rem] mx-auto flex flex-row items-start gap-5'
         >
             <motion.div variants={textVariant()}
             className={`${layout.sectionInfo} mb-24`}
@@ -47,12 +47,13 @@ const Hero = () => {
                 <img src={hero} alt='hero'
                 className=' h-[600px] w-auto'
                 />
-            </motion.div>
+            </motion.div>          
+        </div>
 
-            <motion.div variants={textVariant()}
-            className='flex bottom-0 right-0 absolute items-center'>
+        <motion.div variants={textVariant()}
+            className='flex bottom-0 right-0 pb-2 absolute items-center'>
                 <div className='flex flex-col justify-center items-center'>
-                    <h1 className='text-secondary font-bold text-[45px]
+                    <h1 className='text-secondary font-bold text-[40px]
                     tracking-tight'>
                         50+
                     </h1>
@@ -61,12 +62,12 @@ const Hero = () => {
                     </p>
                 </div>
 
-                <div className='flex relative m-14'>
-                    <div className='bg-secondary w-[2px] h-[55px]' />
+                <div className='flex relative m-12'>
+                    <div className='bg-secondary w-[1px] h-[55px]' />
                 </div> 
 
                 <div className='flex flex-col justify-center items-center'>
-                    <h1 className='text-secondary font-bold text-[45px]
+                    <h1 className='text-secondary font-bold text-[40px]
                     tracking-tight'>
                         1000+
                     </h1>
@@ -75,21 +76,20 @@ const Hero = () => {
                     </p>
                 </div>
 
-                <div className='flex relative m-14'>
-                    <div className='bg-secondary w-[2px] h-[55px]' />
+                <div className='flex relative m-12'>
+                    <div className='bg-secondary w-[1px] h-[55px]' />
                 </div>
 
                 <div className='flex flex-col justify-center items-center'>
-                    <h1 className='text-secondary font-bold text-[50px]
+                    <h1 className='text-secondary font-bold text-[40px]
                     tracking-tight'>
                         10+
                     </h1>
-                    <p className='text-white text-[17px]'>
+                    <p className='text-white text-[15px]'>
                         Years of Service
                     </p>
                 </div>
-            </motion.div>
-        </div>
+        </motion.div>
     </section>  
   )
 };

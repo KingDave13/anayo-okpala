@@ -6,9 +6,9 @@ import { hero } from '../assets';
 
 const Hero = () => {
   return (
-    <section className='relative w-full min-h-[800px] mx-auto flex 
+    <section className='relative w-full min-h-[900px] mx-auto flex 
     items-center flex top-[80px] overflow-hidden'>
-        <div className='absolute items-center justify-between w-full
+        <div className='relative items-center justify-between w-full
         max-w-[95rem] mx-auto flex flex-row items-start gap-5 mb-16'
         >
             <motion.div variants={textVariant()}
@@ -47,6 +47,37 @@ const Hero = () => {
                 <img src={hero} alt='hero'
                 className=' h-[600px] w-auto'
                 />
+            </motion.div>
+
+            <motion.div variants={textVariant()}
+            className='flex bottom-0 right-0 absolute'>
+                <div className='flex flex-col justify-center items-center'>
+                    <h1 className='text-secondary font-bold text-[50px]
+                    tracking-tight'>
+                        50+
+                    </h1>
+                    <p className='text-white text-[17px]'>
+                        Quality Products
+                    </p>
+                </div>
+                <div className='flex flex-col justify-center items-center'>
+                    <h1 className='text-secondary font-bold text-[50px]
+                    tracking-tight'>
+                        1000+
+                    </h1>
+                    <p className='text-white text-[17px]'>
+                        Satisfied Customers
+                    </p>
+                </div>
+                <div className='flex flex-col justify-center items-center'>
+                    <h1 className='text-secondary font-bold text-[50px]
+                    tracking-tight'>
+                        10+
+                    </h1>
+                    <p className='text-white text-[17px]'>
+                        Years of Service
+                    </p>
+                </div>
             </motion.div>
         </div>
     </section>  

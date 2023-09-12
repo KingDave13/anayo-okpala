@@ -8,8 +8,17 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { BsArrowRightShort } from 'react-icons/bs';
 
 const ProductCard = ({ title, description, image }) => {
+
+    const isCurrent = index === currentIndex;
+    const translateX = isCurrent ? 0 : index > 
+    currentIndex ? '100%' : '-100%';
+
     return (
-        <div className='w-full flex flex-1'>
+        <div className='w-full flex flex-1'
+        style={{
+            transform: `translateX(${translateX})`,
+            transition: 'transform 0.3s ease-in-out',
+        }}>
             <motion.div
                 variants={fadeIn('down', 'spring', 0.2, 1)}
                 className='w-full flex relative justify-center'
@@ -88,7 +97,8 @@ const Products = () => {
 
                 <motion.div className='flex mt-16 items-center flex-col
                 relative justify-center'>
-                    <div className='relative'>
+                    <div className='relative' style={{ display: 'flex', 
+                    width: '100%' }}>
                         {products.map((product, index) => (
                             index === currentIndex && (
                                 <ProductCard 

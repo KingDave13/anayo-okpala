@@ -27,17 +27,17 @@ const About = () => {
                     h-[13px]' />
                 </div>
 
-                <p className='mt-8 text-primary text-[20px] max-w-[700px]'>
-                Anayo Okpala Global Concept are a Nigerian industrial and 
-                household item supplier dealing with a wide range of items. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed non risus. Suspendisse lectus tortor, dignissim sit 
-                amet, adipiscing nec, ultricies sed, dolor. Cras elementum 
-                ultrices diam. Maecenas ligula massa, varius a, semper 
-                congue, euismod non, mi.
+                <p className='mt-12 text-primary text-[20px] max-w-[700px]'>
+                Anayo Okpala Global Concept is a leading supplier of 
+                high-quality foam cloth, tape edge, PVC, sewing thread, 
+                cellotape, and other foam accessories for various 
+                industries. With a commitment to providing top-notch 
+                products, we have built a solid reputation for delivering 
+                innovative solutions that meet the diverse needs of our 
+                clients.
                 </p>
 
-                <div className='mt-8'>
+                <div className='mt-12'>
                     <button className='bg-primary grow
                     text-[17px] py-3 px-14 text-white rounded-[3px]
                     font-medium border-none hover:text-primary'

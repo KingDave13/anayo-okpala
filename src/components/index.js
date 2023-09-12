@@ -11,6 +11,7 @@ import Footer from './Footer';
 import Hero2 from './Hero2';
 import AboutMain from './AboutMain';
 import Mission from './Mission';
+import Contact from './Contact';
 
 export { 
     Navbar, 
@@ -26,4 +27,5 @@ export {
     Hero2,
     AboutMain,
     Mission,
+    Contact,
  }

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import styles, { layout } from '../styles';
+import { useState, useEffect } from 'react';
+import styles from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
@@ -51,6 +51,18 @@ const ProductCard = ({ title, description, image }) => {
 
 const Products = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex === products.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 5000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
 
     const handleClick = (index) => {
         setCurrentIndex(index);

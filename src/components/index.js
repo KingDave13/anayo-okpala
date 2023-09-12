@@ -9,6 +9,7 @@ import Testimonials from './Testimonials';
 import CTA from './CTA';
 import Footer from './Footer';
 import Hero2 from './Hero2';
+import Hero3 from './Hero3';
 import AboutMain from './AboutMain';
 import Mission from './Mission';
 import Contact from './Contact';
@@ -25,6 +26,7 @@ export {
     Footer,
     NavbarAlt,
     Hero2,
+    Hero3,
     AboutMain,
     Mission,
     Contact,

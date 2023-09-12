@@ -70,7 +70,7 @@ const Values = () => {
                  <div className='flex mt-16 justify-center items-center 
                  gap-1 cursor-pointer grow2 flex-row'>
                     <p className='font-medium text-primary'
-                    onClick={() => navigate('/About')}>
+                    onClick={() => navigate('/about')}>
                         See more about us
                     </p>
         

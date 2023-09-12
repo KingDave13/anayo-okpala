@@ -3,8 +3,10 @@ import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { man } from '../assets';
+import { useNavigate } from 'react-router-dom';
 
 const CTA = () => {
+    const navigate = useNavigate();
   return (
     <section className='relative w-full min-h-[500px] mx-auto flex
     items-center'>
@@ -28,7 +30,8 @@ const CTA = () => {
                 <div className='mt-5'>
                     <button className='bg-secondary grow2 mr-5
                     text-[16px] py-2 px-12 text-primary rounded-[3px]
-                    font-normal border-none hover:text-white'>
+                    font-normal border-none hover:text-white'
+                    onClick={() => navigate('/contact')}>
                         Contact Us
                     </button>
 

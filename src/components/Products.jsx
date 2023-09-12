@@ -1,13 +1,16 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
 import { products } from '../constants';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { BsArrowRightShort } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 
 const ProductCard = ({ title, description, image }) => {
+    const navigate = useNavigate();
+
     return (
         <div className='w-full flex flex-1'>
             <motion.div
@@ -32,7 +35,8 @@ const ProductCard = ({ title, description, image }) => {
                         <div className='flex mt-4 gap-5'>
                             <button className='bg-secondary text-[17px] py-3 
                             px-14 text-primary rounded-[3px] font-medium 
-                            border-none hover:text-white grow2'>
+                            border-none hover:text-white grow2'
+                            onClick={() => navigate('/contact')}>
                                 Order Now
                             </button>
 

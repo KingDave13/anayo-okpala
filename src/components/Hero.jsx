@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles, { layout } from '../styles';
+import { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
@@ -128,7 +128,7 @@ const Hero = () => {
                     <button className='bg-secondary grow
                     text-[17px] py-3 px-14 text-primary rounded-[3px]
                     font-medium border-none hover:text-white'
-                    onClick={() => navigate('/About')}
+                    onClick={() => navigate('/about')}
                     >
                         Learn More
                     </button>
@@ -136,7 +136,8 @@ const Hero = () => {
                     <button className='border-[1px] 
                     grow border-secondary text-[17px] py-3 px-14 
                     text-secondary rounded-[3px] font-medium
-                    hover:text-white'>
+                    hover:text-white'
+                    onClick={() => navigate('/contact')}>
                         Get in Touch
                     </button>
                 </div>           

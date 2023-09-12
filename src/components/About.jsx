@@ -41,7 +41,7 @@ const About = () => {
                     <button className='bg-primary grow
                     text-[17px] py-3 px-14 text-white rounded-[3px]
                     font-medium border-none hover:text-primary'
-                    onClick={() => navigate('/About')}>
+                    onClick={() => navigate('/about')}>
                         Learn More
                     </button>
                 </div>           

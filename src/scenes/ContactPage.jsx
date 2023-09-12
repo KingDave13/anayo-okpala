@@ -4,9 +4,9 @@ import {
     Hero3, 
     Contact } 
     from '../components';
-  import { product3 } from '../assets';
+import { product3 } from '../assets';
 
-  const AboutPage = () => {
+  const ContactPage = () => {
     return (
       <div className='font-instrument-sans'>
         <NavbarAlt />
@@ -27,4 +27,4 @@ import {
     )
   };
   
-  export default AboutPage;
+  export default ContactPage;

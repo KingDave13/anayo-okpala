@@ -128,7 +128,7 @@ const Hero = () => {
                     <button className='bg-secondary grow
                     text-[17px] py-3 px-14 text-primary rounded-[3px]
                     font-medium border-none hover:text-white'
-                    onClick={() => navigate('/AboutPage')}
+                    onClick={() => navigate('/About')}
                     >
                         Learn More
                     </button>

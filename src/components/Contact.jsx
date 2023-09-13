@@ -132,8 +132,8 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Enter your name"
-              className='py-4 px-6 border-[2px]
-              placeholder:text-black text-black rounded-lg'
+              className='py-4 px-6 border-[1px] outline-none
+              placeholder:text-black-100 text-black rounded-lg'
             />
           </label>
 
@@ -147,8 +147,8 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="Enter your email"
-              className='py-4 px-6 border-[2px]
-              placeholder:text-black text-black rounded-lg'
+              className='py-4 px-6 border-[1px] outline-none
+              placeholder:text-black-100 text-black rounded-lg'
             />
           </label>
 
@@ -162,8 +162,8 @@ const Contact = () => {
               value={form.phone}
               onChange={handleChange}
               placeholder="Enter your phone number"
-              className='py-4 px-6 border-[2px]
-              placeholder:text-black text-black rounded-lg'
+              className='py-4 px-6 border-[1px] outline-none
+              placeholder:text-black-100 text-black rounded-lg'
             />
           </label>
 
@@ -177,8 +177,8 @@ const Contact = () => {
               value={form.subject}
               onChange={handleChange}
               placeholder="Enter a subject"
-              className='py-4 px-6 border-[2px]
-              placeholder:text-black text-black rounded-lg'
+              className='py-4 px-6 border-[1px] outline-none
+              placeholder:text-black-100 text-black rounded-lg'
             />
           </label>
 
@@ -192,8 +192,8 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Your message"
-              className='py-4 px-6 border-[2px]
-              placeholder:text-black text-black rounded-lg'
+              className='py-4 px-6 border-[1px] outline-none
+              placeholder:text-black-100 text-black rounded-lg'
             />
           </label>
 

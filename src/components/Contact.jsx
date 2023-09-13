@@ -115,77 +115,90 @@ const Contact = () => {
       )}
 
       <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
-        className='flex-1 bg-dimWhite bg-opacity-40 p-8 rounded-2xl'
+        className='flex-1 bg-dimWhite bg-opacity-40 p-8'
       >
-        <form ref={formRef} className="mt-12 grid grid-cols-2 gap-8">
-          {/* Group 1 */}
+        <form ref={formRef} className="grid grid-cols-2 gap-8">
           <div className="flex flex-col">
-            <label className="text-primary font-bold mb-4">Name</label>
+            <label className="text-primary font-bold mb-4">
+              Name
+            </label>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
               placeholder="Enter your name"
-              className="py-4 px-6 border-[1px] outline-none placeholder:text-black-100 text-black rounded-lg"
+              className="py-4 px-6 border-[1px] outline-none 
+              placeholder:text-black-100 text-black rounded-lg"
             />
           </div>
 
           <div className="flex flex-col">
-            <label className="text-primary font-bold mb-4">Email</label>
+            <label className="text-primary font-bold mb-4">
+              Email
+            </label>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
               placeholder="Enter your email"
-              className="py-4 px-6 border-[1px] outline-none placeholder:text-black-100 text-black rounded-lg"
+              className="py-4 px-6 border-[1px] outline-none 
+              placeholder:text-black-100 text-black rounded-lg"
             />
           </div>
 
-          {/* Group 2 */}
           <div className="flex flex-col">
-            <label className="text-primary font-bold mb-4">Phone Number</label>
+            <label className="text-primary font-bold mb-4">
+              Phone Number
+            </label>
             <input
               type="text"
               name="phone"
               value={form.phone}
               onChange={handleChange}
               placeholder="Enter your phone number"
-              className="py-4 px-6 border-[1px] outline-none placeholder:text-black-100 text-black rounded-lg"
+              className="py-4 px-6 border-[1px] outline-none 
+              placeholder:text-black-100 text-black rounded-lg"
             />
           </div>
 
           <div className="flex flex-col">
-            <label className="text-primary font-bold mb-4">Subject</label>
+            <label className="text-primary font-bold mb-4">
+              Subject
+            </label>
             <input
               type="text"
               name="subject"
               value={form.subject}
               onChange={handleChange}
               placeholder="Enter a subject"
-              className="py-4 px-6 border-[1px] outline-none placeholder:text-black-100 text-black rounded-lg"
+              className="py-4 px-6 border-[1px] outline-none 
+              placeholder:text-black-100 text-black rounded-lg"
             />
           </div>
 
-          {/* Message */}
-          <div className="col-span-2">
-            <label className="text-primary font-bold mb-4">Message</label>
+          <div className="col-span-2 flex flex-col">
+            <label className="text-primary font-bold mb-4">
+              Message
+            </label>
             <textarea
               rows="5"
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="Your message"
-              className="py-4 px-6 border-[1px] outline-none placeholder:text-black-100 text-black rounded-lg"
+              className="py-4 px-6 border-[1px] outline-none 
+              placeholder:text-black-100 text-black rounded-lg"
             />
           </div>
 
-          {/* Submit Button */}
           <div className="col-span-2">
             <button
               type="submit"
-              className="bg-primary grow2 mr-5 w-fit shadow-md text-[16px] py-2 px-12 text-white rounded-lg font-medium border-none hover:text-white"
+              className="bg-primary grow2 mr-5 w-fit shadow-md 
+              text-[16px] py-2 px-12 text-white rounded-lg font-medium 
+              border-none hover:text-white"
             >
               {Loading ? 'Sending...' : 'Send'}
             </button>

@@ -114,8 +114,8 @@ const Contact = () => {
       />
       )}
 
-      <motion.div variants={slideIn('left', 'tween', 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+      <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
+        className='flex-1 bg-dimWhite bg-opacity-40 p-8 rounded-2xl'
       >
         <form
           ref={formRef}
@@ -123,7 +123,7 @@ const Contact = () => {
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
+            <span className='text-primary font-bold mb-4'>
               Name
             </span>
             <input 
@@ -132,13 +132,13 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Enter your name"
-              className='bg-tertiary py-4 px-6 outline-none border-none
-              placeholder:text-secondary text-white rounded-lg'
+              className='py-4 px-6 border-[2px]
+              placeholder:text-black text-black rounded-lg'
             />
           </label>
 
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
+            <span className='text-primary font-bold mb-4'>
               Email
             </span>
             <input 
@@ -147,14 +147,14 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="Enter your email"
-              className='bg-tertiary py-4 px-6 outline-none border-none
-              placeholder:text-secondary text-white rounded-lg'
+              className='py-4 px-6 border-[2px]
+              placeholder:text-black text-black rounded-lg'
             />
           </label>
 
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
-              Phone number
+            <span className='text-primary font-bold mb-4'>
+              Phone Number
             </span>
             <input 
               type='text'
@@ -162,13 +162,13 @@ const Contact = () => {
               value={form.phone}
               onChange={handleChange}
               placeholder="Enter your phone number"
-              className='py-4 px-6 outline-none border-primary
-              placeholder:text-black text-primary rounded-lg'
+              className='py-4 px-6 border-[2px]
+              placeholder:text-black text-black rounded-lg'
             />
           </label>
 
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
+            <span className='text-primary font-bold mb-4'>
               Subject
             </span>
             <input 
@@ -177,13 +177,13 @@ const Contact = () => {
               value={form.subject}
               onChange={handleChange}
               placeholder="Enter a subject"
-              className='py-4 px-6 outline-none border-primary
-              placeholder:text-black text-primary rounded-lg'
+              className='py-4 px-6 border-[2px]
+              placeholder:text-black text-black rounded-lg'
             />
           </label>
 
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
+            <span className='text-primary font-bold mb-4'>
               Message
             </span>
             <textarea 
@@ -192,17 +192,18 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Your message"
-              className='bg-tertiary py-4 px-6 outline-none border-none
-              placeholder:text-secondary text-white rounded-lg'
+              className='py-4 px-6 border-[2px]
+              placeholder:text-black text-black rounded-lg'
             />
           </label>
 
-          <button
+          <button 
             type='submit'
-            className='bg-primary py-3 px-8 outline-none w-fit
-            text-white font-medium shadow-md rounded-xl'
-          >
-            {Loading ? 'Sending...' : 'Send'}
+            className='bg-primary grow2 mr-5 w-fit shadow-md
+            text-[16px] py-2 px-12 text-white rounded-lg
+            font-medium border-none hover:text-white'
+            >
+              {Loading ? 'Sending...' : 'Send'}
           </button>
         </form>
       </motion.div>

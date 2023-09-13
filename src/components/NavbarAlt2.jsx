@@ -13,7 +13,7 @@ const Navbar = () => {
             fixed py-8 top-0 z-20 bg-white`}>
             <div className='w-full flex justify-between items-center
             max-w-[95rem] mx-auto'>
-                <Link to='/About'
+                <Link to='/contact'
                     onClick={() => {
                     setActive('');
                     window.scrollTo(0, 0);

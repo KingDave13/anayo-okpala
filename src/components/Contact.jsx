@@ -33,6 +33,8 @@ const Contact = () => {
   const [form, setForm] = useState({
     name: '',
     email: '',
+    phone: '',
+    subject: '',
     message: ''
   });
 
@@ -64,6 +66,8 @@ const Contact = () => {
   //   //     to_name: 'David',
   //   //     from_email: form.email,
   //   //     to_email: 'okaliwedavid@gmail.com',
+              // phone: form.phone,
+              // subject: form.subject,
   //   //     message: form.message,
   //   //   },
   //   //   'E-R_jyLgNaP5en5j-'
@@ -81,6 +85,8 @@ const Contact = () => {
   //       setForm({
   //         name: '',
   //         email: '',
+            //  phone: '',
+            //  subject: '',
   //         message: '',
   //       });
   //     },
@@ -118,14 +124,14 @@ const Contact = () => {
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>
-              Your Name
+              Name
             </span>
             <input 
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder="Enter your name"
               className='bg-tertiary py-4 px-6 outline-none border-none
               placeholder:text-secondary text-white rounded-lg'
             />
@@ -133,14 +139,14 @@ const Contact = () => {
 
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>
-              Your Email
+              Email
             </span>
             <input 
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email?"
+              placeholder="Enter your email"
               className='bg-tertiary py-4 px-6 outline-none border-none
               placeholder:text-secondary text-white rounded-lg'
             />
@@ -148,14 +154,44 @@ const Contact = () => {
 
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>
-              Your Message
+              Phone number
+            </span>
+            <input 
+              type='text'
+              name='phone'
+              value={form.phone}
+              onChange={handleChange}
+              placeholder="Enter your phone number"
+              className='py-4 px-6 outline-none border-primary
+              placeholder:text-black text-primary rounded-lg'
+            />
+          </label>
+
+          <label className='flex flex-col'>
+            <span className='text-white font-medium mb-4'>
+              Subject
+            </span>
+            <input 
+              type='text'
+              name='subject'
+              value={form.subject}
+              onChange={handleChange}
+              placeholder="Enter a subject"
+              className='py-4 px-6 outline-none border-primary
+              placeholder:text-black text-primary rounded-lg'
+            />
+          </label>
+
+          <label className='flex flex-col'>
+            <span className='text-white font-medium mb-4'>
+              Message
             </span>
             <textarea 
-              rows='7'
+              rows='5'
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder="What would you love to say to me?"
+              placeholder="Your message"
               className='bg-tertiary py-4 px-6 outline-none border-none
               placeholder:text-secondary text-white rounded-lg'
             />
@@ -163,8 +199,8 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 outline-none w-fit
-            text-white font-medium shadow-md shadow-primary rounded-xl'
+            className='bg-primary py-3 px-8 outline-none w-fit
+            text-white font-medium shadow-md rounded-xl'
           >
             {Loading ? 'Sending...' : 'Send'}
           </button>

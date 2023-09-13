@@ -1,5 +1,5 @@
 import { 
-    NavbarAlt,  
+    NavbarAlt2,  
     Footer, 
     Hero3, 
     Contact } 
@@ -9,7 +9,7 @@ import { product3 } from '../assets';
   const ContactPage = () => {
     return (
       <div className='font-instrument-sans'>
-        <NavbarAlt />
+        <NavbarAlt2 />
         <div className='relative flex items-center justify-center w-full 
         max-h-[450px] top-20'>
           <img src={product3} className='object-cover w-[150rem] h-[450px]' />

@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import NavbarAlt from './NavbarAlt';
+import NavbarAlt2 from './NavbarAlt2';
 import Hero from './Hero';
 import About from './About';
 import Products from './Products';
@@ -25,6 +26,7 @@ export {
     CTA, 
     Footer,
     NavbarAlt,
+    NavbarAlt2,
     Hero2,
     Hero3,
     AboutMain,

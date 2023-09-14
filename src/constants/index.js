@@ -135,15 +135,15 @@ export const footerLinks = [
     links: [
       {
         name: "About",
-        link: "https://www.hoobank.com/content/",
+        route: "/about",
       },
       {
         name: "Products",
-        link: "https://www.hoobank.com/create/",
+        route: "/products",
       },
       {
         name: "Contact",
-        link: "https://www.hoobank.com/how-it-works/",
+        route: "/contact",
       }, 
     ],
   },

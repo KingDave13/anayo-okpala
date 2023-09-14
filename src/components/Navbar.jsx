@@ -83,9 +83,12 @@ const Navbar = () => {
                             text-[16px] ss:text-[20px] w-full 
                             hover:bg-dimWhite`}
                             onClick={() => {
-                                setToggle(!toggle);
+                                setToggle(!toggle)
                                 setActive(link.title);
-                            }}
+                                if (link.special) {
+                                    navigate(link.route);
+                                }
+                                }}
                             >
                             <a href={`#${link.id}`}>{link.title}</a>
                             </li>

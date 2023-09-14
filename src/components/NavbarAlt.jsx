@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles';
 import { navLinks } from '../constants';
-import { logo2, menu, close } from '../assets';
+import { logo2 } from '../assets';
 import { useNavigate } from 'react-router-dom';
+import { BsX, BsList } from 'react-icons/bs';
 
 const Navbar = () => {
     const [active, setActive] = useState('');
@@ -54,50 +55,58 @@ const Navbar = () => {
 
                 <div className='md:hidden flex flex-1 justify-end 
                 items-center'>
-                <img 
-                src={toggle ? close : menu}
-                alt='menu'
-                className='w-[28px] h-[28px] object-contain 
-                cursor-pointer'
-                onClick={() => setToggle(!toggle)}
-                />
+                    {toggle ? (
+                    <BsX
+                        size={30}
+                        className="object-contain cursor-pointer"
+                        style={{ color: '#253266' }}
+                        onClick={() => setToggle(!toggle)}
+                    />
+                    ) : (
+                    <BsList
+                        size={30}
+                        className="object-contain cursor-pointer"
+                        style={{ color: '#253266' }}
+                        onClick={() => setToggle(!toggle)}
+                    />
+                    )}
 
-                <div className={`${!toggle ? 'hidden' 
-                : 'flex'} p-6 bg-white absolute top-10 right-0 
-                mx-4 my-8 min-w-[140px] z-10 rounded-xl flex-col
-                ss:mx-16 ss:my-10 ss:min-w-[220px]`}>
-                    <ul className='list-none flex justify-end 
-                    items-start flex-col gap-4'>
-                    {navLinks.map((link) => (
-                        <li
-                        key={link.id}
-                        className={`${
-                            active === link.title
-                            ? 'text-secondary'
-                            : 'text-primary'
-                        } font-poppins font-medium cursor-pointer 
-                        text-[16px] ss:text-[20px] w-full 
-                        hover:bg-dimWhite`}
+                    <div className={`${!toggle ? 'hidden' 
+                    : 'flex'} p-6 bg-white absolute top-10 right-0 
+                    mx-4 my-8 min-w-[140px] z-10 rounded-xl flex-col
+                    ss:mx-16 ss:my-10 ss:min-w-[220px]`}>
+                        <ul className='list-none flex justify-end 
+                        items-start flex-col gap-4'>
+                        {navLinks.map((link) => (
+                            <li
+                            key={link.id}
+                            className={`${
+                                active === link.title
+                                ? 'text-secondary'
+                                : 'text-primary'
+                            } font-poppins font-medium cursor-pointer 
+                            text-[16px] ss:text-[20px] w-full 
+                            hover:bg-dimWhite`}
+                            onClick={() => {
+                                setToggle(!toggle);
+                                setActive(link.title);
+                            }}
+                            >
+                            <a href={link.route}>{link.title}</a>
+                            </li>
+                        ))}
+                        </ul>
+
+                        <button className='bg-secondary text-[16px] py-1 px-3
+                        text-white rounded-[5px] mt-5 ss:text-[20px]'
                         onClick={() => {
                             setToggle(!toggle);
-                            setActive(link.title);
+                            navigate('/contact');
                         }}
                         >
-                        <a href={link.route}>{link.title}</a>
-                        </li>
-                    ))}
-                    </ul>
-
-                    <button className='bg-secondary text-[16px] py-1 px-3
-                    text-white rounded-[5px] mt-5 ss:text-[20px]'
-                    onClick={() => {
-                        setToggle(!toggle);
-                        navigate('/contact');
-                    }}
-                    >
-                        Get a Quote
-                    </button>
-                </div>
+                            Get a Quote
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>

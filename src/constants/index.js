@@ -138,13 +138,13 @@ export const footerLinks = [
         link: "https://www.hoobank.com/content/",
       },
       {
-        name: "Contact",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
         name: "Products",
         link: "https://www.hoobank.com/create/",
       },
+      {
+        name: "Contact",
+        link: "https://www.hoobank.com/how-it-works/",
+      }, 
     ],
   },
   {

@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from '../styles';
 import { navLinks } from '../constants';
 import { logo2 } from '../assets';
 import { BsX, BsList } from 'react-icons/bs';
 
 const Navbar = () => {
-    const [active, setActive] = useState('');
+    const location = useLocation();
     const [toggle, setToggle] = useState(false);
 
     return (
@@ -16,7 +16,6 @@ const Navbar = () => {
             max-w-[95rem] mx-auto'>
                 <Link to='/contact'
                     onClick={() => {
-                    setActive('');
                     window.scrollTo(0, 0);
                     }}>
                     <img src={logo2} alt='logo'
@@ -25,18 +24,18 @@ const Navbar = () => {
 
                 <div className='flex justify-between gap-40'>
                     <ul className='list-none hidden md:flex flex-row 
-                    gap-16'>
+                    gap-20'>
                         {navLinks.map((link) => (
-                            <li key={link.id}
-                            className={`${
-                                active === link.title
-                                ? 'border-b-[4px] rounded-[1px] border-b-secondary text-primary'
-                                : 'text-primary'
-                            } hover:text-secondary text-[17px] 
+                            <li
+                                key={link.id}
+                                className={`${
+                                    location.pathname === link.route
+                                        ? 'border-b-[4px] rounded-[1px] border-b-secondary text-primary'
+                                        : 'text-primary'
+                                } hover:text-secondary text-[17px] 
                                 cursor-pointer py-2 font-medium`}
-                            onClick={() => setActive(link.title)}
                             >
-                                <a href={link.route}>{link.title}</a>
+                                <Link to={link.route}>{link.title}</Link>
                             </li>
                         ))}
                     </ul>
@@ -74,23 +73,22 @@ const Navbar = () => {
                     <ul className='list-none flex justify-end 
                     items-start flex-col gap-4'>
                     {navLinks.map((link) => (
-                        <li
-                        key={link.id}
-                        className={`${
-                            active === link.title
-                            ? 'text-secondary'
-                            : 'text-primary'
-                        } font-poppins font-medium cursor-pointer 
-                        text-[16px] ss:text-[20px] w-full 
-                        hover:bg-dimWhite`}
-                        onClick={() => {
-                            setToggle(!toggle);
-                            setActive(link.title);
-                        }}
-                        >
-                        <a href={link.route}>{link.title}</a>
-                        </li>
-                    ))}
+                            <li
+                            key={link.id}
+                            className={`${
+                                location.pathname === link.route
+                                ? 'text-secondary'
+                                : 'text-primary'
+                            } font-poppins font-medium cursor-pointer 
+                            text-[16px] ss:text-[20px] w-full 
+                            hover:bg-dimWhite`}
+                            onClick={() => {
+                                setToggle(!toggle);
+                            }}
+                            >
+                            <Link to={link.route}>{link.title}</Link>
+                            </li>
+                        ))}
                     </ul>
 
                     <button className='bg-secondary text-[16px] py-1 px-3

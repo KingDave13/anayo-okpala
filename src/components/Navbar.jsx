@@ -25,7 +25,7 @@ const Navbar = () => {
 
                 <div className='flex justify-between gap-40'>
                     <ul className='list-none hidden md:flex flex-row 
-                    gap-16'>
+                    gap-20'>
                         {navLinks.map((link) => (
                             <li key={link.id}
                             className={`${

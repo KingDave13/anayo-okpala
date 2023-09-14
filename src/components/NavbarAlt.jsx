@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from '../styles';
 import { navLinks } from '../constants';
 import { logo2 } from '../assets';
@@ -7,9 +7,9 @@ import { useNavigate } from 'react-router-dom';
 import { BsX, BsList } from 'react-icons/bs';
 
 const Navbar = () => {
-    const [active, setActive] = useState('');
     const [toggle, setToggle] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
 
     return (
         <nav className={`${styles.paddingX} w-full flex items-center
@@ -18,7 +18,6 @@ const Navbar = () => {
             max-w-[95rem] mx-auto'>
                 <Link to='/about'
                     onClick={() => {
-                    setActive('');
                     window.scrollTo(0, 0);
                     }}>
                     <img src={logo2} alt='logo'
@@ -27,18 +26,18 @@ const Navbar = () => {
 
                 <div className='flex justify-between gap-40'>
                     <ul className='list-none hidden md:flex flex-row 
-                    gap-16'>
+                    gap-20'>
                         {navLinks.map((link) => (
-                            <li key={link.id}
-                            className={`${
-                                active === link.title
-                                ? 'border-b-[4px] rounded-[1px] border-b-secondary text-primary'
-                                : 'text-primary'
-                            } hover:text-secondary text-[17px] 
+                            <li
+                                key={link.id}
+                                className={`${
+                                    location.pathname === link.route
+                                        ? 'border-b-[4px] rounded-[1px] border-b-secondary text-primary'
+                                        : 'text-primary'
+                                } hover:text-secondary text-[17px] 
                                 cursor-pointer py-2 font-medium`}
-                            onClick={() => setActive(link.title)}
                             >
-                                <a href={link.route}>{link.title}</a>
+                                <Link to={link.route}>{link.title}</Link>
                             </li>
                         ))}
                     </ul>
@@ -81,7 +80,7 @@ const Navbar = () => {
                             <li
                             key={link.id}
                             className={`${
-                                active === link.title
+                                location.pathname === link.route
                                 ? 'text-secondary'
                                 : 'text-primary'
                             } font-poppins font-medium cursor-pointer 
@@ -89,10 +88,9 @@ const Navbar = () => {
                             hover:bg-dimWhite`}
                             onClick={() => {
                                 setToggle(!toggle);
-                                setActive(link.title);
                             }}
                             >
-                            <a href={link.route}>{link.title}</a>
+                            <Link to={link.route}>{link.title}</Link>
                             </li>
                         ))}
                         </ul>

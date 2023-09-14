@@ -34,7 +34,12 @@ const Navbar = () => {
                                 : 'text-white'
                             } hover:text-secondary text-[17px] 
                                 cursor-pointer py-2 font-medium`}
-                            onClick={() => setActive(link.title)}
+                                onClick={() => {
+                                    setActive(link.title);
+                                    if (link.special) {
+                                      navigate(link.route);
+                                    }
+                                  }}
                             >
                                 <a href={`#${link.id}`}>{link.title}</a>
                             </li>

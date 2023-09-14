@@ -37,7 +37,7 @@ const Navbar = () => {
                                 cursor-pointer py-2 font-medium`}
                             onClick={() => setActive(link.title)}
                             >
-                                <a href={`#${link.id}`}>{link.title}</a>
+                                <a href={link.route}>{link.title}</a>
                             </li>
                         ))}
                     </ul>
@@ -83,7 +83,7 @@ const Navbar = () => {
                             setActive(link.title);
                         }}
                         >
-                        <a href={`#${link.id}`}>{link.title}</a>
+                        <a href={link.route}>{link.title}</a>
                         </li>
                     ))}
                     </ul>

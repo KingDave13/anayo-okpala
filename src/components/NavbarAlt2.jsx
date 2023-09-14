@@ -35,14 +35,14 @@ const Navbar = () => {
                                 cursor-pointer py-2 font-medium`}
                             onClick={() => setActive(link.title)}
                             >
-                                <a href={`#${link.id}`}>{link.title}</a>
+                                <a href={link.route}>{link.title}</a>
                             </li>
                         ))}
                     </ul>
                     
-                    <button className='hidden md:flex bg-primary grow
+                    <button className='hidden md:flex bg-primary
                     text-[17px] py-3 px-14 text-white rounded-[3px] font-medium'>
-                        Get a Quote
+                        Fill the form
                     </button>
                 </div>
                 
@@ -79,7 +79,7 @@ const Navbar = () => {
                             setActive(link.title);
                         }}
                         >
-                        <a href={`#${link.id}`}>{link.title}</a>
+                        <a href={link.route}>{link.title}</a>
                         </li>
                     ))}
                     </ul>
@@ -90,7 +90,7 @@ const Navbar = () => {
                         setToggle(!toggle);
                     }}
                     >
-                        Get a Quote
+                        Fill the form
                     </button>
                 </div>
                 </div>

@@ -31,7 +31,7 @@ export const navLinks = [
     route: "/products",
   },
   {
-    id: "contact",
+    id: "",
     title: "Contact Us",
     route: "/contact",
     special: true,

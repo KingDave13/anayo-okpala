@@ -3,17 +3,19 @@ import { Link } from 'react-router-dom';
 import styles from '../styles';
 import { navLinks } from '../constants';
 import { logo2, menu, close } from '../assets';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const [active, setActive] = useState('');
     const [toggle, setToggle] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <nav className={`${styles.paddingX} w-full flex items-center
             fixed py-8 top-0 z-20 bg-white`}>
             <div className='w-full flex justify-between items-center
             max-w-[95rem] mx-auto'>
-                <Link to='/About'
+                <Link to='/about'
                     onClick={() => {
                     setActive('');
                     window.scrollTo(0, 0);
@@ -41,7 +43,9 @@ const Navbar = () => {
                     </ul>
                     
                     <button className='hidden md:flex bg-primary grow
-                    text-[17px] py-3 px-14 text-white rounded-[3px] font-medium'>
+                    text-[17px] py-3 px-14 text-white rounded-[3px] font-medium'
+                    onClick={() => navigate('/contact')}
+                    >
                         Get a Quote
                     </button>
                 </div>
@@ -88,6 +92,7 @@ const Navbar = () => {
                     text-white rounded-[5px] mt-5 ss:text-[20px]'
                     onClick={() => {
                         setToggle(!toggle);
+                        navigate('/contact');
                     }}
                     >
                         Get a Quote

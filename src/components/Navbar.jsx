@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import styles from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const [active, setActive] = useState('');
     const [toggle, setToggle] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <nav className={`${styles.paddingX} w-full flex items-center
@@ -41,7 +43,9 @@ const Navbar = () => {
                     </ul>
                     
                     <button className='hidden md:flex bg-secondary grow
-                    text-[17px] py-3 px-14 text-primary rounded-[3px] font-medium'>
+                    text-[17px] py-3 px-14 text-primary rounded-[3px] font-medium'
+                    onClick={() => navigate('/contact')}
+                    >
                         Get a Quote
                     </button>
                 </div>

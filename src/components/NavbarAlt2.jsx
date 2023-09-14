@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles';
 import { navLinks } from '../constants';
-import { logo2, menu, close } from '../assets';
+import { logo2 } from '../assets';
+import { BsX, BsList } from 'react-icons/bs';
 
 const Navbar = () => {
     const [active, setActive] = useState('');
@@ -50,18 +51,26 @@ const Navbar = () => {
 
                 <div className='md:hidden flex flex-1 justify-end 
                 items-center'>
-                <img 
-                src={toggle ? close : menu}
-                alt='menu'
-                className='w-[28px] h-[28px] object-contain 
-                cursor-pointer'
-                onClick={() => setToggle(!toggle)}
+                {toggle ? (
+                <BsX
+                    size={30}
+                    className="object-contain cursor-pointer"
+                    style={{ color: '#253266' }}
+                    onClick={() => setToggle(!toggle)}
                 />
+                ) : (
+                <BsList
+                    size={30}
+                    className="object-contain cursor-pointer"
+                    style={{ color: '#253266' }}
+                    onClick={() => setToggle(!toggle)}
+                />
+                )}
 
                 <div className={`${!toggle ? 'hidden' 
-                : 'flex'} p-6 bg-white absolute top-10 right-0 
+                : 'flex'} p-6 bg-dimWhite absolute top-10 right-0 
                 mx-4 my-8 min-w-[140px] z-10 rounded-xl flex-col
-                ss:mx-16 ss:my-10 ss:min-w-[220px]`}>
+                ss:mx-16 ss:my-10 ss:min-w-[220px] shadow-xl`}>
                     <ul className='list-none flex justify-end 
                     items-start flex-col gap-4'>
                     {navLinks.map((link) => (

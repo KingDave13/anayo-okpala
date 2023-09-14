@@ -1,5 +1,4 @@
 import { SectionWrapper } from '../hoc';
-import styles from '../styles';
 import { motion } from 'framer-motion';
 import { textVariant } from '../utils/motion';
 import { BiCopyright } from 'react-icons/bi';
@@ -61,7 +60,7 @@ const Footer = () => {
 							</h4>
 							<ul className='list-none mt-4'>
 								{footerLink.links.map((Link, index) => (
-									<a target='_blank' href={Link.link}>
+									<a target='_blank' href={Link.route}>
 									<li
 									key={Link.name}
 									className={`text-[20px] 

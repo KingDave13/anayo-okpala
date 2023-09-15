@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -101,11 +101,9 @@ const Counter = () => {
 
 const Hero = () => {
   const navigate = useNavigate();
-  const homeRef = useRef(null);
 
   return (
-    <section ref={homeRef}
-    className='relative w-full min-h-[890px] mx-auto flex 
+    <section className='relative w-full min-h-[890px] mx-auto flex 
     items-center flex overflow-hidden'>
         <div className='relative items-center justify-between w-full
         max-w-[95rem] mx-auto flex flex-row items-start gap-5'

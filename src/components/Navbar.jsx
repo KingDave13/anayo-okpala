@@ -5,7 +5,7 @@ import { logo, menu, close } from '../assets';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-    const [active, setActive] = useState('');
+    const [active, setActive] = useState('Home');
     const [toggle, setToggle] = useState(false);
     const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ const Navbar = () => {
             max-w-[95rem] mx-auto'>
                 <Link to='/'
                     onClick={() => {
-                    setActive('');
+                    setActive('Home');
                     window.scrollTo(0, 0);
                     }}>
                     <img src={logo} alt='logo'

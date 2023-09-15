@@ -57,13 +57,13 @@ const Counter = () => {
   
     return (
       <motion.div variants={textVariant()} 
-      className='flex bottom-0 right-0 pb-1 absolute items-center'>
+      className='flex bottom-0 right-0 md:pb-1 absolute items-center'>
         <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-secondary font-bold text-[40px] 
-                tracking-tight'>
+            <h1 className='text-secondary font-bold md:text-[40px] 
+                text-[30px] tracking-tight'>
                 {Math.round(count1)}+
             </h1>
-            <p className='text-white text-[15px]'>
+            <p className='text-white md:text-[15px]'>
                 Quality Products
             </p>
         </div>
@@ -103,7 +103,8 @@ const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className='relative w-full min-h-[890px] mx-auto flex 
+    <section className='relative w-full md:min-h-[890px] min-h-[700px]
+     mx-auto flex 
     items-center flex overflow-hidden'>
         <div className='relative items-center justify-between w-full
         max-w-[95rem] mx-auto flex flex-row items-start gap-5'
@@ -111,8 +112,9 @@ const Hero = () => {
             <motion.div variants={textVariant()}
             className={`${layout.sectionInfo}`}
             >
-                <h1 className='text-secondary font-bold text-[65px]
-                leading-[78px] tracking-tight max-w-[750px]'>
+                <h1 className='text-secondary font-bold md:text-[65px]
+                text-[45px] md:leading-[78px] leading-[55px]
+                 tracking-tight md:max-w-[750px]'>
                     No. 1 <span className='text-white'>
                     home accessories and general </span> 
                     industrial materials supplier.
@@ -143,7 +145,8 @@ const Hero = () => {
                 </div>           
             </motion.div>
 
-            <motion.div variants={fadeIn('right', 'spring', 0.3)}>
+            <motion.div variants={fadeIn('right', 'spring', 0.3)}
+            className='md:flex hidden'>
                 <img src={hero} alt='hero'
                 className=' h-[600px] w-auto'
                 />

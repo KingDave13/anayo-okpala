@@ -46,8 +46,7 @@ const Footer = () => {
                             2023. All Rights Reserved.
                         </p>            
                     </div>
-                </div>
-                
+                </div>     
 
                 <div className='w-full flex flex-row justify-end'>
 					{footerLinks.map((footerLink, index) => (

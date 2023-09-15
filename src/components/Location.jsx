@@ -1,4 +1,4 @@
-import styles, { layout } from '../styles';
+import { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { zoomIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
@@ -6,6 +6,7 @@ import { map } from '../assets';
 import { Tilt } from 'react-tilt';
 
 const Location = () => {
+
   return (
     <section className='relative w-full min-h-[800px] mx-auto flex'>
         <div className='absolute w-full

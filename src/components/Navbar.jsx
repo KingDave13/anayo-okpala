@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
@@ -8,6 +8,41 @@ const Navbar = () => {
     const [active, setActive] = useState('Home');
     const [toggle, setToggle] = useState(false);
     const navigate = useNavigate();
+
+    const homeRef = useRef(null);
+    const aboutRef = useRef(null);
+    const productsRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+
+            if (
+                homeRef.current &&
+                scrollPosition >= homeRef.current.offsetTop &&
+                scrollPosition < aboutRef.current.offsetTop
+            ) {
+                setActive('Home');
+            } else if (
+                aboutRef.current &&
+                scrollPosition >= aboutRef.current.offsetTop &&
+                scrollPosition < productsRef.current.offsetTop
+            ) {
+                setActive('About Us');
+            } else if (
+                productsRef.current &&
+                scrollPosition >= productsRef.current.offsetTop
+            ) {
+                setActive('Products');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <nav className={`${styles.paddingX} w-full flex items-center

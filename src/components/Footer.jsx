@@ -60,7 +60,7 @@ const Footer = () => {
 							</h4>
 							<ul className='list-none mt-4'>
 								{footerLink.links.map((Link, index) => (
-									<a target='_blank' href={Link.route}>
+									<a href={Link.route}>
 									<li
 									key={Link.name}
 									className={`text-[20px] 

@@ -68,30 +68,30 @@ const Counter = () => {
             </p>
         </div>
   
-        <div className='flex relative m-12'>
+        <div className='flex relative md:m-12 m-6'>
             <div className='bg-secondary w-[1px] h-[55px]' />
         </div>
   
         <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-secondary font-bold text-[40px] 
-                tracking-tight'>
+            <h1 className='text-secondary font-bold md:text-[40px] 
+                text-[30px] tracking-tight'>
                 {Math.round(count2)}+
             </h1>
-            <p className='text-white text-[15px]'>
+            <p className='text-white md:text-[15px]'>
                 Satisfied Customers
             </p>
         </div>
   
-        <div className='flex relative m-12'>
+        <div className='flex relative md:m-12 m-6'>
             <div className='bg-secondary w-[1px] h-[55px]' />
         </div>
   
         <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-secondary font-bold text-[40px]
-                tracking-tight'>
+            <h1 className='text-secondary font-bold md:text-[40px]
+                text-[30px] tracking-tight'>
                 {Math.round(count3)}+
             </h1>
-            <p className='text-white text-[15px]'>
+            <p className='text-white md:text-[15px]'>
                 Years of Service
             </p>
         </div>
@@ -103,9 +103,8 @@ const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className='relative w-full md:min-h-[890px] min-h-[700px]
-     mx-auto flex 
-    items-center flex overflow-hidden'>
+    <section className='relative w-full md:min-h-[890px] sm:min-h-[700px] 
+    mx-auto items-center flex overflow-hidden'>
         <div className='relative items-center justify-between w-full
         max-w-[95rem] mx-auto flex flex-row items-start gap-5'
         >

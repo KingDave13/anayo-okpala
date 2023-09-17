@@ -113,7 +113,7 @@ const Hero = () => {
             >
                 <h1 className='text-secondary font-bold md:text-[65px]
                 text-[45px] md:leading-[78px] leading-[55px]
-                 tracking-tight md:max-w-[750px]'>
+                tracking-tight md:max-w-[750px]'>
                     No. 1 <span className='text-white'>
                     home accessories and general </span> 
                     industrial materials supplier.

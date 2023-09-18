@@ -8,66 +8,50 @@ import { logo2 } from '../assets';
 const Footer = () => {
   return (
     <section className='relative w-full min-h-[400px] mx-auto flex
-    items-center'>
+    items-center flex-col'>
         <div className='flex max-w-[95rem] mx-auto 
         items-center w-full relative'>
             <motion.div variants={textVariant()}
-            className='flex relative w-full'>
+            className='flex md:flex-row ss:flex-row flex-col relative w-full'>
                 <div className='flex flex-col flex-start relative w-full'>
                     <img src={logo2} alt='logo'
                     className='md:w-[200px] ss:w-[180px] w-[150px] h-auto'
                     />
                     
                     <p className='text-darkBlue md:text-[21px] ss:text-[19px]
-                    text-[16px] md:max-w-[640px] ss:max-w-[350px]
-                    mt-8 leading-[30px]'>
+                    text-[16px] md:max-w-[640px] ss:max-w-[350px] md:mt-8 
+                    ss:mt-8 mt-5 md:leading-[30px] ss:leading-[30px]
+                    leading-[25px]'>
                     Anayo Okpala Global Concept is a nationally recognized 
                     industrial material supplier and retailer registered
                     under the Federal Government of Nigeria with
                      registration number RC-123456.
                     </p>
-
-                    <div className='flex mt-6 items-center'>
-                        {socialMedia.map((social, index) => (
-                            <a target='_blank' key={social.id}
-                            href={social.link}>
-                                <social.Icon 
-                                className={`w-[20px] h-[20px] 
-                                object-contain cursor-pointer 
-                                ${index !== socialMedia.length -1 ? 
-                                'mr-3' : 'mr-0' }`}
-                                />
-                            </a>
-                        ))}
-                    </div>
-
-                    <div className='flex mt-6 items-center'>
-                        <BiCopyright className='sm:mr-2 mr-1 text-[20px]'/>
-                        <p className='text-[18px] text-darkBlue mt-1'>
-                            2023. All Rights Reserved.
-                        </p>            
-                    </div>
                 </div>     
 
-                <div className='w-full flex flex-row justify-end'>
+                <div className='w-full flex flex-row md:justify-end
+                ss:justify-end '>
 					{footerLinks.map((footerLink, index) => (
 						<div key={footerLink.key} className='flex flex-col
 						my-4 min-w-[120px]'>
-							<h4 className={`font-bold text-[21px] 
+							<h4 className={`font-bold md:text-[21px] 
+                            ss:text-[21px] text-[17px]
 							text-primary ${index !== footerLink.length -1 ? 
                                 'md:mr-20 ss:mr-12' : 'mr-0' }`}>
 								{footerLink.title}
 							</h4>
-							<ul className='list-none mt-4'>
+							<ul className='list-none md:mt-4 ss:mt-4
+                            mt-1'>
 								{footerLink.links.map((Link, index) => (
 									<a href={Link.route}>
 									<li
 									key={Link.name}
-									className={`text-[20px] 
-                                    leading-[18px] text-primary 
+									className={`md:text-[20px] ss:text-[20px]
+                                    text-[15px] md:leading-[18px] 
+                                    ss:leading-[18px] text-primary 
 									hover:text-secondary cursor-pointer
 									${index !== footerLink.links.length -1 ? 
-									'mb-4' : 'mb-0'}`}
+									'md:mb-4 ss:mb-4 mb-1' : 'mb-0'}`}
 									>
 										{Link.name}
 									</li>
@@ -79,6 +63,31 @@ const Footer = () => {
 				</div>
             </motion.div>              
         </div>
+
+        <motion.div variants={textVariant()}
+        className='relative flex flex-col w-full'
+        >
+            <div className='flex md:mt-6 ss:mt-4 mt-3 items-center'>
+                {socialMedia.map((social, index) => (
+                    <a target='_blank' key={social.id}
+                    href={social.link}>
+                        <social.Icon 
+                        className={`w-[20px] h-[20px] 
+                        object-contain cursor-pointer 
+                        ${index !== socialMedia.length -1 ? 
+                        'mr-3' : 'mr-0' }`}
+                        />
+                    </a>
+                ))}
+            </div>
+
+            <div className='flex md:mt-6 ss:mt-4 mt-3 items-center'>
+                <BiCopyright className='sm:mr-2 mr-1 text-[20px]'/>
+                <p className='text-[18px] text-darkBlue mt-1'>
+                    2023. All Rights Reserved.
+                </p>            
+            </div>
+        </motion.div>
     </section>
   )
 };

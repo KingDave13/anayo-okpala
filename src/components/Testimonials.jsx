@@ -56,14 +56,14 @@ const Testimonials = () => {
         <div className='max-w-[95rem] mx-auto flex flex-col mb-10'
         >
             <motion.div variants={textVariant()}>
-                <h1 className='text-primary font-bold text-[60px]
-                tracking-tight'>
+                <h1 className='text-primary font-bold md:text-[60px]
+                ss:text-[50px] text-[40px] tracking-tight'>
                     Testimonials
                 </h1>
                 
                 <div className='flex relative'>
-                    <div className='bg-secondary w-[150px]
-                    h-[13px]' />
+                    <div className='bg-secondary md:w-[150px] ss:w-[150px]
+                    w-[100px] h-[13px]' />
                 </div>                  
             </motion.div>
 

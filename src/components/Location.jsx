@@ -31,7 +31,7 @@ const Location = () => {
                 <motion.div variants={zoomIn(0.3, 0.7)}
                 className='flex flex-col justify-center items-center'>
                     <h1 className='text-primary md:text-[25px] 
-                    ss:text-[25px] text-[18px] font-medium mb-3 
+                    ss:text-[22px] text-[18px] font-medium mb-3 
                     tracking-tight'>
                         We are closer to you than you think!
                     </h1>

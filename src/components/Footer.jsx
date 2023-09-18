@@ -15,10 +15,11 @@ const Footer = () => {
             className='flex relative w-full'>
                 <div className='flex flex-col flex-start relative w-full'>
                     <img src={logo2} alt='logo'
-                    className='w-[200px] h-auto'
+                    className='md:w-[200px] ss:w-[180px] w-[150px] h-auto'
                     />
                     
-                    <p className='text-darkBlue text-[21px] max-w-[640px]
+                    <p className='text-darkBlue md:text-[21px] ss:text-[19px]
+                    text-[16px] md:max-w-[640px] ss:max-w-[350px]
                     mt-8 leading-[30px]'>
                     Anayo Okpala Global Concept is a nationally recognized 
                     industrial material supplier and retailer registered
@@ -54,7 +55,7 @@ const Footer = () => {
 						my-4 min-w-[120px]'>
 							<h4 className={`font-bold text-[21px] 
 							text-primary ${index !== footerLink.length -1 ? 
-                                'mr-20' : 'mr-0' }`}>
+                                'md:mr-20 ss:mr-12' : 'mr-0' }`}>
 								{footerLink.title}
 							</h4>
 							<ul className='list-none mt-4'>

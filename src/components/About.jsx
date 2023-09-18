@@ -29,7 +29,7 @@ const About = () => {
                 </div>
 
                 <p className='md:mt-12 ss:mt-8 mt-5 text-primary 
-                md:text-[20px] ss:text-[18px] text-[15px] max-w-[700px]'>
+                md:text-[20px] ss:text-[18px] text-[14px] max-w-[700px]'>
                 Anayo Okpala Global Concept is a leading supplier of 
                 high-quality foam cloth, tape edge, PVC, sewing thread, 
                 cellotape, and other foam accessories for various 
@@ -39,12 +39,11 @@ const About = () => {
                 clients.
                 </p>
 
-                <div className='md:mt-12 ss:mt-8 mt-5'>
+                <div className='md:mt-12 ss:mt-8 mt-4'>
                     <button className='bg-primary grow
-                    md:text-[17px] 
-                    ss:text-[17px] text-[14px] md:py-3 ss:py-3 py-3 
-                    md:px-14 ss:px-14 px-8 text-white rounded-[3px]
-                    font-medium border-none hover:text-primary'
+                    md:text-[17px] ss:text-[17px] text-[13px] md:py-3 
+                    ss:py-3 py-2 md:px-14 ss:px-14 px-8 text-white 
+                    rounded-[3px] font-medium border-none hover:text-primary'
                     onClick={() => navigate('/about')}>
                         Learn More
                     </button>

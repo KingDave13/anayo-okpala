@@ -4,7 +4,7 @@ import { HomePage, AboutPage, ContactPage } from './scenes';
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes >
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/contact' element={<ContactPage />} />

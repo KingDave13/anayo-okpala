@@ -104,7 +104,7 @@ const Hero = () => {
 
   return (
     <section className='relative w-full md:min-h-[890px] sm:min-h-[700px] 
-    mx-auto items-center flex overflow-hidden mobile '>
+    items-center flex overflow-hidden mobile '>
         <div className='relative items-center justify-between w-full
         max-w-[95rem] flex flex-row items-start gap-5' 
         >

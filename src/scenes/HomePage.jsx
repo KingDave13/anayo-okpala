@@ -4,7 +4,7 @@ from '../components';
 
 const HomePage = () => {
   return (
-    <div className='font-instrument-sans relative'>
+    <div className='font-instrument-sans'>
         <div className='bg-primary relative overflow-hidden'>
           <Navbar />
           <div className='sm:flex hidden absolute top-40 left-[900px] 

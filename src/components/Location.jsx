@@ -8,21 +8,22 @@ import { Tilt } from 'react-tilt';
 const Location = () => {
 
   return (
-    <section className='relative w-full min-h-[800px] mx-auto flex'>
-        <div className='absolute w-full
-        max-w-[95rem] mx-auto flex flex-col gap-5 mb-16'
+    <section className='relative w-full min-h-[800px] mx-auto flex
+    items-center'>
+        <div className='absolute w-full max-w-[95rem] mx-auto flex 
+        flex-col gap-5 mb-16'
         >
             <motion.div variants={textVariant()}
             className={`${layout.sectionInfo}`}
             >
-                <h1 className='text-primary font-bold text-[60px]
-                tracking-tight'>
+                <h1 className='text-primary font-bold md:text-[60px]
+                ss:text-[50px] text-[40px] tracking-tight'>
                     Where are we?
                 </h1>
                 
                 <div className='flex relative'>
-                    <div className='bg-secondary w-[150px]
-                    h-[13px]' />
+                    <div className='bg-secondary md:w-[150px] ss:w-[150px]
+                    w-[100px] h-[13px]' />
                 </div>                  
             </motion.div>
 

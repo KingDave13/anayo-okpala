@@ -85,7 +85,7 @@ const Products = () => {
     <section className='relative w-full md:min-h-[800px] ss:min-h-[700px] 
     min-h-[500px] mx-auto flex justify-center items-center'>
         <div className='absolute w-full max-w-[95rem] mx-auto flex 
-        mb-16 justify-center'>
+        md:mb-16 ss:mb-16 mb-0 justify-center'>
             <motion.div variants={textVariant()}
             className={`${styles.paddingX} flex flex-col justify-center 
             items-center relative`}>

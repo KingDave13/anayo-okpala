@@ -128,19 +128,20 @@ const Hero = () => {
                  making, PVCs and lots more.
                 </p>
 
-                <div className='flex flex-row mt-5 gap-5'>
-                    <button className='bg-secondary grow
-                    text-[17px] py-3 px-14 text-primary rounded-[3px]
+                <div className='flex flex-row mt-5 md:gap-5 ss:gap-5 gap-2'>
+                    <button className='bg-secondary grow md:text-[17px] 
+                    ss:text-[17px] text-[14px] md:py-3 ss:py-3 py-2 
+                    md:px-14 ss:px-14 px-6 text-primary rounded-[3px]
                     font-medium border-none hover:text-white'
                     onClick={() => navigate('/about')}
                     >
                         Learn More
                     </button>
 
-                    <button className='border-[1px] 
-                    grow border-secondary text-[17px] py-3 px-14 
-                    text-secondary rounded-[3px] font-medium
-                    hover:text-white'
+                    <button className='border-[1px] grow border-secondary 
+                    md:text-[17px] ss:text-[17px] text-[14px] md:py-3 
+                    ss:py-3 py-2 md:px-14 ss:px-14 px-6 text-secondary 
+                    rounded-[3px] font-medium hover:text-white'
                     onClick={() => navigate('/contact')}>
                         Get in Touch
                     </button>

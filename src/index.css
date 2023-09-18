@@ -33,7 +33,7 @@ body, html {
 
 @media screen and (max-width: 480px) {
   .mobile {
-    height: 100vh;
+    height: 700px;
   }
 }
 

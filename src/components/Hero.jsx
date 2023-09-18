@@ -103,8 +103,8 @@ const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className='relative w-full md:min-h-[890px] sm:min-h-[700px] 
-    items-center flex overflow-hidden mobile '>
+    <section className='relative w-full md:min-h-[890px] ss:min-h-[700px] 
+    items-center flex overflow-hidden mobile'>
         <div className='relative items-center justify-between w-full
         max-w-[95rem] flex flex-row items-start gap-5' 
         >
@@ -112,14 +112,17 @@ const Hero = () => {
             className={`${layout.sectionInfo}`}
             >
                 <h1 className='text-secondary font-bold md:text-[65px]
-                text-[45px] md:leading-[78px] leading-[55px]
+                ss:text-[50px] text-[40px] md:leading-[78px] 
+                ss:leading-[55px] leading-[50px]
                 tracking-tight md:max-w-[750px]'>
                     No. 1 <span className='text-white'>
                     home accessories and general </span> 
                     industrial materials supplier.
                 </h1>
 
-                <p className='mt-8 text-white text-[20px] max-w-[620px]'>
+                <p className='md:mt-8 ss:mt-8 mt-5 text-white md:text-[20px]
+                ss:text-[20px] text-[14px] md:max-w-[620px] ss:max-w-[620px]
+                max-w-[320px]'>
                  We are the number one suppliers of top quality industrial
                  materials for various applications including mattress 
                  making, PVCs and lots more.

@@ -39,15 +39,14 @@ const Values = () => {
 
   return (
     <section className='relative w-full md:min-h-[650px] ss:min-h-[650px] 
-    min-h-[900px] mx-auto flex justify-center items-center'>
+    min-h-[1000px] mx-auto flex justify-center items-center'>
         <div className='absolute w-full max-w-[95rem] mx-auto flex 
-        mb-16 justify-center'>
+        md:mb-16 ss:mb-16 mb-0 justify-center'>
             <motion.div variants={textVariant()}
             className={`${styles.paddingX} flex flex-col justify-center 
             items-center relative`}>
                 <h1 className='text-primary font-bold md:text-[60px]
-                ss:text-[50px] text-[40px] tracking-tight md:mt-0
-                ss:mt-0 mt-20'>
+                ss:text-[50px] text-[40px] tracking-tight'>
                     Our core values
                 </h1>
                 

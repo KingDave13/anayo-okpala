@@ -90,7 +90,7 @@ const Products = () => {
             className={`${styles.paddingX} flex flex-col justify-center 
             items-center relative`}>
                 <h1 className='text-primary font-bold md:text-[60px]
-                ss:text-[50px] text-[40px] tracking-tight'>
+                ss:text-[50px] text-[40px] tracking-tight md:mt-0 ss:mt-10'>
                     Our products
                 </h1>
                 

@@ -9,7 +9,7 @@ const About = () => {
     const navigate = useNavigate();
 
   return (
-    <section className='relative w-full md:min-h-[700px] ss:min-h-[600px] 
+    <section className='relative w-full md:min-h-[700px] ss:min-h-[700px] 
     min-h-[700px] mx-auto flex 
     items-center flex overflow-hidden'>
         <div className='absolute items-center justify-between w-full
@@ -20,7 +20,7 @@ const About = () => {
             className={`${layout.sectionInfo}`}
             >
                 <h1 className='text-primary font-bold md:text-[60px]
-                ss:text-[50px] text-[40px] tracking-tight'>
+                ss:text-[47px] text-[40px] tracking-tight'>
                     Who we are
                 </h1>
                 

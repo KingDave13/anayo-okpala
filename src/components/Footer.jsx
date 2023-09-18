@@ -19,13 +19,13 @@ const Footer = () => {
                     />
                     
                     <p className='text-darkBlue md:text-[21px] ss:text-[19px]
-                    text-[16px] md:max-w-[640px] ss:max-w-[350px] md:mt-8 
-                    ss:mt-8 mt-5 md:leading-[30px] ss:leading-[30px]
+                    text-[15px] md:max-w-[640px] ss:max-w-[350px] max-w-[320px]
+                    md:mt-8 ss:mt-8 mt-5 md:leading-[30px] ss:leading-[30px]
                     leading-[25px]'>
                     Anayo Okpala Global Concept is a nationally recognized 
                     industrial material supplier and retailer registered
                     under the Federal Government of Nigeria with
-                     registration number RC-123456.
+                    registration number RC-123456.
                     </p>
                 </div>     
 
@@ -72,8 +72,8 @@ const Footer = () => {
                     <a target='_blank' key={social.id}
                     href={social.link}>
                         <social.Icon 
-                        className={`w-[20px] h-[20px] 
-                        object-contain cursor-pointer 
+                        className={`md:w-[20px] ss:w-[20px] w-[16px] 
+                        h-[20px] object-contain cursor-pointer 
                         ${index !== socialMedia.length -1 ? 
                         'mr-3' : 'mr-0' }`}
                         />
@@ -81,9 +81,11 @@ const Footer = () => {
                 ))}
             </div>
 
-            <div className='flex md:mt-6 ss:mt-4 mt-3 items-center'>
-                <BiCopyright className='sm:mr-2 mr-1 text-[20px]'/>
-                <p className='text-[18px] text-darkBlue mt-1'>
+            <div className='flex md:mt-6 ss:mt-4 mt-1 items-center'>
+                <BiCopyright className='sm:mr-2 mr-1 md:text-[20px]
+                ss:text-[20px] text-[15px]'/>
+                <p className='md:text-[18px] ss:text-[18px] text-[15px] 
+                text-darkBlue mt-1'>
                     2023. All Rights Reserved.
                 </p>            
             </div>

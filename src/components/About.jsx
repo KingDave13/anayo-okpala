@@ -9,7 +9,8 @@ const About = () => {
     const navigate = useNavigate();
 
   return (
-    <section className='relative w-full min-h-[700px] mx-auto flex 
+    <section className='relative w-full md:min-h-[700px] ss:min-h-[600px] 
+    min-h-[700px] mx-auto flex 
     items-center flex overflow-hidden'>
         <div className='absolute items-center justify-between w-full
         max-w-[95rem] mx-auto flex md:flex-row ss:flex-row flex-col 

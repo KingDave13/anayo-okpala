@@ -12,15 +12,16 @@ const ProductCard = ({ title, description, image }) => {
     const navigate = useNavigate();
 
     return (
-        <div className='w-full flex flex-1'>
+        <div className='w-full flex'>
             <motion.div
                 variants={fadeIn('down', 'spring', 0.2, 1)}
                 className='w-full flex relative justify-center'
             >
-                <div className='flex flex-col items-center w-[70%]
-                relative'>
+                <div className='flex flex-col items-center md:w-[70%]
+                ss:w-[90%] w-[80%] relative'>
                     <img src={image} alt='product' 
-                    className='rounded-[20px] shadow-md'
+                    className='md:rounded-[20px] ss:rounded-[20px] 
+                    rounded-[10px] shadow-md'
                     />
                     <div className='absolute bottom-0 left-0 p-8 
                     flex flex-col'>
@@ -73,21 +74,23 @@ const Products = () => {
     }
 
   return (
-    <section className='relative w-full min-h-[800px] mx-auto flex 
-    justify-center'>
+    <section className='relative w-full md:min-h-[800px] ss:min-h-[700px] 
+    min-h-[500px] mx-auto flex 
+    justify-center items-center'>
         <div className='absolute w-full max-w-[95rem] mx-auto flex 
         mb-16 justify-center'>
             <motion.div variants={textVariant()}
             className={`${styles.paddingX} flex flex-col justify-center 
             items-center relative`}>
-                <h1 className='text-primary font-bold text-[60px]
+                <h1 className='text-primary font-bold md:text-[60px]
+                ss:text-[50px] text-[40px]
                 tracking-tight'>
                     Our products
                 </h1>
                 
                 <div className='flex relative justify-center'>
-                    <div className='bg-secondary w-[150px]
-                    h-[13px]' />
+                    <div className='bg-secondary md:w-[150px] ss:w-[150px]
+                    w-[100px] h-[13px]' />
                 </div>
 
                 <motion.div className='flex mt-16 items-center flex-col

@@ -37,10 +37,9 @@ body, html {
   }
 }
 
-@media screen and  (max-width: 480px) {
-  form.grid-cols-2 > div {
-    flex: 1;
-    width: 100%;
+@media (max-width: 480px) {
+  .grid-cols-2 > div {
+    grid-column: span 2;
   }
 }
 

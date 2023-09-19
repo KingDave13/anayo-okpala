@@ -22,7 +22,7 @@ const Mission = () => {
                     w-[100px] h-[13px]' />
                 </div>
 
-                <motion.div className='flex md:mt-16 ss:mt-16 mt-8 
+                <motion.div className='flex md:mt-16 ss:mt-10 mt-8 
                 items-center flex-col relative justify-center'>
                     <p className='text-primary md:text-[20px] ss:text-[20px] 
                     text-[14px] max-w-[700px] tracking-tight text-center 

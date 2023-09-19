@@ -19,9 +19,9 @@ const Footer = () => {
                     />
                     
                     <p className='text-darkBlue md:text-[21px] ss:text-[19px]
-                    text-[15px] md:max-w-[640px] ss:max-w-[350px] max-w-[320px]
+                    text-[14px] md:max-w-[640px] ss:max-w-[350px] max-w-[320px]
                     md:mt-8 ss:mt-8 mt-5 md:leading-[30px] ss:leading-[30px]
-                    leading-[25px]'>
+                    leading-[20px]'>
                     Anayo Okpala Global Concept is a nationally recognized 
                     industrial material supplier and retailer registered
                     under the Federal Government of Nigeria with
@@ -35,7 +35,7 @@ const Footer = () => {
 						<div key={footerLink.key} className='flex flex-col
 						my-4 min-w-[120px]'>
 							<h4 className={`font-bold md:text-[21px] 
-                            ss:text-[21px] text-[17px]
+                            ss:text-[21px] text-[16px]
 							text-primary ${index !== footerLink.length -1 ? 
                                 'md:mr-20 ss:mr-12' : 'mr-0' }`}>
 								{footerLink.title}
@@ -47,11 +47,11 @@ const Footer = () => {
 									<li
 									key={Link.name}
 									className={`md:text-[20px] ss:text-[20px]
-                                    text-[15px] md:leading-[18px] 
+                                    text-[14px] md:leading-[18px] 
                                     ss:leading-[18px] text-primary 
 									hover:text-secondary cursor-pointer
 									${index !== footerLink.links.length -1 ? 
-									'md:mb-4 ss:mb-4 mb-1' : 'mb-0'}`}
+									'md:mb-4 ss:mb-4 mb-0' : 'mb-0'}`}
 									>
 										{Link.name}
 									</li>
@@ -72,7 +72,7 @@ const Footer = () => {
                     <a target='_blank' key={social.id}
                     href={social.link}>
                         <social.Icon 
-                        className={`md:w-[20px] ss:w-[20px] w-[16px] 
+                        className={`md:w-[20px] ss:w-[20px] w-[14px] 
                         h-[20px] object-contain cursor-pointer 
                         ${index !== socialMedia.length -1 ? 
                         'mr-3' : 'mr-0' }`}
@@ -81,10 +81,10 @@ const Footer = () => {
                 ))}
             </div>
 
-            <div className='flex md:mt-6 ss:mt-4 mt-1 items-center'>
+            <div className='flex md:mt-6 ss:mt-4 mt-3 items-center'>
                 <BiCopyright className='sm:mr-2 mr-1 md:text-[20px]
                 ss:text-[20px] text-[15px]'/>
-                <p className='md:text-[18px] ss:text-[18px] text-[15px] 
+                <p className='md:text-[18px] ss:text-[18px] text-[14px] 
                 text-darkBlue mt-1'>
                     2023. All Rights Reserved.
                 </p>            

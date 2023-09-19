@@ -68,7 +68,7 @@ const Navbar = () => {
 
                     <div className={`${!toggle ? 'hidden' 
                     : 'flex'} p-6 bg-white absolute top-10 right-0 
-                    mx-6 my-14 min-w-[150px] z-10 rounded-xl flex-col
+                    mx-6 my-14 min-w-[140px] z-10 rounded-xl flex-col
                     ss:mx-16 ss:my-14 ss:min-w-[220px] shadow-xl`}>
                         <ul className='list-none flex justify-end 
                         items-start flex-col gap-4'>
@@ -80,7 +80,7 @@ const Navbar = () => {
                                 ? 'text-secondary'
                                 : 'text-primary'
                             } font-poppins font-medium cursor-pointer 
-                            text-[20px] ss:text-[20px] text-[15px] w-full 
+                            text-[16px] ss:text-[20px] w-full 
                             hover:bg-dimWhite`}
                             onClick={() => {
                                 setToggle(!toggle)
@@ -95,7 +95,7 @@ const Navbar = () => {
                         ))}
                         </ul>
 
-                        <button className='bg-secondary text-[20px] py-1 px-3
+                        <button className='bg-secondary text-[16px] py-1 px-3
                         text-white rounded-[5px] mt-5 ss:text-[20px] text-[15px]'
                         onClick={() => {
                             setToggle(!toggle);

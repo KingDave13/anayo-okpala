@@ -115,10 +115,11 @@ const Contact = () => {
       )}
 
       <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
-        className='flex-1 bg-dimWhite bg-opacity-40 p-8'
-      >
+        className='flex-1 bg-dimWhite bg-opacity-40 p-8 md:mt-0 ss:mt-14
+        mt-14'>
         <form ref={formRef} className="grid grid-cols-2 gap-8">
-          <div className="flex flex-col">
+          <div className="flex md:grid-cols-2 ss:grid-cols-2 col-span-2 
+          flex-col">
             <label className="text-primary font-bold mb-4">
               Name
             </label>
@@ -133,7 +134,8 @@ const Contact = () => {
             />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex md:grid-cols-2 ss:grid-cols-2 col-span-2 
+          flex-col">
             <label className="text-primary font-bold mb-4">
               Email
             </label>
@@ -148,7 +150,8 @@ const Contact = () => {
             />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex md:grid-cols-2 ss:grid-cols-2 col-span-2 
+          flex-col">
             <label className="text-primary font-bold mb-4">
               Phone Number
             </label>
@@ -163,7 +166,8 @@ const Contact = () => {
             />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex md:grid-cols-2 ss:grid-cols-2 col-span-2 
+          flex-col">
             <label className="text-primary font-bold mb-4">
               Subject
             </label>
@@ -197,8 +201,9 @@ const Contact = () => {
             <button
               type="submit"
               className="bg-primary grow2 mr-5 w-fit shadow-md 
-              text-[16px] py-2 px-12 text-white rounded-lg font-medium 
-              border-none hover:text-white"
+              md:text-[16px] ss:text-[16px] text-[13px] py-2 px-12 
+              text-white rounded-lg font-medium border-none 
+              hover:text-white"
             >
               {Loading ? 'Sending...' : 'Send'}
             </button>

@@ -15,8 +15,8 @@ const Hero = () => {
               className={`${layout.sectionInfo} justify-center 
               items-center`}
               >
-                <h1 className='text-secondary font-bold text-[65px]
-                    tracking-tight'>
+                <h1 className='text-secondary font-bold md:text-[65px]
+                ss:text-[65px] text-[55px] tracking-tight text-center'>
                     Get in Touch!
                 </h1>
 

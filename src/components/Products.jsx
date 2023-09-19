@@ -40,9 +40,9 @@ const ProductCard = ({ title, description, image }) => {
                         ss:gap-3 gap-2'>
                             <button className='bg-secondary md:text-[17px] 
                             ss:text-[17px] text-[12px] md:py-3 ss:py-2 py-1 
-                            md:px-14 ss:px-8 px-3 
-                            text-primary rounded-[3px] font-medium 
-                            border-none hover:text-white grow2'
+                            md:px-14 ss:px-8 px-3 text-primary 
+                            rounded-[3px] font-medium border-none 
+                            hover:text-white grow2'
                             onClick={() => navigate('/contact')}>
                                 Order Now
                             </button>

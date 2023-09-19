@@ -10,8 +10,9 @@ const CTA = () => {
   return (
     <section className='relative w-full min-h-[500px] mx-auto flex
     items-center'>
-        <div className={`${styles.padding} bg-primary flex max-w-[95rem] 
-        mx-auto items-center w-full rounded-3xl relative`}>
+        <div className={`${styles.padding} bg-primary flex md:max-w-[95rem] 
+        ss:max-w-[95rem] mx-auto items-center w-full md:rounded-3xl ss:rounded-3xl 
+        rounded-2xl relative`}>
             <motion.div variants={textVariant()}
             className='flex flex-start flex-col relative w-full'>
                 <h1 className='text-white font-bold text-[30px] mb-5
@@ -28,16 +29,19 @@ const CTA = () => {
                 </p>
 
                 <div className='mt-5'>
-                    <button className='bg-secondary grow2 mr-5
-                    text-[16px] py-2 px-12 text-primary rounded-[3px]
-                    font-normal border-none hover:text-white'
+                    <button className='bg-secondary grow2 md:text-[17px] 
+                    ss:text-[14px] text-[12px] md:py-3 ss:py-2 py-1 
+                    md:mr-5 ss:mr-3 mr-1 md:px-14 ss:px-6 px-3 
+                    text-primary rounded-[3px] font-normal border-none 
+                    hover:text-white'
                     onClick={() => navigate('/contact')}>
                         Contact Us
                     </button>
 
                     <button className='border-[1px] grow2 
-                    border-secondary text-[16px] py-2 px-12 
-                    text-secondary rounded-[3px] font-normal
+                    border-secondary md:text-[17px] ss:text-[13px] 
+                    text-[12px] md:py-3 ss:py-2 py-1 md:px-14 ss:px-6 
+                    px-3 text-secondary rounded-[3px] font-normal
                     hover:text-white'>
                         View Products
                     </button>
@@ -45,8 +49,9 @@ const CTA = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('left', 'spring', 0.3)}
-            className='absolute mr-14 right-0 bottom-0'>
-                <img src={man} className='object-contain w-[280px]'/>
+            className='absolute md:mr-14 ss:mr-10 right-0 bottom-0'>
+                <img src={man} className='object-contain md:w-[280px]
+                ss:w-[250px]'/>
             </motion.div>                
         </div>
     </section>

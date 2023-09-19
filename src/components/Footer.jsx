@@ -18,9 +18,9 @@ const Footer = () => {
                     className='md:w-[200px] ss:w-[180px] w-[150px] h-auto'
                     />
                     
-                    <p className='text-darkBlue md:text-[21px] ss:text-[19px]
+                    <p className='text-darkBlue md:text-[21px] ss:text-[18px]
                     text-[14px] md:max-w-[640px] ss:max-w-[350px] max-w-[320px]
-                    md:mt-8 ss:mt-8 mt-5 md:leading-[30px] ss:leading-[30px]
+                    md:mt-8 ss:mt-8 mt-5 md:leading-[30px] ss:leading-[26px]
                     leading-[20px]'>
                     Anayo Okpala Global Concept is a nationally recognized 
                     industrial material supplier and retailer registered
@@ -46,7 +46,7 @@ const Footer = () => {
 									<a href={Link.route}>
 									<li
 									key={Link.name}
-									className={`md:text-[20px] ss:text-[20px]
+									className={`md:text-[20px] ss:text-[19px]
                                     text-[14px] md:leading-[18px] 
                                     ss:leading-[18px] text-primary 
 									hover:text-secondary cursor-pointer
@@ -67,7 +67,7 @@ const Footer = () => {
         <motion.div variants={textVariant()}
         className='relative flex flex-col w-full'
         >
-            <div className='flex md:mt-6 ss:mt-4 mt-3 items-center'>
+            <div className='flex md:mt-6 ss:mt-10 mt-3 items-center'>
                 {socialMedia.map((social, index) => (
                     <a target='_blank' key={social.id}
                     href={social.link}>

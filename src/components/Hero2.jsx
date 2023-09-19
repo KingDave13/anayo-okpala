@@ -15,9 +15,9 @@ const Hero = () => {
               className={`${layout.sectionInfo} justify-center 
               items-center`}
               >
-                <h1 className='text-secondary font-bold text-[65px]
-                    tracking-tight'>
-                    About Us
+                <h1 className='text-secondary font-bold md:text-[65px]
+                ss:text-[65px] text-[55px] tracking-tight'>
+                  About Us
                 </h1>
 
                 <div className='flex flex-row text-[20px] justify-center

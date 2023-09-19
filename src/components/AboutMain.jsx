@@ -9,23 +9,24 @@ const AboutMain = () => {
     <section className='relative w-full min-h-[700px] mx-auto flex 
     items-center flex flex-col mt-10'>
         <div className='relative justify-between w-full items-center
-        max-w-[95rem] mx-auto flex flex-row items-start gap-5'
+        max-w-[95rem] mx-auto flex md:flex-row ss:flex-row flex-col 
+        items-start gap-5'
         >
             <motion.div variants={textVariant()}
             className={`${layout.sectionInfo} mt-8`}
             >
-                <h1 className='text-primary font-bold text-[60px]
-                tracking-tight'>
+                <h1 className='text-primary font-bold md:text-[60px]
+                ss:text-[47px] text-[40px] tracking-tight'>
                     Who we are
                 </h1>
                 
                 <div className='flex relative'>
-                    <div className='bg-secondary w-[150px]
-                    h-[13px]' />
+                    <div className='bg-secondary md:w-[150px] ss:w-[150px]
+                    w-[100px] h-[13px]' />
                 </div>
 
-                <p className='mt-8 text-primary text-[20px] max-w-[620px]
-                tracking-tight'>
+                <p className='md:mt-8 ss:mt-5 mt-5 text-primary md:text-[20px] 
+                ss:text-[20px] text-[14px] max-w-[620px] tracking-tight'>
                 Anayo Okpala Global Concept is a leading supplier of 
                 high-quality foam cloth, tape edge, PVC, sewing thread, 
                 cellotape, and other foam accessories for various 
@@ -45,9 +46,9 @@ const AboutMain = () => {
 
             <motion.div 
             variants={slideIn('right', 'tween', 0.2, 0.5)}
-            className='mt-10'>
+            className='md:mt-10 ss:mt-10 mt-0'>
                 <img src={frame} alt='cloth'
-                className=' h-[500px] w-auto'
+                className=' md:h-[500px] ss:h-[500px] h-[280px] w-auto'
                 />
             </motion.div>
         </div>

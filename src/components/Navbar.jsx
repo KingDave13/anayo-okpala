@@ -23,6 +23,7 @@ const Navbar = () => {
                     <img src={logo} alt='logo'
                     className='w-[130px] h-auto'/>
                 </Link>
+                
                 <div className='flex justify-between gap-40'>
                     <ul className='list-none hidden md:flex flex-row 
                     gap-20'>

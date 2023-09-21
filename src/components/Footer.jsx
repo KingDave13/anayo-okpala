@@ -69,7 +69,9 @@ const Footer = () => {
         >
             <div className='flex md:mt-6 ss:mt-10 mt-3 items-center'>
                 {socialMedia.map((social, index) => (
-                    <a target='_blank' key={social.id}
+                    <a target='_blank' 
+                    rel="noreferrer"
+                    key={social.id}
                     href={social.link}>
                         <social.Icon 
                         className={`md:w-[20px] ss:w-[20px] w-[14px] 

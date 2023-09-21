@@ -110,22 +110,22 @@ export const socialMedia = [
   {
     id: "social-media-1",
     Icon: BsTwitter,
-    link: "https://twitter.com/DavidOkaliwe"
+    link: ""
   },
   {
     id: "social-media-2",
     Icon: BsInstagram,
-    link: "https://www.linkedin.com/in/david-okaliwe-229666234/"
+    link: ""
   },
   {
     id: "social-media-3",
     Icon: BsFacebook,
-    link: "https://github.com/KingDave13"
+    link: ""
   },
   {
     id: "social-media-4",
     Icon: FaLinkedinIn,
-    link: "https://github.com/KingDave13"
+    link: ""
   },
 ];
 

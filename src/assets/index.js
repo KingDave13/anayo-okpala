@@ -19,6 +19,7 @@ import quote from './quote.png';
 import man from './man.png';
 import logo2 from './logo.svg';
 import frame from './frame.png';
+import cellotapes from './cellotapes.png';
 
 export {
     logo,
@@ -42,4 +43,5 @@ export {
     man,
     logo2,
     frame,
+    cellotapes,
 }

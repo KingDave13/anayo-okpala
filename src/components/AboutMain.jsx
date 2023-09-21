@@ -56,8 +56,8 @@ const AboutMain = () => {
 
         <motion.div 
             variants={textVariant()}
-            className='relative md:mt-6 ss:mt-10 text-primary md:text-[20px] 
-            ss:text-[20px] text-[14px] tracking-tight'>
+            className='relative md:mt-6 ss:mt-10 mt-6 text-primary 
+            md:text-[20px] ss:text-[20px] text-[14px] tracking-tight'>
               We also provide a wide range of sewing threads in different 
               colors and strengths to cater to the unique requirements of 
               our customers. Lastly, our cellotape is of superior quality, 

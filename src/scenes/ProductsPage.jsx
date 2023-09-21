@@ -20,11 +20,11 @@ import {
           </div>
         </div>
         
-        <ProductsMain />
-  
         <div className='bg-dimWhite'>
-          <CTA />
+            <ProductsMain />
         </div>
+        
+        <CTA />
   
         <div className='bg-dimWhite'>
           <Footer />

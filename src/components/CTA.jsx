@@ -45,7 +45,8 @@ const CTA = () => {
                     border-secondary md:text-[17px] ss:text-[13px] 
                     text-[10px] md:py-3 ss:py-2 py-1 md:px-14 ss:px-5 
                     px-3 text-secondary rounded-[3px] font-normal
-                    hover:text-white'>
+                    hover:text-white'
+                    onClick={() => navigate('/products')}>
                         View Products
                     </button>
                 </div>

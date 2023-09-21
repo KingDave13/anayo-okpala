@@ -51,7 +51,8 @@ const ProductCard = ({ title, description, image }) => {
                             md:text-[17px] ss:text-[17px] text-[12px] 
                             md:py-3 ss:py-2 py-1 md:px-14 ss:px-8 
                             px-3 text-secondary rounded-[3px] font-medium 
-                            hover:text-white grow2'>
+                            hover:text-white grow2'
+                            onClick={() => navigate('/products')}>
                                 View Details
                             </button>
                         </div>
@@ -64,6 +65,7 @@ const ProductCard = ({ title, description, image }) => {
 
 const Products = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -149,7 +151,8 @@ const Products = () => {
 
                 <div className='flex flex-row md:mt-16 ss:mt-16 mt-10 
                 justify-center items-center gap-1 cursor-pointer grow2'>
-                    <p className='font-medium text-primary'>
+                    <p className='font-medium text-primary'
+                    onClick={() => navigate('/products')}>
                         View All
                     </p>
                     

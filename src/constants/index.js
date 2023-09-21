@@ -152,19 +152,19 @@ export const footerLinks = [
     links: [
       {
         name: "Cookies",
-        link: "https://www.hoobank.com/help-center/",
+        link: "",
       },
       {
         name: "Privacy Policy",
-        link: "https://www.hoobank.com/partners/",
+        link: "",
       },
       {
         name: "Security",
-        link: "https://www.hoobank.com/suggestions/",
+        link: "",
       },
       {
         name: "Terms of Use",
-        link: "https://www.hoobank.com/blog/",
+        link: "",
       },
     ],
   },

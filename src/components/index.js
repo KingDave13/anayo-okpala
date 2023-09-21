@@ -11,9 +11,11 @@ import CTA from './CTA';
 import Footer from './Footer';
 import Hero2 from './Hero2';
 import Hero3 from './Hero3';
+import Hero4 from './Hero4';
 import AboutMain from './AboutMain';
 import Mission from './Mission';
 import Contact from './Contact';
+import ProductsMain from './ProductsMain';
 
 export { 
     Navbar, 
@@ -29,7 +31,9 @@ export {
     NavbarAlt2,
     Hero2,
     Hero3,
+    Hero4,
     AboutMain,
     Mission,
     Contact,
+    ProductsMain,
  }

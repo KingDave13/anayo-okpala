@@ -1,4 +1,4 @@
-import styles, { layout } from '../styles';
+import styles from '../styles';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -24,8 +24,9 @@ const ValueCard = ({ index, title, description, image}) => {
                     mt-3'>
                         {title}
                     </h1>
-                    <p className='max-w-[220px] text-primary mt-1
-                    text-[14px] font-medium leading-[18px]'>
+                    <p className='md:max-w-[220px] ss:max-w-[200px] 
+                    text-primary mt-1 text-[14px] font-medium 
+                    leading-[18px]'>
                         {description}
                     </p>
                 </div>

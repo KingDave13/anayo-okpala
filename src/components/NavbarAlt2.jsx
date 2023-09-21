@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from '../styles';
 import { navLinks } from '../constants';
@@ -8,6 +8,21 @@ import { BsX, BsList } from 'react-icons/bs';
 const Navbar = () => {
     const location = useLocation();
     const [toggle, setToggle] = useState(false);
+    const menuRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setToggle(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <nav className={`${styles.paddingX} w-full flex items-center
@@ -52,21 +67,21 @@ const Navbar = () => {
                 items-center'>
                 {toggle ? (
                 <BsX
-                    size={30}
+                    size={35}
                     className="object-contain cursor-pointer"
                     style={{ color: '#253266' }}
                     onClick={() => setToggle(!toggle)}
                 />
                 ) : (
                 <BsList
-                    size={30}
+                    size={35}
                     className="object-contain cursor-pointer"
                     style={{ color: '#253266' }}
                     onClick={() => setToggle(!toggle)}
                 />
                 )}
 
-                <div className={`${!toggle ? 'hidden' 
+                <div ref={menuRef} className={`${!toggle ? 'hidden' 
                 : 'flex'} p-6 bg-dimWhite absolute top-10 right-0 
                 mx-4 my-8 min-w-[140px] z-10 rounded-xl flex-col
                 ss:mx-16 ss:my-10 ss:min-w-[220px] shadow-xl`}>

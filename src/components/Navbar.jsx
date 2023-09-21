@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
@@ -8,6 +8,21 @@ const Navbar = () => {
     const [active, setActive] = useState('Home');
     const [toggle, setToggle] = useState(false);
     const navigate = useNavigate();
+    const menuRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setToggle(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <nav className={`${styles.paddingX} w-full flex items-center
@@ -67,7 +82,7 @@ const Navbar = () => {
                     onClick={() => setToggle(!toggle)}
                     />
 
-                    <div className={`${!toggle ? 'hidden' 
+                    <div ref={menuRef} className={`${!toggle ? 'hidden' 
                     : 'flex'} p-6 bg-white absolute top-10 right-0 
                     mx-6 my-14 min-w-[140px] z-10 rounded-xl flex-col
                     ss:mx-16 ss:my-14 ss:min-w-[220px] shadow-xl`}>

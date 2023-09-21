@@ -54,7 +54,8 @@ const CTA = () => {
             <motion.div variants={fadeIn('left', 'spring', 0.3)}
             className='ss:flex hidden absolute md:mr-14 ss:mr-10 right-0 
             bottom-0'>
-                <img src={man} className='object-contain md:w-[280px]
+                <img src={man} alt='man'
+                className='object-contain md:w-[280px]
                 ss:w-[240px]'/>
             </motion.div>                
         </div>

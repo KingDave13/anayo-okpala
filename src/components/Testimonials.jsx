@@ -1,5 +1,4 @@
 import { SectionWrapper } from '../hoc';
-import styles, { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { testimonials } from '../constants';
@@ -15,6 +14,7 @@ const TestCard = ({ index, testimonial, image, name, designation }) => {
         transition: { duration: 0.2, ease: 'easeInOut' } }}
         >
             <img src={quote}
+                alt='quotes'
                 className='absolute object-contain w-16 h-auto top-[-35px]
                 right-7' 
             />

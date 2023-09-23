@@ -43,13 +43,7 @@ const AboutMain = () => {
                 products, we have built a solid reputation for delivering 
                 innovative solutions that meet the diverse needs of our 
                 clients.
-                <br></br><br></br>
-                Our foam cloth is made from premium materials, 
-                ensuring durability, comfort, and excellent insulation. 
-                The tape edge we offer is meticulously crafted, providing 
-                a clean and professional finish to foam products. Our PVC
-                 materials are known for their flexibility and resistance 
-                 to wear and tear. 
+
                 </p>          
             </motion.div>
         </div>

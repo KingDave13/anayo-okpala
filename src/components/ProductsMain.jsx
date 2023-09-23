@@ -9,7 +9,7 @@ const AboutMain = () => {
     <section className='relative w-full min-h-[700px] mx-auto flex 
     items-center flex flex-col mt-10'>
         <div className='relative justify-between w-full items-center
-        max-w-[95rem] mx-auto flex md:flex-row ss:flex-wrap flex-col 
+        max-w-[95rem] mx-auto flex md:flex-row ss:flex-row flex-col 
         items-start gap-5'
         >
             <motion.div 

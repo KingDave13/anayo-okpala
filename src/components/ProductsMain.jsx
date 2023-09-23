@@ -43,7 +43,6 @@ const AboutMain = () => {
                 products, we have built a solid reputation for delivering 
                 innovative solutions that meet the diverse needs of our 
                 clients.
-
                 </p>          
             </motion.div>
         </div>

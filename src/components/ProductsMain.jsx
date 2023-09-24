@@ -43,6 +43,7 @@ const AboutMain = () => {
                 </p>          
             </motion.div>
         </div>
+        
     </section> 
   )
 };

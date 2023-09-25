@@ -31,7 +31,6 @@ const Navbar = () => {
             max-w-[95rem] mx-auto'>
                 <Link to='/'
                     onClick={() => {
-                        console.log('click')
                     setActive('Home');
                     window.scrollTo(0, 0);
                     }}>
@@ -41,7 +40,7 @@ const Navbar = () => {
                 
                 <div className='flex justify-between gap-40'>
                     <ul className='list-none hidden md:flex flex-row 
-                    gap-20'>
+                    gap-24'>
                         {navLinks.map((link) => (
                             <li key={link.id}
                             className={`${

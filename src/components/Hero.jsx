@@ -74,7 +74,7 @@ const Counter = () => {
         </div>
   
         <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-secondary font-bold ss:text-[30px]
+            <h1 className='text-secondary font-bold md:text-[40px] ss:text-[30px]
                 text-[25px] tracking-tight'>
                 {Math.round(count2)}+
             </h1>
@@ -89,7 +89,7 @@ const Counter = () => {
         </div>
   
         <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-secondary font-bold ss:text-[30px]
+            <h1 className='text-secondary font-bold md:text-[40px] ss:text-[30px]
                 text-[25px] tracking-tight'>
                 {Math.round(count3)}+
             </h1>

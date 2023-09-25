@@ -39,7 +39,7 @@ const Navbar = () => {
 
                 <div className='flex justify-between gap-40'>
                     <ul className='list-none hidden md:flex flex-row 
-                    gap-20'>
+                    gap-24'>
                         {navLinks.map((link) => (
                             <li
                                 key={link.id}

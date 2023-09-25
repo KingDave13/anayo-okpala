@@ -45,22 +45,22 @@ export const navLinks = [
 
 export const products = [
   {
-    name: 'product_name',
-    title: 'Product Name',
-    description: 'Product Description. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.',
+    name: 'clothing',
+    title: 'Clothing Materials',
+    description: 'Clothing materials for various industrial and domestic uses. We have over 500+ different designs and colours of these clothing materials.',
     image: product1,
   },
   {
-    name: 'product_name',
+    name: 'other',
     title: 'Product Name',
     description: 'Product Description. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.',
-    image: product2
+    image: product2,
   },
   {
-    name: 'product_name',
-    title: 'Product Name',
-    description: 'Product Description. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.',
-    image: product3
+    name: 'tape',
+    title: 'Tape',
+    description: 'Tapes for various industrial and domestic uses. We have these in various patterns, strengths and colours.',
+    image: product3,
   },
 ];
 

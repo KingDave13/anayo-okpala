@@ -1,5 +1,5 @@
 import { 
-    NavbarAlt, 
+    NavbarAlt3, 
     CTA, 
     Footer, 
     Hero4, 
@@ -10,7 +10,7 @@ import {
   const AboutPage = () => {
     return (
       <div className='font-instrument-sans'>
-        <NavbarAlt />
+        <NavbarAlt3 />
         <div className='relative flex items-center justify-center w-full 
         max-h-[450px] top-20'>
           <img src={cellotapes} alt='product3'

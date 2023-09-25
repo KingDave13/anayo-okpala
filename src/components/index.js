@@ -1,6 +1,7 @@
 import Navbar from './Navbar';
 import NavbarAlt from './NavbarAlt';
 import NavbarAlt2 from './NavbarAlt2';
+import NavbarAlt3 from './NavbarAlt3';
 import Hero from './Hero';
 import About from './About';
 import Products from './Products';
@@ -29,6 +30,7 @@ export {
     Footer,
     NavbarAlt,
     NavbarAlt2,
+    NavbarAlt3,
     Hero2,
     Hero3,
     Hero4,

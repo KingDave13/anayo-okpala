@@ -72,7 +72,7 @@ const Footer = () => {
                     <a target='_blank' 
                     rel="noreferrer"
                     key={social.id}
-                    href={social.link}>
+                    >
                         <social.Icon 
                         className={`md:w-[20px] ss:w-[20px] w-[14px] 
                         h-[20px] object-contain cursor-pointer 

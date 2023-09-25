@@ -119,7 +119,7 @@ const Hero = () => {
                 ss:leading-[55px] leading-[50px]
                 tracking-tight md:max-w-[750px]'>
                     No. 1 <span className='text-white'>
-                    home accessories and general </span> 
+                    foam accessories and general </span> 
                     industrial materials supplier.
                 </h1>
 

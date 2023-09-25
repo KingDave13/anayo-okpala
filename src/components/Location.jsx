@@ -2,8 +2,6 @@ import { layout } from '../styles';
 import { motion } from 'framer-motion';
 import { zoomIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-import { map } from '../assets';
-import { Tilt } from 'react-tilt';
 
 const Location = () => {
 
@@ -36,19 +34,22 @@ const Location = () => {
                         We are closer to you than you think!
                     </h1>
 
-                    <Tilt
-                    perspective={1000}
-                    className='your-tilt-container'
-                    options={{
-                      scale: 1.05,
-                      speed: 1000,
-                      transition: true,
-                    }}>
-                        <img src={map} className='object-contain w-[850px]
-                        md:border-[10px] ss:border-[10px] border-[5px]
-                        border-[#99999] cursor-pointer'
-                        alt='map'/>
-                    </Tilt>
+                    <div className='md:max-w-[1000px] ss:max-w-[650px] 
+                    max-w-[320px] md:max-h-[520px] ss:max-h-[450px] 
+                    max-h-[260px] md:border-[7px] ss:border-[7px] 
+                    border-[5px] border-[#99999] cursor-pointer 
+                    overflow-hidden flex items-center justify-center
+                    '>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.519424648168!2d8.532180700000008!3d12.007719100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ae811f184305e7%3A0x185c8f79cab2bf!2s101%20Ibrahim%20Taiwo%20Rd%2C%20Kofar%20Wambali%20700211%2C%20Kano!5e0!3m2!1sen!2sng!4v1695671626641!5m2!1sen!2sng" 
+                            width="1000px" 
+                            height="500px"
+                            title="Office location"
+                            style={{ border: '' }} 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                 </motion.div>
 
                 <motion.div variants={textVariant()}
@@ -62,7 +63,8 @@ const Location = () => {
                                 Head Office
                             </h1>
                             <p className='text-primary md:text-[16px]
-                            ss:text-[16px] text-[13px] leading-[18px]'>
+                            ss:text-[16px] text-[12px] md:leading-[18px]
+                            ss:leading-[18px] leading-[15px]'>
                                 No. 101 Ibrahim Taiwo Road by <br></br>
                                 Sani Ungogo, Kano State, Nigeria.
                             </p>
@@ -78,7 +80,8 @@ const Location = () => {
                                 Branch Office
                             </h1>
                             <p className='text-primary md:text-[16px]
-                            ss:text-[16px] text-[13px] leading-[18px]'>
+                            ss:text-[16px] text-[12px] md:leading-[18px]
+                            ss:leading-[18px] leading-[15px]'>
                                 No. 9 Festing Road Sabon Gari, <br></br>
                                 Kano State, Nigeria.
                             </p>

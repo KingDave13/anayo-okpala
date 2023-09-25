@@ -53,7 +53,7 @@ const Counter = () => {
         clearInterval(interval2);
         clearInterval(interval3);
       };
-    }, []);
+    }, [count1, count2, count3]);
   
     return (
       <motion.div variants={textVariant()} 

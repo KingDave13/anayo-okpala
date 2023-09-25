@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import { styles } from '../styles';
 import { slideIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
@@ -9,15 +9,16 @@ const Modal = ({ message, onClose, showOkButton }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center
      bg-black bg-opacity-50 z-50">
-      <div className="bg-white p-6 rounded-md shadow flex flex-col
-      items-center justify-center">
-        <p className="text-center mb-4 font-medium text-tertiary">
+      <div className="bg-white p-6 rounded-md shadow-xl flex flex-col
+      items-center justify-center md:w-[400px] ss:w-[400px] w-[330px]
+      md:h-[150px] ss:h-[150px] h-[100px]">
+        <p className="text-center mb-4 font-medium text-primary">
           {message}
         </p>
         {showOkButton && (
           <button
             onClick={onClose}
-            className="bg-tertiary text-white px-4 py-2 rounded-md"
+            className="bg-primary text-white w-[50%] py-2 rounded-md"
           >
             OK
           </button>
@@ -47,58 +48,59 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   }
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  //   if (!form.name || !form.email || !form.message) {
-  //     setModalMessage('Please fill out all the required fields.');
-  //     setModalOpen(true);
-  //     return;
-  //   }
+    if (!form.name || !form.email || !form.message || !form.phone 
+      || !form.subject ) {
+      setModalMessage('Please fill out all the required fields.');
+      setModalOpen(true);
+      return;
+    }
 
-  //   setLoading(true);
+    setLoading(true);
 
-  //   // emailjs.send(
-  //   //   'service_xfy39rq',
-  //   //   'template_sy35l5o',
-  //   //   {
-  //   //     from_name: form.name,
-  //   //     to_name: 'David',
-  //   //     from_email: form.email,
-  //   //     to_email: 'okaliwedavid@gmail.com',
-              // phone: form.phone,
-              // subject: form.subject,
-  //   //     message: form.message,
-  //   //   },
-  //   //   'E-R_jyLgNaP5en5j-'
-  //   // )
-  //   .then(
-  //     () => {
-  //       setLoading(false);
-  //       setModalMessage('Thanks for reaching out, I will be in touch.');
-  //       setModalOpen(true);
+    emailjs.send(
+      'service_xfy39rq',
+      'template_sy35l5o',
+      {
+        from_name: form.name,
+        to_name: 'David',
+        from_email: form.email,
+        to_email: 'okaliwedavid@gmail.com',
+        phone: form.phone,
+        subject: form.subject,
+        message: form.message,
+      },
+      'E-R_jyLgNaP5en5j-'
+    )
+    .then(
+      () => {
+        setLoading(false);
+        setModalMessage('Thanks for reaching out, We will be in touch.');
+        setModalOpen(true);
 
-  //       setTimeout(() => {
-  //         setModalOpen(false); 
-  //       }, 3000);
+        setTimeout(() => {
+          setModalOpen(false); 
+        }, 3000);
 
-  //       setForm({
-  //         name: '',
-  //         email: '',
-            //  phone: '',
-            //  subject: '',
-  //         message: '',
-  //       });
-  //     },
+        setForm({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: '',
+        });
+      },
       
-  //     (error) => {
-  //       setLoading(false);
-  //       console.log(error);
-  //       setModalMessage('Something went wrong');
-  //       setModalOpen(true);
-  //     }
-  //   );
-  // }
+      (error) => {
+        setLoading(false);
+        console.log(error);
+        setModalMessage('Something went wrong');
+        setModalOpen(true);
+      }
+    );
+  }
 
 
   return (
@@ -117,7 +119,8 @@ const Contact = () => {
       <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
         className='flex-1 bg-dimWhite bg-opacity-40 p-8 md:mt-0 ss:mt-14
         mt-14'>
-        <form ref={formRef} className="grid grid-cols-2 gap-8">
+        <form ref={formRef} onSubmit={handleSubmit}
+        className="grid grid-cols-2 gap-8">
           <div className="flex flex-col">
             <label className="text-primary font-bold mb-4">
               Name

@@ -33,7 +33,7 @@ const CTA = () => {
 
                 <div className='md:mt-5 ss:mt-3 mt-3'>
                     <button className='bg-secondary grow2 md:text-[17px] 
-                    ss:text-[14px] text-[11px] md:py-3 ss:py-2 py-1 
+                    ss:text-[14px] text-[12px] md:py-3 ss:py-2 py-1 
                     md:mr-5 ss:mr-3 mr-2 md:px-14 ss:px-5 px-3 
                     text-primary rounded-[3px] font-normal border-none 
                     hover:text-white'
@@ -43,7 +43,7 @@ const CTA = () => {
 
                     <button className='border-[1px] grow2 
                     border-secondary md:text-[17px] ss:text-[13px] 
-                    text-[10px] md:py-3 ss:py-2 py-1 md:px-14 ss:px-5 
+                    text-[11px] md:py-3 ss:py-2 py-1 md:px-14 ss:px-5 
                     px-3 text-secondary rounded-[3px] font-normal
                     hover:text-white'
                     onClick={() => navigate('/products')}>

@@ -16,15 +16,16 @@ const Hero = () => {
               items-center`}
               >
                 <h1 className='text-secondary font-bold md:text-[65px]
-                ss:text-[65px] text-[55px] tracking-tight'>
+                ss:text-[65px] text-[40px] tracking-tight'>
                   Products
                 </h1>
 
-                <div className='flex flex-row text-[20px] justify-center
-                items-center gap-5 text-white'>
+                <div className='flex flex-row items-center md:gap-5 
+                ss:gap-5 gap-2 text-white md:text-[20px] ss:text-[20px] 
+                text-[14px] justify-center'>
                     <p>Home</p>
-                    <BsArrowRightShort className='text-[30px] 
-                    text-white'/>
+                    <BsArrowRightShort className='md:text-[30px] 
+                    ss:text-[30px] text-[25px] text-white'/>
                     <p>Products</p>
                 </div>
               </motion.div>          

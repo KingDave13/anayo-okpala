@@ -52,7 +52,8 @@ const Product = ({ index, name, description, image }) => {
                     <button className='bg-primary md:text-[17px] 
                     ss:text-[12px] text-[9px] md:py-2 ss:py-2 py-1 
                     md:px-12 ss:px-8 px-3 text-white tracking-tight
-                    rounded-[3px] font-medium border-none grow2'
+                    rounded-[3px] md:font-medium ss:font-medium font-normal
+                    border-none grow2'
                     onClick={() => navigate('/contact')}>
                         Buy Now
                     </button>
@@ -75,8 +76,9 @@ const AboutMain = () => {
   return (
     <section className='relative w-full min-h-[700px] mx-auto flex 
     items-center flex flex-col mt-20 justify-center'>
-        <div className='relative justify-between w-full mb-12
-        max-w-[95rem] mx-auto flex flex-col gap-20'>
+        <div className='relative justify-between w-full md:mb-12 ss:mb-12
+        mb-8 max-w-[95rem] mx-auto flex flex-col md:gap-20 ss:gap-20 
+        gap-8'>
             {productsMain.map((product, index) => (
                 <Product 
                     key={product.name} 

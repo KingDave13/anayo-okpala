@@ -15,39 +15,42 @@ const Product = ({ index, name, description, image }) => {
         className='flex '>
             <motion.div 
             variants={slideIn('left', 'tween', 0.2, 0.5)}
-            className='md:mt-3 ss:mt-2 mt-0'>
+            className='md:mt-3 ss:mt-2 mt-1'>
                 <img src={image} alt='product'
-                className=' md:h-[350px] ss:h-[200px] h-[280px] w-auto'
+                className=' md:h-[350px] ss:h-[200px] h-[auto] md:w-auto
+                ss:w-auto w-[150px]'
                 />
             </motion.div>
 
             <motion.div variants={textVariant()}
-            className='flex-1 md:ml-40 ss:ml-14'
+            className='flex-1 md:ml-40 ss:ml-14 ml-5'
             >
                 <h1 className='text-primary font-bold md:text-[45px]
-                ss:text-[33px] text-[40px] tracking-tight'>
+                ss:text-[33px] text-[17px] tracking-tight'>
                     {name}
                 </h1>
                 
                 <div className='flex relative'>
                     <div className='bg-secondary md:w-[150px] ss:w-[120px]
-                    w-[100px] md:h-[13px] ss:h-[10px] h-[10px]' />
+                    w-[50px] md:h-[13px] ss:h-[10px] h-[4px]' />
                 </div>
 
-                <p className='md:mt-8 ss:mt-3 mt-5 text-primary md:text-[20px] 
-                ss:text-[14px] text-[14px] md:max-w-[650px] ss:max-w-[700px]
-                tracking-tight leading-[18px]'>
+                <p className='md:mt-8 ss:mt-3 mt-2 text-primary md:text-[20px] 
+                ss:text-[14px] text-[10px] md:max-w-[650px] ss:max-w-[700px]
+                tracking-tight md:leading-[28px] ss:leading-[18px]
+                leading-[12px]'>
                     {description}
                 </p>
 
-                <div className='md:mt-12 ss:mt-4 mt-5'>
+                <div className='md:flex ss:flex hidden md:mt-12 ss:mt-4 
+                mt-5'>
                     <div className='border-t-[1px] border-t-primary' />
                 </div>
 
-                <div className='flex md:mt-12 ss:mt-4 mt-5 md:gap-5 
+                <div className='flex md:mt-12 ss:mt-4 mt-2 md:gap-5 
                 ss:gap-2 gap-2'>
                     <button className='bg-primary md:text-[17px] 
-                    ss:text-[12px] text-[12px] md:py-2 ss:py-2 py-1 
+                    ss:text-[12px] text-[9px] md:py-2 ss:py-2 py-1 
                     md:px-12 ss:px-8 px-3 text-white tracking-tight
                     rounded-[3px] font-medium border-none grow2'
                     onClick={() => navigate('/contact')}>
@@ -55,7 +58,7 @@ const Product = ({ index, name, description, image }) => {
                     </button>
 
                     <button className='border-[1px] border-primary 
-                    md:text-[17px] ss:text-[12px] text-[12px] 
+                    md:text-[17px] ss:text-[12px] text-[9px] 
                     md:py-2 ss:py-2 py-1 md:px-12 ss:px-8 
                     px-3 text-primary rounded-[3px] font-medium 
                     grow2 tracking-tight'

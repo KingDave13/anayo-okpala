@@ -87,7 +87,7 @@ export const values = [
 export const productsMain = [
   {
     name: 'Clothing Materials',
-    description: 'Clothing materials for various industrial and domestic uses. We have over 500 different designs and colours of these clothing materials.',
+    description: 'Clothing materials for various industrial and domestic uses. We have over 500 different designs and colours of these.',
     image: img1
   },
   {

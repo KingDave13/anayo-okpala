@@ -132,7 +132,7 @@ const Hero = () => {
                 </p>
 
                 <div className='flex flex-row mt-5 md:gap-5 ss:gap-5 gap-2'>
-                    <button className='bg-secondary grow md:text-[17px] 
+                    <button className='bg-secondary grow2 md:text-[17px] 
                     ss:text-[17px] text-[14px] md:py-3 ss:py-3 py-2 
                     md:px-14 ss:px-14 px-6 text-primary rounded-[3px]
                     font-medium border-none hover:text-white'
@@ -141,7 +141,7 @@ const Hero = () => {
                         Learn More
                     </button>
 
-                    <button className='border-[1px] grow border-secondary 
+                    <button className='border-[1px] grow2 border-secondary 
                     md:text-[17px] ss:text-[17px] text-[14px] md:py-3 
                     ss:py-3 py-2 md:px-14 ss:px-14 px-6 text-secondary 
                     rounded-[3px] font-medium hover:text-white'

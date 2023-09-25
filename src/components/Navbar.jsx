@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import styles from '../styles';
 import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { logo } from '../assets';
+import { BsX, BsList } from 'react-icons/bs';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
@@ -73,18 +74,27 @@ const Navbar = () => {
 
                 <div className='md:hidden flex flex-1 justify-end 
                 items-center'>
-                    <img 
-                    src={toggle ? close : menu}
-                    alt='menu'
-                    className='w-[28px] h-[28px] object-contain 
-                    cursor-pointer'
-                    onClick={() => setToggle(!toggle)}
+                    {toggle ? (
+                    <BsX
+                        size={40}
+                        className="object-contain cursor-pointer"
+                        style={{ color: '#fff' }}
+                        onClick={() => setToggle(!toggle)}
                     />
+                    ) : (
+                    <BsList
+                        size={40}
+                        className="object-contain cursor-pointer"
+                        style={{ color: '#fff' }}
+                        onClick={() => setToggle(!toggle)}
+                    />
+                    )}
 
-                    <div ref={menuRef} className={`${!toggle ? 'hidden' 
-                    : 'flex'} p-6 bg-white absolute top-10 right-0 
-                    mx-6 my-14 min-w-[140px] z-10 rounded-xl flex-col
-                    ss:mx-16 ss:my-14 ss:min-w-[220px] shadow-xl`}>
+                    <div ref={menuRef} 
+                    className={`${!toggle ? 'hidden' : 'flex'} p-6 
+                    bg-white absolute top-10 right-0 mx-6 my-14 
+                    min-w-[140px] z-10 rounded-xl flex-col ss:mx-16 
+                    ss:my-14 ss:min-w-[220px] shadow-xl`}>
                         <ul className='list-none flex justify-end 
                         items-start flex-col gap-4'>
                         {navLinks.map((link) => (
@@ -114,6 +124,7 @@ const Navbar = () => {
                         text-white rounded-[5px] mt-5 ss:text-[20px] text-[15px]'
                         onClick={() => {
                             setToggle(!toggle);
+                            navigate('/contact');
                         }}
                         >
                             Get a Quote

@@ -82,7 +82,7 @@ const Navbar = () => {
                 )}
 
                 <div ref={menuRef} className={`${!toggle ? 'hidden' 
-                : 'flex'} p-6 bg-dimWhite absolute top-10 right-0 
+                : 'flex'} p-6 bg-dimWhite absolute top-12 right-0 
                 mx-4 my-8 min-w-[140px] z-10 rounded-xl flex-col
                 ss:mx-16 ss:my-10 ss:min-w-[220px] shadow-xl`}>
                     <ul className='list-none flex justify-end 

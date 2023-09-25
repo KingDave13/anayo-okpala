@@ -7,7 +7,7 @@ import { values } from '../constants';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 
-const ValueCard = ({ index, title, description, image}) => {
+const ValueCard = ({ index, title, description, image }) => {
     return (
         <Tilt className='w-full flex'>
             <motion.div
@@ -56,18 +56,16 @@ const Values = () => {
                     w-[100px] h-[13px]' />
                 </div>
 
-                <div>
-                    <motion.div className='flex md:flex-row ss:flex-row 
-                    flex-col md:mt-16 ss:mt-14 mt-10 gap-12'>
-                        {values.map((value, index) => (
-                            <ValueCard 
-                                key={value.title} 
-                                index={index} 
-                                {...value}
-                            />
-                        ))}
-                    </motion.div> 
-                </div>
+                <div className='flex md:flex-row ss:flex-row 
+                flex-col md:mt-16 ss:mt-14 mt-10 gap-12'>
+                    {values.map((value, index) => (
+                        <ValueCard 
+                            key={value.title} 
+                            index={index} 
+                            {...value}
+                        />
+                    ))}
+                </div> 
 
                  <div className='flex md:mt-16 ss:mt-14 mt-10 
                  justify-center items-center gap-1 cursor-pointer 

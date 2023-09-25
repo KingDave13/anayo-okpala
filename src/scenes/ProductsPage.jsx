@@ -5,7 +5,7 @@ import {
     Hero4, 
     ProductsMain } 
     from '../components';
-  import { cellotapes } from '../assets';
+  import { img2 } from '../assets';
   
   const AboutPage = () => {
     return (
@@ -13,7 +13,7 @@ import {
         <NavbarAlt3 />
         <div className='relative flex items-center justify-center w-full 
         max-h-[450px] top-20'>
-          <img src={cellotapes} alt='product3'
+          <img src={img2} alt='product3'
           className='object-cover w-[150rem] h-[450px]' />
           <div className='absolute w-full'>
             <Hero4 />

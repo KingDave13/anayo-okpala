@@ -9,6 +9,11 @@ import {
   pic2,
   pic3,
   pic4,
+  img1,
+  img2,
+  img3,
+  img4,
+  cellotapes,
 } from '../assets';
 
 import { BsTwitter, BsInstagram, BsFacebook } from 'react-icons/bs';
@@ -76,6 +81,34 @@ export const values = [
     title: 'Security',
     description: 'Security is also one of our watchwords as we prioritize absolute security of transactions between us and our customers.',
     image: vector3
+  },
+];
+
+export const productsMain = [
+  {
+    name: 'Clothing Materials',
+    description: 'Clothing materials for various industrial and domestic uses. We have over 500 different designs and colours of these clothing materials.',
+    image: img1
+  },
+  {
+    name: 'Tape',
+    description: 'Tapes for various industrial and domestic uses. We have these in various patterns, strengths and colours.',
+    image: img2
+  },
+  {
+    name: 'PVC Transparent',
+    description: 'PVC Transparent description to be inserted here.',
+    image: img3
+  },
+  {
+    name: 'PVC Leather',
+    description: 'PVC Leather description to be inserted here.',
+    image: img4
+  },
+  {
+    name: 'Cellotape',
+    description: ' Cellotape description to be inserted here.',
+    image: cellotapes
   },
 ];
 

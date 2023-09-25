@@ -67,14 +67,14 @@ const Footer = () => {
         <motion.div variants={textVariant()}
         className='relative flex flex-col w-full'
         >
-            <div className='flex md:mt-6 ss:mt-10 mt-3 items-center'>
+            <div className='flex md:mt-6 ss:mt-8 mt-3 items-center'>
                 {socialMedia.map((social, index) => (
                     <a target='_blank' 
                     rel="noreferrer"
                     key={social.id}
                     >
                         <social.Icon 
-                        className={`md:w-[20px] ss:w-[20px] w-[18px] 
+                        className={`md:w-[20px] ss:w-[25px] w-[18px] 
                         h-[20px] object-contain cursor-pointer 
                         ${index !== socialMedia.length -1 ? 
                         'mr-3' : 'mr-0' }`}

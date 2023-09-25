@@ -8,23 +8,27 @@ const TestCard = ({ index, testimonial, image, name, designation }) => {
     return (
         <motion.div
         variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-        className='bg-dimWhite pt-16 pb-16 p-10 rounded-3xl xs:w-[500px] 
+        className='bg-dimWhite md:pt-16 md:pb-16 ss:pt-16 ss:pb-16 pt-10
+        pb-10 p-10 rounded-3xl xs:w-[500px] 
         w-full relative cursor-pointer'
         whileHover={{ boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)', 
         transition: { duration: 0.2, ease: 'easeInOut' } }}
         >
             <img src={quote}
                 alt='quotes'
-                className='absolute object-contain w-16 h-auto top-[-35px]
+                className='absolute object-contain md:w-16 ss:w-16 w-10 
+                h-auto md:top-[-35px] ss:top-[-35px] top-[-20px]
                 right-7' 
             />
 
             <div className=''>
-                <p className='text-primary text-[18px] font-normal'>
+                <p className='text-primary md:text-[18px] ss:text-[18px] 
+                text-[14px] font-normal'>
                     {testimonial}
                 </p>
 
-                <div className='mt-5 flex justify-between items-center'>
+                <div className='md:mt-5 ss:mt-5 mt-4 flex justify-between 
+                items-center'>
                     <img 
                         src={image}
                         alt='name'
@@ -36,7 +40,8 @@ const TestCard = ({ index, testimonial, image, name, designation }) => {
                         h-[45px] bg-opacity-40' />
                     </div> 
                     <div className='flex-1 flex flex-col'>
-                        <p className='text-primary font-bold text-[18px]'>
+                        <p className='text-primary font-bold 
+                        md:text-[18px] ss:text-[18px] text-[15px]'>
                             {name}
                         </p>
                         <p className='text-primary text-[12px]'>

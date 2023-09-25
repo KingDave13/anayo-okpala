@@ -42,7 +42,7 @@ const Product = ({ index, name, description, image }) => {
                     {description}
                 </p>
 
-                <div className='md:flex ss:flex hidden md:mt-12 ss:mt-4 
+                <div className='hidden ss:block md:mt-12 ss:mt-4
                 mt-5'>
                     <div className='border-t-[1px] border-t-primary' />
                 </div>

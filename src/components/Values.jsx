@@ -1,4 +1,3 @@
-import styles from '../styles';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -12,8 +11,8 @@ const ValueCard = ({ index, title, description, image }) => {
         <Tilt className='w-full flex'>
             <motion.div
                 variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-                className='w-full bg-dimWhite p-[5px] rounded-[20px]
-                cursor-pointer shadow-xl'
+                className='w-full bg-dimWhite md:p-[5px] ss:p-[0px] p-[5px]
+                rounded-[20px] cursor-pointer shadow-xl'
             >
                 <div options={{ max: 45, scale: 1, speed: 450 }}
                 className='flex flex-col justify-evenly p-7'>
@@ -25,7 +24,7 @@ const ValueCard = ({ index, title, description, image }) => {
                         {title}
                     </h1>
                     <p className='md:max-w-[220px] ss:max-w-[200px] 
-                    text-primary mt-1 text-[14px] font-medium 
+                    text-primary mt-1 text-[14px] md:font-medium ss:font-normal
                     leading-[18px]'>
                         {description}
                     </p>
@@ -44,8 +43,8 @@ const Values = () => {
         <div className='absolute w-full max-w-[95rem] mx-auto flex 
         md:mb-16 ss:mb-16 mb-0 justify-center'>
             <motion.div variants={textVariant()}
-            className={`${styles.paddingX} flex flex-col justify-center 
-            items-center relative`}>
+            className='flex flex-col justify-center md:px-16 px-6
+            items-center relative'>
                 <h1 className='text-primary font-bold md:text-[60px]
                 ss:text-[50px] text-[40px] tracking-tight'>
                     Our core values

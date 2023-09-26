@@ -76,7 +76,7 @@ const Contact = () => {
     .then(
       () => {
         setLoading(false);
-        setModalMessage('Thanks for reaching out, We will be in touch.');
+        setModalMessage('Thanks for reaching out, we will be in touch.');
         setModalOpen(true);
 
         setTimeout(() => {

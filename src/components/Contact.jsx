@@ -111,7 +111,7 @@ const Contact = () => {
         message={modalMessage}
         onClose={() => setModalOpen(false)}
         showOkButton={modalMessage !== 
-          'Thanks for reaching out, We will be in touch.'}
+          'Thanks for reaching out, we will be in touch.'}
       />
       )}
 

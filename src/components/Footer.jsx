@@ -67,7 +67,7 @@ const Footer = () => {
         <motion.div variants={textVariant()}
         className='relative flex flex-col w-full'
         >
-            <div className='flex md:mt-6 ss:mt-8 mt-3 items-center'>
+            <div className='flex md:mt-6 ss:mt-8 mt-1 items-center'>
                 {socialMedia.map((social, index) => (
                     <a target='_blank' 
                     rel="noreferrer"

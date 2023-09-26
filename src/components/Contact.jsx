@@ -131,7 +131,9 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Enter your name"
               className="py-4 px-6 border-[1px] outline-none 
-              placeholder:text-black-100 text-black rounded-lg"
+              placeholder:text-black-100 text-black rounded-lg
+              md:placeholder:text-[16px] ss:placeholder:text-[14px]
+              placeholder:text-[14px]"
             />
           </div>
 
@@ -146,7 +148,9 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Enter your email"
               className="py-4 px-6 border-[1px] outline-none 
-              placeholder:text-black-100 text-black rounded-lg"
+              placeholder:text-black-100 text-black rounded-lg
+              md:placeholder:text-[16px] ss:placeholder:text-[14px]
+              placeholder:text-[14px]"
             />
           </div>
 
@@ -159,9 +163,11 @@ const Contact = () => {
               name="phone"
               value={form.phone}
               onChange={handleChange}
-              placeholder="Enter your phone number(preferably WhatsApp)"
+              placeholder="Enter your phone(WhatsApp) number"
               className="py-4 px-6 border-[1px] outline-none 
-              placeholder:text-black-100 text-black rounded-lg"
+              placeholder:text-black-100 text-black rounded-lg
+              md:placeholder:text-[16px] ss:placeholder:text-[14px]
+              placeholder:text-[13px]"
             />
           </div>
 
@@ -176,7 +182,9 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Enter a subject"
               className="py-4 px-6 border-[1px] outline-none 
-              placeholder:text-black-100 text-black rounded-lg"
+              placeholder:text-black-100 text-black rounded-lg
+              md:placeholder:text-[16px] ss:placeholder:text-[14px]
+              placeholder:text-[14px]"
             />
           </div>
 
@@ -191,7 +199,9 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Your message"
               className="py-4 px-6 border-[1px] outline-none 
-              placeholder:text-black-100 text-black rounded-lg"
+              placeholder:text-black-100 text-black rounded-lg
+              md:placeholder:text-[16px] ss:placeholder:text-[14px]
+              placeholder:text-[14px]"
             />
           </div>
 

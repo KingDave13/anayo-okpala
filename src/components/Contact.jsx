@@ -1,7 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { styles } from '../styles';
 import { slideIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
@@ -61,13 +60,13 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.send(
-      'service_xfy39rq',
-      'template_sy35l5o',
+      'service_f16gg3e',
+      'template_h17p0dt',
       {
         from_name: form.name,
-        to_name: 'David',
+        to_name: 'Anayo Okpala Global Concept',
         from_email: form.email,
-        to_email: 'okaliwedavid@gmail.com',
+        to_email: 'contact@anayookpalaglobalconcept.com',
         phone: form.phone,
         subject: form.subject,
         message: form.message,

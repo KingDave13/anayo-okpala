@@ -13,13 +13,13 @@ const Mission = () => {
             className={`${styles.paddingX} flex flex-col justify-center 
             items-center relative`}>
                 <h1 className='text-primary font-bold md:text-[60px]
-                ss:text-[47px] text-[40px] tracking-tight text-center'>
+                ss:text-[47px] text-[35px] tracking-tight text-center'>
                     Our Mission
                 </h1>
                 
                 <div className='flex relative justify-center'>
                     <div className='bg-secondary md:w-[150px] ss:w-[150px]
-                    w-[100px] h-[13px]' />
+                    w-[80px] md:h-[13px] ss:h-[13px] h-[8px]' />
                 </div>
 
                 <motion.div className='flex md:mt-16 ss:mt-10 mt-8 

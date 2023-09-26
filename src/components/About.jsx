@@ -20,13 +20,13 @@ const About = () => {
             className={`${layout.sectionInfo}`}
             >
                 <h1 className='text-primary font-bold md:text-[60px]
-                ss:text-[47px] text-[40px] tracking-tight'>
+                ss:text-[47px] text-[35px] tracking-tight'>
                     Who we are
                 </h1>
                 
                 <div className='flex relative'>
                     <div className='bg-secondary md:w-[150px] ss:w-[150px]
-                    w-[100px] h-[13px]' />
+                    w-[80px] md:h-[13px] ss:h-[13px] h-[8px]' />
                 </div>
 
                 <p className='md:mt-12 ss:mt-8 mt-5 text-primary 

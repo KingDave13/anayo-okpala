@@ -41,7 +41,7 @@ const Footer = () => {
                   {footerLink.links.map((Link, index) => (
                     <a href={Link.route} key={Link.name}>
                       <li className={`md:text-[20px] ss:text-[19px] 
-                      text-[14px] md:leading-[18px] ss:leading-[18px] 
+                      text-[14px] md:leading-[18px] ss:leading-[18px] leading-[22px]
                       text-primary hover:text-secondary cursor-pointer 
                       ${index !== footerLink.links.length - 1 ? 'md:mb-4 ss:mb-4 mb-0' : 'mb-0'}`}>
                         {Link.name}
@@ -71,7 +71,7 @@ const Footer = () => {
 
         <div className='flex md:mt-6 ss:mt-4 mt-3 items-center'>
           <BiCopyright className='sm:mr-2 mr-1 md:text-[20px] 
-          ss:text-[20px] text-[15px]' />
+          ss:text-[20px] text-[15px] md:mt-0 ss:mt-0 mt-[3px]' />
           <p className='md:text-[18px] ss:text-[18px] text-[14px] 
           text-darkBlue mt-1'>
             2023. All Rights Reserved.

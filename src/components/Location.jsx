@@ -15,13 +15,13 @@ const Location = () => {
             className={`${layout.sectionInfo}`}
             >
                 <h1 className='text-primary font-bold md:text-[60px]
-                ss:text-[50px] text-[40px] tracking-tight'>
+                ss:text-[50px] text-[35px] tracking-tight'>
                     Where are we?
                 </h1>
                 
                 <div className='flex relative'>
                     <div className='bg-secondary md:w-[150px] ss:w-[150px]
-                    w-[100px] h-[13px]' />
+                    w-[80px] md:h-[13px] ss:h-[13px] h-[8px]' />
                 </div>                  
             </motion.div>
 
@@ -29,7 +29,7 @@ const Location = () => {
                 <motion.div variants={zoomIn(0.3, 0.7)}
                 className='flex flex-col justify-center items-center'>
                     <h1 className='text-primary md:text-[25px] 
-                    ss:text-[22px] text-[18px] font-medium mb-3 
+                    ss:text-[22px] text-[17px] font-medium mb-3 
                     tracking-tight'>
                         We are closer to you than you think!
                     </h1>
@@ -72,7 +72,7 @@ const Location = () => {
 
                         <div className='flex md:mr-16 ss:mr-16 mr-10'>
                             <div className='bg-primary md:w-[2px] ss:w-[2px]
-                            w-[1px] md:h-[60px] ss:h-[60px] h-[80px]' />
+                            w-[1px] md:h-[60px] ss:h-[60px] h-[70px]' />
                         </div>
                         <div className='flex justify-end flex-col text-right'>
                             <h1 className='text-primary md:text-[18px]

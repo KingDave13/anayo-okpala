@@ -16,13 +16,13 @@ const AboutMain = () => {
             className={`${layout.sectionInfo} mt-8`}
             >
                 <h1 className='text-primary font-bold md:text-[60px]
-                ss:text-[50px] text-[40px] tracking-tight'>
+                ss:text-[50px] text-[35px] tracking-tight'>
                     Who we are
                 </h1>
                 
                 <div className='flex relative'>
                     <div className='bg-secondary md:w-[150px] ss:w-[150px]
-                    w-[100px] h-[13px]' />
+                    w-[80px] md:h-[13px] ss:h-[13px] h-[8px]' />
                 </div>
 
                 <p className='md:mt-8 ss:mt-8 mt-5 text-primary md:text-[20px] 

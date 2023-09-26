@@ -88,22 +88,23 @@ const Products = () => {
     };
 
     return (
-        <section className='relative w-full md:min-h-[800px] 
+        <section className='relative w-full md:min-h-[900px] 
         ss:min-h-[700px] min-h-[500px] mx-auto flex justify-center 
         items-center'>
             <div className='absolute w-full max-w-[95rem] mx-auto flex 
-            md:mb-16 ss:mb-16 mb-0 justify-center'>
+            md:mb-5 ss:mb-5 mb-0 justify-center'>
                 <motion.div variants={textVariant()} 
                 className={`${styles.paddingX} flex flex-col 
                 justify-center items-center relative`}>
                     <h1 className='text-primary font-bold md:text-[60px] 
-                    ss:text-[50px] text-[40px] tracking-tight md:mt-0 
+                    ss:text-[50px] text-[35px] tracking-tight md:mt-0 
                     ss:mt-10'>
                         Our products
                     </h1>
                     <div className='flex relative justify-center'>
                         <div className='bg-secondary md:w-[150px] 
-                        ss:w-[150px] w-[100px] h-[13px]' />
+                        ss:w-[150px] w-[80px] md:h-[13px] ss:h-[13px] 
+                        h-[8px]' />
                     </div>
                     <motion.div className='flex md:mt-16 ss:mt-16 mt-10 
                     items-center flex-col relative justify-center'>
@@ -138,7 +139,7 @@ const Products = () => {
                             </motion.div>
                         </div>
                     </motion.div>
-                    <div className='flex flex-row md:mt-16 ss:mt-16 mt-10 
+                    <div className='flex flex-row md:mt-16 ss:mt-16 mt-6 
                     justify-center items-center gap-1 cursor-pointer 
                     grow2'>
                         <p className='font-medium text-primary' 

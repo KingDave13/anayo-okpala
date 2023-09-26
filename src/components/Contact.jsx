@@ -60,8 +60,8 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.send(
-      'service_f16gg3e',
-      'template_h17p0dt',
+      'service_skvhseu',
+      'template_bu4q17u',
       {
         from_name: form.name,
         to_name: 'Anayo Okpala Global Concept',
@@ -71,7 +71,7 @@ const Contact = () => {
         subject: form.subject,
         message: form.message,
       },
-      'E-R_jyLgNaP5en5j-'
+      'u4mJjP_i8Ayoq1SU-'
     )
     .then(
       () => {
@@ -159,7 +159,7 @@ const Contact = () => {
               name="phone"
               value={form.phone}
               onChange={handleChange}
-              placeholder="Enter your phone number"
+              placeholder="Enter your phone number(preferably WhatsApp)"
               className="py-4 px-6 border-[1px] outline-none 
               placeholder:text-black-100 text-black rounded-lg"
             />

@@ -30,8 +30,8 @@ const ProductCard = ({ product }) => {
                             {product.title}
                         </h1>
                         <p className='md:max-w-[450px] ss:max-w-[350px] 
-                        max-w-[200px] text-white md:mt-3 ss:mt-1 mt-1 
-                        md:text-[18px] ss:text-[15px] text-[10px]
+                        max-w-[230px] text-white md:mt-3 ss:mt-1 mt-1 
+                        md:text-[18px] ss:text-[15px] text-[11px]
                         md:leading-[25px] ss:leading-[23px] leading-[14px]'>
                             {product.description}
                         </p>
@@ -39,15 +39,15 @@ const ProductCard = ({ product }) => {
                     <div className='flex md:mt-4 ss:mt-4 mt-2 md:gap-5 
                     ss:gap-3 gap-2'>
                         <button className='bg-secondary md:text-[17px] 
-                        ss:text-[17px] text-[10px] md:py-3 ss:py-2 py-1 
-                        md:px-14 ss:px-8 px-3 text-primary rounded-[3px] 
+                        ss:text-[17px] text-[11px] md:py-3 ss:py-2 py-2 
+                        md:px-14 ss:px-8 px-5 text-primary rounded-[3px] 
                         font-medium border-none hover:text-white grow2'
                             onClick={() => navigate('/contact')}>
                             Order Now
                         </button>
                         <button className='border-[1px] border-secondary 
-                        md:text-[17px] ss:text-[17px] text-[10px] md:py-3 
-                        ss:py-2 py-1 md:px-14 ss:px-8 px-3 text-secondary 
+                        md:text-[17px] ss:text-[17px] text-[11px] md:py-3 
+                        ss:py-2 py-2 md:px-14 ss:px-8 px-5 text-secondary 
                         rounded-[3px] font-medium hover:text-white grow2'
                             onClick={() => navigate('/products')}>
                             View Details
@@ -94,8 +94,8 @@ const Products = () => {
             <div className='absolute w-full max-w-[95rem] mx-auto flex 
             md:mb-5 ss:mb-5 mb-0 justify-center'>
                 <motion.div variants={textVariant()} 
-                className={`${styles.paddingX} flex flex-col 
-                justify-center items-center relative`}>
+                className='flex flex-col justify-center items-center 
+                relative md:px-16 ss:px-10 px-1'>
                     <h1 className='text-primary font-bold md:text-[60px] 
                     ss:text-[50px] text-[35px] tracking-tight md:mt-0 
                     ss:mt-10'>
@@ -139,9 +139,9 @@ const Products = () => {
                             </motion.div>
                         </div>
                     </motion.div>
-                    <div className='flex flex-row md:mt-16 ss:mt-16 mt-6 
+                    <div className='flex flex-row md:mt-16 ss:mt-10 mt-6 
                     justify-center items-center gap-1 cursor-pointer 
-                    grow2'>
+                    grow2 md:mb-0 ss:mb-5 mb-0'>
                         <p className='font-medium text-primary' 
                         onClick={() => navigate('/products')}>
                             View All

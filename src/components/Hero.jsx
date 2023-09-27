@@ -109,7 +109,7 @@ const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className='relative w-full md:min-h-[890px] ss:min-h-[700px] 
+    <section className='relative w-full md:min-h-[890px] ss:min-h-[800px] 
     items-center flex overflow-hidden mobile'>
         <div className='relative items-center justify-between w-full
         max-w-[95rem] flex flex-row items-start gap-5' 

@@ -12,8 +12,7 @@ const Product = ({ index, name, description, image }) => {
     return (
         <motion.div 
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-        className='flex md:flex-row ss:flex-row flex-col items-center
-        justify-center'>
+        className='flex md:flex-row ss:flex-row flex-col'>
             <motion.div 
             variants={slideIn('left', 'tween', 0.2, 0.5)}
             className='md:mt-3 ss:mt-2 mt-1'>

@@ -57,7 +57,7 @@ const Counter = () => {
   
     return (
       <motion.div variants={textVariant()} 
-      className='flex bottom-0 md:right-0 ss:right-0 left-0 md:pb-1 
+      className='flex bottom-0 md:right-0 md:pb-1 
       ss:pb-1 pb-2 absolute items-center'>
         <div className='flex flex-col justify-center items-center'>
             <h1 className='text-secondary font-bold md:text-[40px] ss:text-[30px]

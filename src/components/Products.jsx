@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import styles from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc'

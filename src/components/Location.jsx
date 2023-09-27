@@ -35,7 +35,7 @@ const Location = () => {
                     </h1>
 
                     <div className='md:max-w-[1000px] ss:max-w-[650px] 
-                    max-w-[320px] md:max-h-[520px] ss:max-h-[450px] 
+                    max-w-[365px] md:max-h-[520px] ss:max-h-[450px] 
                     max-h-[260px] md:border-[7px] ss:border-[7px] 
                     border-[5px] border-[#99999] cursor-pointer 
                     overflow-hidden flex items-center justify-center
@@ -54,8 +54,7 @@ const Location = () => {
 
                 <motion.div variants={textVariant()}
                     className='flex items-center justify-between md:mt-10
-                    ss:mt-10 mt-5 md:max-w-[50rem] ss:max-w-[50rem]
-                    max-w-[19rem]'>
+                    ss:mt-10 mt-5 md:max-w-[50rem] ss:max-w-[50rem] w-full'>
                         <div className='flex flex-col md:mr-16 ss:mr-16
                         mr-10'>
                             <h1 className='text-primary md:text-[18px]
@@ -74,6 +73,7 @@ const Location = () => {
                             <div className='bg-primary md:w-[2px] ss:w-[2px]
                             w-[1px] md:h-[60px] ss:h-[60px] h-[70px]' />
                         </div>
+
                         <div className='flex justify-end flex-col text-right'>
                             <h1 className='text-primary md:text-[18px]
                             ss:text-[18px] text-[16px] font-bold'>

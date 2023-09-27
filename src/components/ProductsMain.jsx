@@ -19,27 +19,27 @@ const Product = ({ index, name, description, image }) => {
             className='md:mt-3 ss:mt-2 mt-1'>
                 <img src={image} alt='product'
                 className=' md:h-[350px] ss:h-[200px] h-[auto] md:w-auto
-                ss:w-auto w-[300px]'
+                ss:w-auto w-full'
                 />
             </motion.div>
 
             <motion.div variants={textVariant()}
-            className='flex-1 md:ml-40 ss:ml-14 ml-5'
+            className='flex-1 md:ml-40 ss:ml-14 md:mt-0 ss:mt-0 mt-3'
             >
                 <h1 className='text-primary font-bold md:text-[45px]
-                ss:text-[33px] text-[17px] tracking-tight'>
+                ss:text-[33px] text-[25px] tracking-tight'>
                     {name}
                 </h1>
                 
                 <div className='flex relative'>
                     <div className='bg-secondary md:w-[150px] ss:w-[120px]
-                    w-[50px] md:h-[13px] ss:h-[10px] h-[4px]' />
+                    w-[80px] md:h-[13px] ss:h-[10px] h-[6px]' />
                 </div>
 
                 <p className='md:mt-8 ss:mt-3 mt-2 text-primary md:text-[20px] 
-                ss:text-[14px] text-[10px] md:max-w-[650px] ss:max-w-[700px]
+                ss:text-[14px] text-[12px] md:max-w-[650px] ss:max-w-[700px]
                 tracking-tight md:leading-[28px] ss:leading-[18px]
-                leading-[12px]'>
+                leading-[16px]'>
                     {description}
                 </p>
 
@@ -51,8 +51,8 @@ const Product = ({ index, name, description, image }) => {
                 <div className='flex md:mt-8 ss:mt-4 mt-2 md:gap-5 
                 ss:gap-2 gap-2'>
                     <button className='bg-primary md:text-[17px] 
-                    ss:text-[12px] text-[9px] md:py-2 ss:py-2 py-1 
-                    md:px-12 ss:px-8 px-3 text-white tracking-tight
+                    ss:text-[12px] text-[11px] md:py-2 ss:py-2 py-2 
+                    md:px-12 ss:px-8 px-5 text-white tracking-tight
                     rounded-[3px] md:font-medium ss:font-medium font-normal
                     border-none grow2'
                     onClick={() => navigate('/contact')}>
@@ -60,13 +60,18 @@ const Product = ({ index, name, description, image }) => {
                     </button>
 
                     <button className='border-[1px] border-primary 
-                    md:text-[17px] ss:text-[12px] text-[9px] 
-                    md:py-2 ss:py-2 py-1 md:px-12 ss:px-8 
-                    px-3 text-primary rounded-[3px] font-medium 
+                    md:text-[17px] ss:text-[12px] text-[11px] 
+                    md:py-2 ss:py-2 py-2 md:px-12 ss:px-8 
+                    px-5 text-primary rounded-[3px] font-medium 
                     grow2 tracking-tight'
                     >
                         View Full Gallery
                     </button>
+                </div>
+
+                <div className='md:hidden ss:hidden block md:mt-8 ss:mt-4
+                mt-5'>
+                    <div className='border-t-[1px] border-t-primary' />
                 </div>
             </motion.div>
         </motion.div>

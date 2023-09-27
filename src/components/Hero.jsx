@@ -57,20 +57,22 @@ const Counter = () => {
   
     return (
       <motion.div variants={textVariant()} 
-      className='flex bottom-0 right-0 md:pb-1 absolute items-center'>
+      className='flex bottom-0 md:right-0 ss:right-0 left-0 md:pb-1 
+      ss:pb-1 pb-2 absolute items-center'>
         <div className='flex flex-col justify-center items-center'>
             <h1 className='text-secondary font-bold md:text-[40px] ss:text-[30px]
                 text-[25px] tracking-tight'>
                 {Math.round(count1)}+
             </h1>
-            <p className='text-white md:text-[15px] ss:text-[15px] text-[12px]
+            <p className='text-white md:text-[15px] ss:text-[15px] text-[11px]
             text-center'>
                 Quality Products
             </p>
         </div>
   
         <div className='flex relative md:m-12 ss:m-6 m-2'>
-            <div className='bg-secondary w-[1px] h-[55px]' />
+            <div className='bg-secondary w-[1px] md:h-[55px] ss:h-[55px] 
+            h-[45px]' />
         </div>
   
         <div className='flex flex-col justify-center items-center'>
@@ -78,14 +80,15 @@ const Counter = () => {
                 text-[25px] tracking-tight'>
                 {Math.round(count2)}+
             </h1>
-            <p className='text-white md:text-[15px] ss:text-[15px] text-[12px]
+            <p className='text-white md:text-[15px] ss:text-[15px] text-[11px]
             text-center'>
                 Satisfied Customers
             </p>
         </div>
   
         <div className='flex relative md:m-12 ss:m-6 m-2'>
-            <div className='bg-secondary w-[1px] h-[55px]' />
+            <div className='bg-secondary w-[1px] md:h-[55px] ss:h-[55px] 
+            h-[45px]' />
         </div>
   
         <div className='flex flex-col justify-center items-center'>
@@ -93,7 +96,7 @@ const Counter = () => {
                 text-[25px] tracking-tight'>
                 {Math.round(count3)}+
             </h1>
-            <p className='text-white md:text-[15px] ss:text-[15px] text-[12px]
+            <p className='text-white md:text-[15px] ss:text-[15px] text-[11px]
             text-center'>
                 Years of Service
             </p>

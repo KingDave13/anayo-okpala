@@ -22,7 +22,7 @@ const Footer = () => {
             md:mt-8 ss:mt-8 mt-5 md:leading-[30px] ss:leading-[26px] 
             leading-[20px]'>
               Anayo Okpala Global Concept is a nationally recognized 
-              industrial material supplier and retailer registered under 
+              industrial materials supplier and retailer registered under 
               the Federal Government of Nigeria with registration number 
               RC-123456.
             </p>

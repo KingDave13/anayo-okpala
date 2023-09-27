@@ -42,12 +42,12 @@ const Product = ({ index, name, description, image }) => {
                     {description}
                 </p>
 
-                <div className='hidden ss:block md:mt-12 ss:mt-4
+                <div className='hidden ss:block md:mt-8 ss:mt-4
                 mt-5'>
                     <div className='border-t-[1px] border-t-primary' />
                 </div>
 
-                <div className='flex md:mt-12 ss:mt-4 mt-2 md:gap-5 
+                <div className='flex md:mt-8 ss:mt-4 mt-2 md:gap-5 
                 ss:gap-2 gap-2'>
                     <button className='bg-primary md:text-[17px] 
                     ss:text-[12px] text-[9px] md:py-2 ss:py-2 py-1 

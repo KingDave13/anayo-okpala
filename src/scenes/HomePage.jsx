@@ -16,19 +16,19 @@ const HomePage = () => {
 
         <About />
 
-        <div className='relative bg-dimWhite'>
+        <div className='bg-dimWhite'>
           <Products/>
         </div>
 
         <Values />
 
-        <div className='relative bg-dimWhite'>
+        <div className='bg-dimWhite'>
           <Location/>
         </div>
 
         <Testimonials />
 
-        <div className='relative bg-dimWhite'>
+        <div className='bg-dimWhite'>
           <CTA/>
         </div>
 

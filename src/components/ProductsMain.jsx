@@ -12,13 +12,14 @@ const Product = ({ index, name, description, image }) => {
     return (
         <motion.div 
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-        className='flex '>
+        className='flex md:flex-row ss:flex-row flex-col items-center
+        justify-center'>
             <motion.div 
             variants={slideIn('left', 'tween', 0.2, 0.5)}
             className='md:mt-3 ss:mt-2 mt-1'>
                 <img src={image} alt='product'
                 className=' md:h-[350px] ss:h-[200px] h-[auto] md:w-auto
-                ss:w-auto w-[150px]'
+                ss:w-auto w-[300px]'
                 />
             </motion.div>
 
@@ -72,7 +73,7 @@ const Product = ({ index, name, description, image }) => {
     )
 };
 
-const AboutMain = () => {
+const ProductsMain = () => {
   return (
     <section className='relative w-full min-h-[700px] mx-auto flex 
     items-center flex flex-col mt-20 justify-center'>
@@ -91,4 +92,4 @@ const AboutMain = () => {
   )
 };
 
-export default SectionWrapper(AboutMain, '');
+export default SectionWrapper(ProductsMain, '');

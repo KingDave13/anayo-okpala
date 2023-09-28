@@ -29,24 +29,24 @@ const ProductCard = ({ product }) => {
                             {product.title}
                         </h1>
                         <p className='md:max-w-[450px] ss:max-w-[350px] 
-                        max-w-[230px] text-white md:mt-3 ss:mt-1 mt-1 
-                        md:text-[18px] ss:text-[15px] text-[11px]
+                        max-w-[230px] text-white md:mt-1 ss:mt-1 mt-1 
+                        md:text-[16px] ss:text-[14px] text-[11px]
                         md:leading-[25px] ss:leading-[23px] leading-[14px]'>
                             {product.description}
                         </p>
                     </div>
                     <div className='flex md:mt-4 ss:mt-4 mt-2 md:gap-5 
                     ss:gap-3 gap-2'>
-                        <button className='bg-secondary md:text-[17px] 
-                        ss:text-[17px] text-[11px] md:py-3 ss:py-2 py-2 
-                        md:px-14 ss:px-8 px-5 text-primary rounded-[3px] 
+                        <button className='bg-secondary md:text-[16px] 
+                        ss:text-[17px] text-[11px] md:py-2 ss:py-2 py-2 
+                        md:px-12 ss:px-8 px-5 text-primary rounded-[3px] 
                         font-medium border-none hover:text-white grow2'
                             onClick={() => navigate('/contact')}>
                             Order Now
                         </button>
                         <button className='border-[1px] border-secondary 
-                        md:text-[17px] ss:text-[17px] text-[11px] md:py-3 
-                        ss:py-2 py-2 md:px-14 ss:px-8 px-5 text-secondary 
+                        md:text-[16px] ss:text-[17px] text-[11px] md:py-2 
+                        ss:py-2 py-2 md:px-12 ss:px-8 px-5 text-secondary 
                         rounded-[3px] font-medium hover:text-white grow2'
                             onClick={() => navigate('/products')}>
                             View Details
@@ -95,14 +95,14 @@ const Products = () => {
                 <motion.div variants={textVariant()} 
                 className='flex flex-col justify-center items-center 
                 relative md:px-16 ss:px-10 px-1'>
-                    <h1 className='text-primary font-bold md:text-[60px] 
+                    <h1 className='text-primary font-bold md:text-[55px] 
                     ss:text-[50px] text-[35px] tracking-tight md:mt-0 
                     ss:mt-10'>
                         Our products
                     </h1>
                     <div className='flex relative justify-center'>
-                        <div className='bg-secondary md:w-[150px] 
-                        ss:w-[150px] w-[80px] md:h-[13px] ss:h-[13px] 
+                        <div className='bg-secondary md:w-[120px] 
+                        ss:w-[120px] w-[80px] md:h-[10px] ss:h-[10px] 
                         h-[8px]' />
                     </div>
                     <motion.div className='flex md:mt-16 ss:mt-16 mt-10 

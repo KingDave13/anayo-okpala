@@ -14,22 +14,22 @@ const Location = () => {
             <motion.div variants={textVariant()}
             className={`${layout.sectionInfo}`}
             >
-                <h1 className='text-primary font-bold md:text-[60px]
+                <h1 className='text-primary font-bold md:text-[55px]
                 ss:text-[50px] text-[35px] tracking-tight'>
                     Where are we?
                 </h1>
                 
                 <div className='flex relative'>
-                    <div className='bg-secondary md:w-[150px] ss:w-[150px]
-                    w-[80px] md:h-[13px] ss:h-[13px] h-[8px]' />
+                    <div className='bg-secondary md:w-[120px] ss:w-[120px]
+                    w-[80px] md:h-[10px] ss:h-[10px] h-[8px]' />
                 </div>                  
             </motion.div>
 
             <div className='flex flex-col items-center justify-center'>
                 <motion.div variants={zoomIn(0.3, 0.7)}
                 className='flex flex-col justify-center items-center'>
-                    <h1 className='text-primary md:text-[25px] 
-                    ss:text-[22px] text-[17px] font-medium mb-3 
+                    <h1 className='text-primary md:text-[23px] 
+                    ss:text-[20px] text-[17px] font-medium mb-3 
                     tracking-tight'>
                         We are closer to you than you think!
                     </h1>

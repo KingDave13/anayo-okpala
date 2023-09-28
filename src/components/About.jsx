@@ -19,18 +19,18 @@ const About = () => {
             <motion.div variants={textVariant()}
             className={`${layout.sectionInfo}`}
             >
-                <h1 className='text-primary font-bold md:text-[60px]
+                <h1 className='text-primary font-bold md:text-[55px]
                 ss:text-[47px] text-[35px] tracking-tight'>
                     Who we are
                 </h1>
                 
                 <div className='flex relative'>
-                    <div className='bg-secondary md:w-[150px] ss:w-[150px]
-                    w-[80px] md:h-[13px] ss:h-[13px] h-[8px]' />
+                    <div className='bg-secondary md:w-[120px] ss:w-[120px]
+                    w-[80px] md:h-[10px] ss:h-[10px] h-[8px]' />
                 </div>
 
                 <p className='md:mt-12 ss:mt-8 mt-5 text-primary 
-                md:text-[20px] ss:text-[18px] text-[14px] max-w-[700px]'>
+                md:text-[18px] ss:text-[18px] text-[14px] max-w-[700px]'>
                 Anayo Okpala Global Concept is a leading supplier of 
                 high-quality foam cloth, tape edge, PVC, sewing thread, 
                 cellotape, and other foam accessories for various 

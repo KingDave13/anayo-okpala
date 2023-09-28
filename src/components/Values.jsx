@@ -45,14 +45,14 @@ const Values = () => {
             <motion.div variants={textVariant()}
             className='flex flex-col justify-center md:px-16 px-6
             items-center relative'>
-                <h1 className='text-primary font-bold md:text-[60px]
+                <h1 className='text-primary font-bold md:text-[55px]
                 ss:text-[50px] text-[35px] tracking-tight'>
                     Our core values
                 </h1>
                 
                 <div className='flex relative justify-center'>
-                    <div className='bg-secondary md:w-[150px] ss:w-[150px]
-                    w-[80px] md:h-[13px] ss:h-[13px] h-[8px]' />
+                    <div className='bg-secondary md:w-[120px] ss:w-[120px]
+                    w-[80px] md:h-[10px] ss:h-[10px] h-[8px]' />
                 </div>
 
                 <div className='flex md:flex-row ss:flex-row 

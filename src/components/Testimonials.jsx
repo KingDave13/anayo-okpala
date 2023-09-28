@@ -22,8 +22,8 @@ const TestCard = ({ index, testimonial, image, name, designation }) => {
             />
 
             <div className=''>
-                <p className='text-primary md:text-[18px] ss:text-[18px] 
-                text-[14px] font-normal'>
+                <p className='text-primary md:text-[16px] ss:text-[16px] 
+                text-[13px] font-normal'>
                     {testimonial}
                 </p>
 
@@ -41,7 +41,7 @@ const TestCard = ({ index, testimonial, image, name, designation }) => {
                     </div> 
                     <div className='flex-1 flex flex-col'>
                         <p className='text-primary font-bold 
-                        md:text-[18px] ss:text-[18px] text-[15px]'>
+                        md:text-[16px] ss:text-[16px] text-[14px]'>
                             {name}
                         </p>
                         <p className='text-primary text-[12px]'>
@@ -61,14 +61,14 @@ const Testimonials = () => {
         <div className='max-w-[95rem] mx-auto flex flex-col mb-10'
         >
             <motion.div variants={textVariant()}>
-                <h1 className='text-primary font-bold md:text-[60px]
+                <h1 className='text-primary font-bold md:text-[55px]
                 ss:text-[50px] text-[35px] tracking-tight'>
                     Testimonials
                 </h1>
                 
                 <div className='flex relative'>
-                    <div className='bg-secondary md:w-[150px] ss:w-[150px]
-                    w-[80px] md:h-[13px] ss:h-[13px] h-[8px]' />
+                    <div className='bg-secondary md:w-[120px] ss:w-[120px]
+                    w-[80px] md:h-[10px] ss:h-[10px] h-[8px]' />
                 </div>                  
             </motion.div>
 

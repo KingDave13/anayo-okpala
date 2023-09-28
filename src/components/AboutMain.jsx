@@ -15,18 +15,18 @@ const AboutMain = () => {
             <motion.div variants={textVariant()}
             className={`${layout.sectionInfo} mt-8`}
             >
-                <h1 className='text-primary font-bold md:text-[60px]
-                ss:text-[50px] text-[35px] tracking-tight'>
+                <h1 className='text-primary font-bold md:text-[55px]
+                ss:text-[45px] text-[35px] tracking-tight'>
                     Who we are
                 </h1>
                 
                 <div className='flex relative'>
-                    <div className='bg-secondary md:w-[150px] ss:w-[150px]
-                    w-[80px] md:h-[13px] ss:h-[13px] h-[8px]' />
+                    <div className='bg-secondary md:w-[120px] ss:w-[120px]
+                    w-[80px] md:h-[10px] ss:h-[10px] h-[8px]' />
                 </div>
 
                 <p className='md:mt-8 ss:mt-8 mt-5 text-primary md:text-[20px] 
-                ss:text-[20px] text-[14px] md:max-w-[620px] ss:max-w-[700px]
+                ss:text-[18px] text-[14px] md:max-w-[620px] ss:max-w-[700px]
                 tracking-tight'>
                 Anayo Okpala Global Concept is a leading supplier of 
                 high-quality foam cloth, tape edge, PVC, sewing thread, 
@@ -57,7 +57,7 @@ const AboutMain = () => {
         <motion.div 
             variants={textVariant()}
             className='relative md:mt-6 ss:mt-10 mt-6 text-primary 
-            md:text-[20px] ss:text-[20px] text-[14px] tracking-tight'>
+            md:text-[20px] ss:text-[18px] text-[14px] tracking-tight'>
               We also provide a wide range of sewing threads in different 
               colors and strengths to cater to the unique requirements of 
               our customers. Lastly, our cellotape is of superior quality, 

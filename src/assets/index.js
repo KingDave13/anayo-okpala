@@ -26,6 +26,38 @@ import img2 from './img2.png';
 import img3 from './img3.png';
 import img4 from './img4.png';
 
+import clothingA from './clothingA.jpg';
+import clothingB from './clothingB.jpg';
+import clothingC from './clothingC.jpg';
+import clothingD from './clothingD.jpg';
+import clothingE from './clothingE.jpg';
+import clothingF from './clothingF.jpg';
+import clothingG from './clothingG.jpg';
+import clothingH from './clothingH.jpg';
+import clothingI from './clothingI.jpg';
+import clothingJ from './clothingJ.jpg';
+import clothingK from './clothingK.jpg';
+import clothingL from './clothingL.jpg';
+import clothingM from './clothingM.jpg';
+import clothingN from './clothingN.jpg';
+import clothingO from './clothingO.jpg';
+import clothingP from './clothingP.jpg';
+import clothingQ from './clothingQ.jpg';
+
+import celloA from './celloA.jpg';
+import celloB from './celloB.jpg';
+
+import LeatherA from './LeatherA.jpg';
+import LeatherB from './LeatherB.jpg';
+import LeatherC from './LeatherC.jpg';
+
+import tapeA from './tapeA.jpg';
+import tapeB from './tapeB.jpg';
+
+import transparentA from './transparentA.jpg';
+import transparentB from './transparentB.jpg';
+import transparentC from './transparentC.jpg';
+
 export {
     logo,
     menu,
@@ -54,4 +86,31 @@ export {
     img3,
     img4,
     cellotapes1,
+    celloA,
+    celloB,
+    clothingA,
+    clothingB,
+    clothingC,
+    clothingD,
+    clothingE,
+    clothingF,
+    clothingG,
+    clothingH,
+    clothingI,
+    clothingJ,
+    clothingK,
+    clothingL,
+    clothingM,
+    clothingN,
+    clothingO,
+    clothingP,
+    clothingQ,
+    LeatherA,
+    LeatherB,
+    LeatherC,
+    tapeA,
+    tapeB,
+    transparentA,
+    transparentB,
+    transparentC,
 }

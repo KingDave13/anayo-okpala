@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, slideIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { useNavigate } from 'react-router-dom';
+import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 function openWhatsApp(link) {
     window.open(link, '_blank');

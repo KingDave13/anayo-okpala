@@ -15,6 +15,33 @@ import {
   img4,
   cellotapes,
   cellotapes1,
+  celloA,
+  celloB,
+  clothingA,
+  clothingB,
+  clothingC,
+  clothingD,
+  clothingE,
+  clothingF,
+  clothingG,
+  clothingH,
+  clothingI,
+  clothingJ,
+  clothingK,
+  clothingL,
+  clothingM,
+  clothingN,
+  clothingO,
+  clothingP,
+  clothingQ,
+  LeatherA,
+  LeatherB,
+  LeatherC,
+  tapeA,
+  tapeB,
+  transparentA,
+  transparentB,
+  transparentC,
 } from '../assets';
 
 import { BsTwitter, BsInstagram, BsFacebook } from 'react-icons/bs';
@@ -93,37 +120,45 @@ export const productsMain = [
     name: 'Clothing Materials',
     description: 'Clothing materials for various industrial and domestic uses. We have over 500 different designs and colours of these.',
     image: img1,
-    link: 'https://wa.link/n4v0ws'
+    link: 'https://wa.link/n4v0ws',
+    images: [ clothingA, clothingB, clothingC, clothingD, clothingE, 
+    clothingF, clothingG, clothingH, clothingI, clothingJ, clothingK, 
+    clothingL, clothingM, clothingN, clothingO, clothingP, clothingQ ]
   },
   {
     name: 'Tape',
     description: 'Tapes for various industrial and domestic uses. We have these in various patterns, strengths and colours.',
     image: img2,
-    link: 'https://wa.link/2loufh'
+    link: 'https://wa.link/2loufh',
+    images: [ tapeA, tapeB ]
   },
   {
     name: 'PVC Transparent',
     description: 'PVC Transparent description to be inserted here.',
     image: img3,
-    link: 'https://wa.link/gcvjmu'
+    link: 'https://wa.link/gcvjmu',
+    images: [ transparentA, transparentB, transparentC ]
   },
   {
     name: 'PVC Leather',
     description: 'PVC Leather description to be inserted here.',
     image: img4,
-    link: 'https://wa.link/2e948h'
+    link: 'https://wa.link/2e948h',
+    images: [ LeatherA, LeatherB, LeatherC ]
   },
   {
     name: 'Cellotape',
     description: ' Cellotape description to be inserted here.',
     image: cellotapes,
-    link: 'https://wa.link/nffx29'
+    link: 'https://wa.link/nffx29',
+    images: [ celloA, celloB ]
   },
   {
     name: 'Sewing Thread',
     description: ' Sewing thread description to be inserted here.',
     image: cellotapes,
-    link: 'https://wa.link/oghwza'
+    link: 'https://wa.link/oghwza',
+    images: []
   }
 ];
 

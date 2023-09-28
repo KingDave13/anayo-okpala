@@ -26,7 +26,7 @@ const Product = ({ index, name, description, image, link }) => {
             </motion.div>
 
             <motion.div variants={textVariant()}
-            className='flex-1 md:ml-40 ss:ml-14 md:mt-0 ss:mt-0 mt-3'
+            className='flex-1 md:ml-32 ss:ml-14 md:mt-0 ss:mt-0 mt-3'
             >
                 <h1 className='text-primary font-bold md:text-[40px]
                 ss:text-[33px] text-[25px] tracking-tight'>

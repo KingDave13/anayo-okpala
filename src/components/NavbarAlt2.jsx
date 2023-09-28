@@ -47,7 +47,7 @@ const Navbar = () => {
                                     location.pathname === link.route
                                         ? 'border-b-[4px] rounded-[1px] border-b-secondary text-primary'
                                         : 'text-primary'
-                                } hover:text-secondary text-[17px] 
+                                } hover:text-secondary text-[16px] 
                                 cursor-pointer py-2 font-medium`}
                             >
                                 <Link to={link.route}>{link.title}</Link>
@@ -56,7 +56,7 @@ const Navbar = () => {
                     </ul>
                     
                     <button className='hidden md:flex bg-primary
-                    text-[17px] py-3 px-14 text-white rounded-[3px] font-medium'>
+                    text-[16px] py-3 px-14 text-white rounded-[3px] font-medium'>
                         Fill the form
                     </button>
                 </div>

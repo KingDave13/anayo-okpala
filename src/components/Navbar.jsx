@@ -48,7 +48,7 @@ const Navbar = () => {
                                 active === link.title
                                 ? 'border-b-[4px] rounded-[1px] border-b-secondary text-white'
                                 : 'text-white'
-                            } hover:text-secondary text-[17px] 
+                            } hover:text-secondary text-[16px] 
                                 cursor-pointer py-2 font-medium`}
                                 onClick={() => {
                                     setActive(link.title);
@@ -63,7 +63,7 @@ const Navbar = () => {
                     </ul>
                     
                     <button className='hidden md:flex bg-secondary grow
-                    text-[17px] py-3 px-14 text-primary rounded-[3px] font-medium'
+                    text-[16px] py-3 px-14 text-primary rounded-[3px] font-medium'
                     onClick={() => navigate('/contact')}
                     >
                         Get a Quote

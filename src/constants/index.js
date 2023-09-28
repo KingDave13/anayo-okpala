@@ -14,6 +14,7 @@ import {
   img3,
   img4,
   cellotapes,
+  cellotapes1,
 } from '../assets';
 
 import { BsTwitter, BsInstagram, BsFacebook } from 'react-icons/bs';
@@ -51,10 +52,10 @@ export const products = [
     image: product1,
   },
   {
-    name: 'other',
-    title: 'Product Name',
-    description: 'Product Description. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.',
-    image: product2,
+    name: 'cellotapes',
+    title: 'Cellotapes',
+    description: 'Cellotapes for various industrial and domestic uses. We have these in various sizes.',
+    image: cellotapes1,
   },
   {
     name: 'tape',

@@ -20,6 +20,7 @@ import man from './man.png';
 import logo2 from './logo.svg';
 import frame from './frame.png';
 import cellotapes from './cellotapes.png';
+import cellotapes1 from './cellotapes1.png';
 import img1 from './img1.png';
 import img2 from './img2.png';
 import img3 from './img3.png';
@@ -52,4 +53,5 @@ export {
     img2,
     img3,
     img4,
+    cellotapes1,
 }

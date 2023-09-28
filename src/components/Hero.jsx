@@ -60,11 +60,11 @@ const Counter = () => {
       className='flex bottom-0 md:right-0 md:pb-1 
       ss:pb-1 pb-2 absolute items-center'>
         <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-secondary font-bold md:text-[40px] ss:text-[30px]
-                text-[25px] tracking-tight'>
+            <h1 className='text-secondary font-bold md:text-[35px] ss:text-[30px]
+                text-[22px] tracking-tight'>
                 {Math.round(count1)}+
             </h1>
-            <p className='text-white md:text-[15px] ss:text-[15px] text-[11px]
+            <p className='text-white md:text-[15px] ss:text-[15px] text-[10px]
             text-center'>
                 Quality Products
             </p>
@@ -72,15 +72,15 @@ const Counter = () => {
   
         <div className='flex relative md:m-12 ss:m-6 m-2'>
             <div className='bg-secondary w-[1px] md:h-[55px] ss:h-[55px] 
-            h-[45px]' />
+            h-[40px]' />
         </div>
   
         <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-secondary font-bold md:text-[40px] ss:text-[30px]
-                text-[25px] tracking-tight'>
+            <h1 className='text-secondary font-bold md:text-[35px] ss:text-[30px]
+                text-[22px] tracking-tight'>
                 {Math.round(count2)}+
             </h1>
-            <p className='text-white md:text-[15px] ss:text-[15px] text-[11px]
+            <p className='text-white md:text-[15px] ss:text-[15px] text-[10px]
             text-center'>
                 Satisfied Customers
             </p>
@@ -88,15 +88,15 @@ const Counter = () => {
   
         <div className='flex relative md:m-12 ss:m-6 m-2'>
             <div className='bg-secondary w-[1px] md:h-[55px] ss:h-[55px] 
-            h-[45px]' />
+            h-[40px]' />
         </div>
   
         <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-secondary font-bold md:text-[40px] ss:text-[30px]
-                text-[25px] tracking-tight'>
+            <h1 className='text-secondary font-bold md:text-[35px] ss:text-[30px]
+                text-[22px] tracking-tight'>
                 {Math.round(count3)}+
             </h1>
-            <p className='text-white md:text-[15px] ss:text-[15px] text-[11px]
+            <p className='text-white md:text-[15px] ss:text-[15px] text-[10px]
             text-center'>
                 Years of Service
             </p>
@@ -126,8 +126,8 @@ const Hero = () => {
                     industrial materials supplier.
                 </h1>
 
-                <p className='md:mt-8 ss:mt-8 mt-5 text-white md:text-[20px]
-                ss:text-[20px] text-[14px] md:max-w-[620px] ss:max-w-[620px]
+                <p className='md:mt-8 ss:mt-8 mt-5 text-white md:text-[19px]
+                ss:text-[20px] text-[14px] md:max-w-[600px] ss:max-w-[620px]
                 max-w-[320px]'>
                  We are the number one suppliers of top quality industrial
                  materials for various applications including mattress 

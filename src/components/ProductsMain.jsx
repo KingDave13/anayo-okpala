@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { productsMain } from '../constants';
 import { motion } from 'framer-motion';
 import { fadeIn, slideIn, textVariant } from '../utils/motion';
@@ -16,10 +16,12 @@ const Product = ({ index, name, description, image, link, images }) => {
 
     const openModal = () => {
         setIsModalOpen(true);
+        document.body.classList.add('modal-open');
     };
     
     const closeModal = () => {
         setIsModalOpen(false);
+        document.body.classList.remove('modal-open');
     };
     
     const navigateImage = (direction) => {
@@ -33,6 +35,22 @@ const Product = ({ index, name, description, image, link, images }) => {
           );
         }
     };
+
+    const modalRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (modalRef.current && !modalRef.current.contains(event.target)) {
+                setIsModalOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <motion.div 
@@ -99,14 +117,15 @@ const Product = ({ index, name, description, image, link, images }) => {
                 </div>
 
                 {isModalOpen && (
-                    <div className="fixed inset-0 flex items-center 
-                    justify-center bg-black bg-opacity-50 z-50">
-                        <div className="p-6 rounded-md shadow-xl flex 
-                        flex-col items-center justify-center md:w-[70%] 
-                        ss:w-[80%] w-[85%] md:h-auto ss:h-auto h-auto 
-                        absolute">
+                    <div ref={modalRef} 
+                    className="fixed inset-0 flex items-center 
+                    justify-center bg-black bg-opacity-50 z-10">
+                        <div className="flex flex-col items-center 
+                        justify-center md:w-[70%] ss:w-[80%] w-[70%] 
+                        md:h-auto ss:h-auto h-[40%] 
+                        ">
                             <img src={images[currentImageIndex]} 
-                            alt={name} className='relative object-contain' />
+                            alt={name} className='object-fill w-full h-full' />
 
                             <button
                                 className="md:w-14 ss:w-14 

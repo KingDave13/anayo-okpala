@@ -7,6 +7,10 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 
+function openWhatsApp(link) {
+    window.open(link, '_blank');
+}
+
 const ProductCard = ({ product }) => {
     const navigate = useNavigate();
 
@@ -41,7 +45,7 @@ const ProductCard = ({ product }) => {
                         ss:text-[17px] text-[11px] md:py-2 ss:py-2 py-2 
                         md:px-12 ss:px-8 px-5 text-primary rounded-[3px] 
                         font-medium border-none hover:text-white grow2'
-                            onClick={() => navigate('/contact')}>
+                            onClick={() => openWhatsApp(product.link)}>
                             Order Now
                         </button>
                         <button className='border-[1px] border-secondary 

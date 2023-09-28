@@ -50,18 +50,21 @@ export const products = [
     title: 'Clothing Materials',
     description: 'Clothing materials for various industrial and domestic uses. We have over 500+ different designs and colours of these clothing materials.',
     image: product1,
+    link: 'https://wa.link/n4v0ws'
   },
   {
     name: 'cellotapes',
     title: 'Cellotapes',
     description: 'Cellotapes for various industrial and domestic uses. We have these in various sizes.',
     image: cellotapes1,
+    link: 'https://wa.link/nffx29'
   },
   {
     name: 'tape',
     title: 'Tape',
     description: 'Tapes for various industrial and domestic uses. We have these in various patterns, strengths and colours.',
     image: product3,
+    link: 'https://wa.link/2loufh'
   },
 ];
 
@@ -89,28 +92,39 @@ export const productsMain = [
   {
     name: 'Clothing Materials',
     description: 'Clothing materials for various industrial and domestic uses. We have over 500 different designs and colours of these.',
-    image: img1
+    image: img1,
+    link: 'https://wa.link/n4v0ws'
   },
   {
     name: 'Tape',
     description: 'Tapes for various industrial and domestic uses. We have these in various patterns, strengths and colours.',
-    image: img2
+    image: img2,
+    link: 'https://wa.link/2loufh'
   },
   {
     name: 'PVC Transparent',
     description: 'PVC Transparent description to be inserted here.',
-    image: img3
+    image: img3,
+    link: 'https://wa.link/gcvjmu'
   },
   {
     name: 'PVC Leather',
     description: 'PVC Leather description to be inserted here.',
-    image: img4
+    image: img4,
+    link: 'https://wa.link/2e948h'
   },
   {
     name: 'Cellotape',
     description: ' Cellotape description to be inserted here.',
-    image: cellotapes
+    image: cellotapes,
+    link: 'https://wa.link/nffx29'
   },
+  {
+    name: 'Sewing Thread',
+    description: ' Sewing thread description to be inserted here.',
+    image: cellotapes,
+    link: 'https://wa.link/oghwza'
+  }
 ];
 
 export const testimonials = [

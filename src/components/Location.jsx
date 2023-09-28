@@ -55,7 +55,7 @@ const Location = () => {
                 <motion.div variants={textVariant()}
                     className='flex items-center justify-between md:mt-10
                     ss:mt-10 mt-5 md:max-w-[50rem] ss:max-w-[50rem] w-full'>
-                        <div className='flex flex-col md:mr-16 ss:mr-16
+                        <div className='flex flex-col md:mr-2 ss:mr-16
                         mr-10'>
                             <h1 className='text-primary md:text-[18px]
                             ss:text-[18px] text-[16px] font-bold'>
@@ -63,9 +63,10 @@ const Location = () => {
                             </h1>
                             <p className='text-primary md:text-[16px]
                             ss:text-[16px] text-[12px] md:leading-[18px]
-                            ss:leading-[18px] leading-[15px]'>
-                                No. 101 Ibrahim Taiwo Road by <br></br>
-                                Sani Ungogo, Kano State, Nigeria.
+                            ss:leading-[18px] leading-[15px] md:max-w-[320px] 
+                            ss:max-w-[250px] max-w-[180px]'>
+                                No. 101 Ibrahim Taiwo Road by 
+                                Sani Ungogo, <br></br>Kano State, Nigeria.
                             </p>
                         </div>
 
@@ -81,7 +82,8 @@ const Location = () => {
                             </h1>
                             <p className='text-primary md:text-[16px]
                             ss:text-[16px] text-[12px] md:leading-[18px]
-                            ss:leading-[18px] leading-[15px]'>
+                            ss:leading-[18px] leading-[15px]  md:max-w-[] 
+                            ss:max-w-[250px] max-w-[180px]'>
                                 No. 9 Festing Road Sabon Gari, <br></br>
                                 Kano State, Nigeria.
                             </p>

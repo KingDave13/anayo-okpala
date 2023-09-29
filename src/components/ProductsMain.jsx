@@ -121,31 +121,25 @@ const Product = ({ index, name, description, image, link, images }) => {
                     className="fixed inset-0 flex items-center 
                     justify-center bg-black bg-opacity-50 z-10">
                         <div className="flex flex-col items-center 
-                        justify-center md:w-[70%] ss:w-[80%] w-[70%] 
-                        md:h-auto ss:h-auto h-[40%] 
-                        ">
+                        justify-center md:w-[70%] ss:w-[80%] w-[90%] 
+                        md:h-auto ss:h-auto h-[40%]">
                             <img src={images[currentImageIndex]} 
-                            alt={name} className='object-fill w-full h-full' />
+                            alt={name} className='object-fill w-full 
+                            h-full rounded-xl' />
 
-                            <button
-                                className="md:w-14 ss:w-14 
-                                h-10 rounded-full bg-secondary 
-                                bg-opacity-30 p-3 text-primary 
-                                hover:bg-opacity-70 prev absolute left-0"
-                                onClick={() => navigateImage('prev')}
-                            >
-                                <HiChevronLeft />
-                            </button>
+                            <HiChevronLeft className="md:w-14 ss:w-14 w-10 
+                            items-center md:h-10 ss:h-10 h-10 rounded-full
+                            bg-white bg-opacity-50 text-primary p-2
+                            justify-center hover:bg-opacity-70 prev 
+                            absolute left-8 flex"
+                            onClick={() => navigateImage('prev')}/>
 
-                            <button
-                                className="md:w-14 ss:w-14 
-                                h-10 rounded-full bg-secondary 
-                                bg-opacity-30 p-3 text-primary 
-                                hover:bg-opacity-70 next absolute right-0"
-                                onClick={() => navigateImage('next')}
-                            >
-                                <HiChevronRight />
-                            </button>
+                            <HiChevronRight className="md:w-14 ss:w-14 
+                            w-10 md:h-10 ss:h-10 h-10 rounded-full 
+                            bg-white items-center bg-opacity-50 p-2 
+                            text-primary flex hover:bg-opacity-70 next 
+                            absolute right-8 justify-center"
+                            onClick={() => navigateImage('next')} />
 
                             <button className="modal-close" 
                                 onClick={closeModal}>
@@ -162,7 +156,7 @@ const Product = ({ index, name, description, image, link, images }) => {
 const ProductsMain = () => {
   return (
     <section className='relative w-full min-h-[700px] mx-auto flex 
-    items-center flex flex-col mt-20 justify-center'>
+    items-center flex flex-col mt-20 justify-center z-20'>
         <div className='relative justify-between w-full md:mb-12 ss:mb-12
         mb-8 max-w-[95rem] mx-auto flex flex-col md:gap-12 ss:gap-12 
         gap-8'>

@@ -86,7 +86,7 @@ const Navbar = () => {
                     )}
 
                     <div ref={menuRef} className={`p-6 bg-dimWhite absolute 
-                    ss:top-8 top-3 right-0 mx-6 my-14 min-w-[140px] z-10 rounded-xl 
+                    ss:top-8 top-5 right-0 mx-6 my-14 min-w-[140px] z-10 rounded-xl 
                     flex-col ss:mx-16 ss:my-14 ss:min-w-[220px] shadow-xl 
                     slide-down-menu`}
                     style={{ height: toggle ? 'auto' : 0, opacity: toggle ? 1 : 0, visibility: toggle ? 'visible' : 'hidden', transition: 'height 0.3s, opacity 0.3s, visibility 0.3s' }}>

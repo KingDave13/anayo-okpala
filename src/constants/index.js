@@ -1,6 +1,5 @@
 import {
   product1,
-  product2,
   product3,
   vector,
   vector2,

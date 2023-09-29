@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, slideIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
+import { Swipeable } from 'react-swipeable';
 
 function openWhatsApp(link) {
     window.open(link, '_blank');

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, slideIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
-import { Swipeable } from 'react-swipeable';
+import { useSwipeable } from 'react-swipeable';
 
 function openWhatsApp(link) {
     window.open(link, '_blank');
@@ -37,6 +37,11 @@ const Product = ({ index, name, description, image, link, images }) => {
         }
     };
 
+    const handlers = useSwipeable({
+        onSwipedLeft: () => navigateImage('next'),
+        onSwipedRight: () => navigateImage('prev'),
+    });
+
     const modalRef = useRef(null);
 
     useEffect(() => {
@@ -56,7 +61,8 @@ const Product = ({ index, name, description, image, link, images }) => {
     return (
         <motion.div 
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-        className='flex md:flex-row ss:flex-row flex-col'>
+        className='flex md:flex-row ss:flex-row flex-col'
+        {...handlers}>
             <motion.div 
             variants={slideIn('left', 'tween', 0.2, 0.5)}
             className='md:mt-3 ss:mt-2 mt-1'>

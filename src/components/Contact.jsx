@@ -5,6 +5,16 @@ import { slideIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
 const Modal = ({ message, onClose, showOkButton }) => {
+
+  const enableScroll = () => {
+    document.body.classList.remove('no-scroll');
+  };
+
+  const handleOkClick = () => {
+    onClose();
+    enableScroll();
+  };
+
   return (
     <div className="fixed inset-0 flex items-center justify-center
      bg-black bg-opacity-50 z-50">
@@ -16,7 +26,7 @@ const Modal = ({ message, onClose, showOkButton }) => {
         </p>
         {showOkButton && (
           <button
-            onClick={onClose}
+            onClick={handleOkClick}
             className="bg-primary text-white w-[50%] py-2 rounded-md"
           >
             OK
@@ -42,6 +52,14 @@ const Contact = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
 
+  const disableScroll = () => {
+    document.body.classList.add('no-scroll');
+  };
+
+  const enableScroll = () => {
+    document.body.classList.remove('no-scroll');
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
@@ -54,6 +72,7 @@ const Contact = () => {
       || !form.subject ) {
       setModalMessage('Please fill out all the required fields.');
       setModalOpen(true);
+      disableScroll();
       return;
     }
 
@@ -78,10 +97,12 @@ const Contact = () => {
         setLoading(false);
         setModalMessage('Thanks for reaching out, we will be in touch.');
         setModalOpen(true);
+        disableScroll();
 
         setTimeout(() => {
-          setModalOpen(false); 
-        }, 3000);
+          setModalOpen(false);
+          enableScroll();
+        }, 2000);
 
         setForm({
           name: '',

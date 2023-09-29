@@ -126,7 +126,7 @@ const Product = ({ index, name, description, image, link, images }) => {
                 {isModalOpen && (
                     <div ref={modalRef} 
                     className="fixed inset-0 flex items-center 
-                    justify-center bg-black bg-opacity-50 z-50">
+                    justify-center bg-black bg-opacity-70 z-50">
                         <div className="flex flex-col items-center 
                         justify-center md:w-[70%] ss:w-[80%] w-[85%] 
                         md:h-auto ss:h-auto h-[40%]">

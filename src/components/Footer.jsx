@@ -9,7 +9,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <section className='relative w-full min-h-[320px] mx-auto flex 
-    items-center flex-col'>
+    items-center flex-col md:mb-0 ss:mb-0 mb-6'>
       <div className='flex max-w-[95rem] mx-auto items-center w-full 
       relative'>
         <motion.div variants={textVariant()} className='flex md:flex-row 
@@ -55,7 +55,7 @@ const Footer = () => {
 
       <motion.div variants={textVariant()} className='relative flex 
       flex-col w-full'>
-        <div className='flex md:mt-6 ss:mt-8 mt-1 items-center'>
+        <div className='flex md:mt-0 ss:mt-5 mt-1 items-center'>
           {socialMedia.map((social, index) => (
             <a target='_blank' rel="noreferrer" key={index}>
               {React.createElement(social.Icon, {

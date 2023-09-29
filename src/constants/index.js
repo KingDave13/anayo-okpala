@@ -164,28 +164,28 @@ export const productsMain = [
 
 export const testimonials = [
   {
-    testimonial: "I trust Anayo Okpala Global Concept because their excellent customer service and quality products blow my mind everytime!",
+    testimonial: "Anayo Okpala Global Concept has been our trusted partner for years. Their top-notch clothing materials for mattress making have significantly improved the quality of our products. The consistency in the quality of their materials is impressive, and their customer service is second to none.",
     image: pic1,
     name: "Hassan Jamal",
-    designation: "Agro-Economist",
+    designation: "Mattress Manufacturer",
   },
   {
-    testimonial: "I trust Anayo Okpala Global Concept because their excellent customer service and quality products blow my mind everytime!",
+    testimonial: "I've been sourcing PVC Transparent from Anayo Okpala Global Concept, and I must say, their product quality is unmatched. It's crystal clear, durable, and perfect for our packaging needs. The reliability and professionalism of their team keep us coming back.",
     image: pic2,
     name: "Anita Chika Aniedu",
     designation: "Entrepreneur",
   },
   {
-    testimonial: "I trust Anayo Okpala Global Concept because their excellent customer service and quality products blow my mind everytime!",
+    testimonial: "Anayo Okpala Global Concept is my go-to supplier for all things tape-related. Their range of tapes and cellotapes is extensive, and the quality is consistently excellent. Fast delivery and competitive prices make them a reliable partner for our packaging needs.",
     image: pic3,
     name: "Ebiere Alfred Johnson",
-    designation: "CEO, Ebiere Innovations",
+    designation: "Tape Enthusiast",
   },
   {
-    testimonial: "I trust Anayo Okpala Global Concept because their excellent customer service and quality products blow my mind everytime!",
+    testimonial: "Our industrial facility relies on Anayo Okpala Global Concept for various industrial accessories, and they never disappoint. From tapes to specialized tools, they have it all. Their products have enhanced our efficiency and productivity. Highly recommended!",
     image: pic4,
     name: "Olajide Babatunde",
-    designation: "Techpreneur",
+    designation: "Industrial Supplies Manager",
   },
 ];
 

@@ -8,7 +8,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <section className='relative w-full min-h-[400px] mx-auto flex 
+    <section className='relative w-full min-h-[320px] mx-auto flex 
     items-center flex-col'>
       <div className='flex max-w-[95rem] mx-auto items-center w-full 
       relative'>
@@ -22,9 +22,7 @@ const Footer = () => {
             md:mt-8 ss:mt-8 mt-5 md:leading-[25px] ss:leading-[26px] 
             leading-[20px]'>
               Anayo Okpala Global Concept is a nationally recognized 
-              industrial materials supplier and retailer registered under 
-              the Federal Government of Nigeria with registration number 
-              RC-123456.
+              industrial materials supplier and retailer.
             </p>
           </div>
           

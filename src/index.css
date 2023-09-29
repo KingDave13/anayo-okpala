@@ -42,8 +42,9 @@ body, html {
   }
 }
 
-.disable-scroll {
+.no-scroll {
   overflow: hidden;
+  position: fixed;
 }
 
 .box-shadow {

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { productsMain } from '../constants';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { fadeIn, slideIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
@@ -17,12 +17,12 @@ const Product = ({ index, name, description, image, link, images }) => {
 
     const openModal = () => {
         setIsModalOpen(true);
-        document.body.classList.add('modal-open');
+        document.body.classList.add('no-scroll');
     };
     
     const closeModal = () => {
         setIsModalOpen(false);
-        document.body.classList.remove('modal-open');
+        document.body.classList.remove('no-scroll');
     };
     
     const navigateImage = (direction) => {
@@ -126,7 +126,7 @@ const Product = ({ index, name, description, image, link, images }) => {
                 {isModalOpen && (
                     <div ref={modalRef} 
                     className="fixed inset-0 flex items-center 
-                    justify-center bg-black bg-opacity-50 z-10">
+                    justify-center bg-black bg-opacity-50 z-50">
                         <div className="flex flex-col items-center 
                         justify-center md:w-[70%] ss:w-[80%] w-[85%] 
                         md:h-auto ss:h-auto h-[40%]">

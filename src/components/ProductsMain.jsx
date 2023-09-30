@@ -133,32 +133,33 @@ const Product = ({ index, name, description, image, link, images }) => {
                         md:h-[60%] ss:h-[50%] h-[40%] relative">
                             <img src={images[currentImageIndex]} 
                             alt={name} className='object-fill w-full 
-                            h-full rounded-xl shadow-md cursor-pointer' />
+                            h-full rounded-xl shadow-md' />
 
-                            <HiChevronLeft className="md:w-14 ss:w-14 w-10 
-                            items-center md:h-10 ss:h-14 h-10 rounded-full
+                            <HiChevronLeft className="md:w-12 ss:w-14 w-10 
+                            items-center md:h-12 ss:h-14 h-10 rounded-full
                             bg-white bg-opacity-40 text-primary p-2
                             justify-center hover:bg-opacity-70 prev 
-                            absolute md:left-10 ss:left-3 left-2 flex
+                            absolute md:left-4 ss:left-3 left-2 flex
                             cursor-pointer"
                             onClick={() => navigateImage('prev')}/>
 
-                            <HiChevronRight className="md:w-14 ss:w-14 
-                            w-10 md:h-10 ss:h-14 h-10 rounded-full 
+                            <HiChevronRight className="md:w-12 ss:w-14 
+                            w-10 md:h-12 ss:h-14 h-10 rounded-full 
                             bg-white items-center bg-opacity-40 p-2 
                             text-primary flex hover:bg-opacity-70 next 
-                            absolute md:right-10 ss:right-3 right-2 
+                            absolute md:right-6 ss:right-3 right-2 
                             justify-center cursor-pointer"
                             onClick={() => navigateImage('next')} />
 
                             <HiX 
-                                className='absolute md:w-14 ss:w-10 
+                                className='absolute md:w-10 ss:w-10 
                                 w-6 md:h-10 ss:h-10 h-6 rounded-full 
                                 items-center justify-center bg-opacity-40 
-                                text-primary flex hover:bg-opacity-70 
-                                md:right-10 ss:right-6 right-4 md:top-4
-                                ss:top-6 top-4 bg-white md:p-1 ss:p-2 p-1
-                                cursor-pointer'
+                                text-dimWhite flex hover:bg-opacity-70 
+                                md:right-6 ss:right-6 right-4 md:top-6
+                                ss:top-6 top-4 md:p-2 ss:p-2 p-1
+                                cursor-pointer text-opacity-70 
+                                hover:text-opacity-100'
                                 onClick={closeModal}
                             />
                         </div>

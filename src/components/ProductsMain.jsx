@@ -5,7 +5,6 @@ import { fadeIn, slideIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { HiChevronLeft, HiChevronRight, HiX } from 'react-icons/hi';
 import { useSwipeable } from 'react-swipeable';
-import { BsX } from 'react-icons/bs';
 
 function openWhatsApp(link) {
     window.open(link, '_blank');
@@ -125,7 +124,10 @@ const Product = ({ index, name, description, image, link, images }) => {
                 </div>
 
                 {isModalOpen && (
-                    <div ref={modalRef} 
+                    <motion.div ref={modalRef}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
                     className="fixed inset-0 flex items-center 
                     justify-center bg-black bg-opacity-70 z-50">
                         <div className="flex flex-col items-center 
@@ -163,7 +165,7 @@ const Product = ({ index, name, description, image, link, images }) => {
                                 onClick={closeModal}
                             />
                         </div>
-                    </div>
+                    </motion.div>
                 )}
             </motion.div>
         </motion.div>

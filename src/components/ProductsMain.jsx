@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { productsMain } from '../constants';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { fadeIn, slideIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
+import { HiChevronLeft, HiChevronRight, HiX } from 'react-icons/hi';
 import { useSwipeable } from 'react-swipeable';
+import { BsX } from 'react-icons/bs';
 
 function openWhatsApp(link) {
     window.open(link, '_blank');
@@ -128,32 +129,38 @@ const Product = ({ index, name, description, image, link, images }) => {
                     className="fixed inset-0 flex items-center 
                     justify-center bg-black bg-opacity-70 z-50">
                         <div className="flex flex-col items-center 
-                        justify-center md:w-[70%] ss:w-[70%] w-[85%] 
-                        md:h-auto ss:h-[50%] h-[40%]">
+                        justify-center md:w-[30%] ss:w-[70%] w-[85%] 
+                        md:h-[60%] ss:h-[50%] h-[40%] relative">
                             <img src={images[currentImageIndex]} 
                             alt={name} className='object-fill w-full 
-                            h-full rounded-xl shadow-md' />
+                            h-full rounded-xl shadow-md cursor-pointer' />
 
                             <HiChevronLeft className="md:w-14 ss:w-14 w-10 
                             items-center md:h-10 ss:h-14 h-10 rounded-full
                             bg-white bg-opacity-40 text-primary p-2
                             justify-center hover:bg-opacity-70 prev 
-                            absolute md:left-10 ss:left-32 left-10 flex
-                            md:ml-0 ss:ml-2 ml-0"
+                            absolute md:left-10 ss:left-3 left-2 flex
+                            cursor-pointer"
                             onClick={() => navigateImage('prev')}/>
 
                             <HiChevronRight className="md:w-14 ss:w-14 
                             w-10 md:h-10 ss:h-14 h-10 rounded-full 
                             bg-white items-center bg-opacity-40 p-2 
                             text-primary flex hover:bg-opacity-70 next 
-                            absolute md:right-10 ss:right-32 right-10 
-                            justify-center md:mr-0 ss:mr-2 mr-0"
+                            absolute md:right-10 ss:right-3 right-2 
+                            justify-center cursor-pointer"
                             onClick={() => navigateImage('next')} />
 
-                            <button className="modal-close" 
-                                onClick={closeModal}>
-                                Close
-                            </button>
+                            <HiX 
+                                className='absolute md:w-14 ss:w-10 
+                                w-6 md:h-10 ss:h-10 h-6 rounded-full 
+                                items-center justify-center bg-opacity-40 
+                                text-primary flex hover:bg-opacity-70 
+                                md:right-10 ss:right-6 right-4 md:top-4
+                                ss:top-6 top-4 bg-white md:p-1 ss:p-2 p-1
+                                cursor-pointer'
+                                onClick={closeModal}
+                            />
                         </div>
                     </div>
                 )}

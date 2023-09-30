@@ -136,16 +136,18 @@ const Product = ({ index, name, description, image, link, images }) => {
 
                             <HiChevronLeft className="md:w-14 ss:w-14 w-10 
                             items-center md:h-10 ss:h-14 h-10 rounded-full
-                            bg-white bg-opacity-50 text-primary p-2
+                            bg-white bg-opacity-40 text-primary p-2
                             justify-center hover:bg-opacity-70 prev 
-                            absolute left-10 flex"
+                            absolute md:left-10 ss:left-32 left-10 flex
+                            md:ml-0 ss:ml-2 ml-0"
                             onClick={() => navigateImage('prev')}/>
 
                             <HiChevronRight className="md:w-14 ss:w-14 
                             w-10 md:h-10 ss:h-14 h-10 rounded-full 
-                            bg-white items-center bg-opacity-50 p-2 
+                            bg-white items-center bg-opacity-40 p-2 
                             text-primary flex hover:bg-opacity-70 next 
-                            absolute right-10 justify-center"
+                            absolute md:right-10 ss:right-32 right-10 
+                            justify-center md:mr-0 ss:mr-2 mr-0"
                             onClick={() => navigateImage('next')} />
 
                             <button className="modal-close" 

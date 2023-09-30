@@ -35,7 +35,7 @@ const ProductCard = ({ product }) => {
                         <p className='md:max-w-[450px] ss:max-w-[350px] 
                         max-w-[230px] text-white md:mt-1 ss:mt-1 mt-1 
                         md:text-[16px] ss:text-[14px] text-[11px]
-                        md:leading-[25px] ss:leading-[23px] leading-[14px]'>
+                        md:leading-[25px] ss:leading-[20px] leading-[14px]'>
                             {product.description}
                         </p>
                     </div>

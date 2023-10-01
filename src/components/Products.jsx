@@ -93,8 +93,16 @@ const Products = () => {
     };
 
     const swipeHandlers = useSwipeable({
-        onSwipedLeft: () => navigateRight(),
-        onSwipedRight: () => navigateLeft(),
+        delta: 30,
+
+        onSwipedLeft: (event) => {
+            event.preventDefault();
+            navigateRight();
+        },
+        onSwipedRight: (event) => {
+            event.preventDefault();
+            navigateLeft();
+        },
     });
 
     return (

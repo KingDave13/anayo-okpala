@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
@@ -6,6 +6,7 @@ import { products } from '../constants';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
+import { useSwipeable } from 'react-swipeable';
 
 function openWhatsApp(link) {
     window.open(link, '_blank');
@@ -65,6 +66,7 @@ const ProductCard = ({ product }) => {
 const Products = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const navigate = useNavigate();
+    const containerRef = useRef(null);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -90,10 +92,18 @@ const Products = () => {
         );
     };
 
+    const swipeHandlers = useSwipeable({
+        onSwipedLeft: () => navigateRight(),
+        onSwipedRight: () => navigateLeft(),
+    });
+
     return (
-        <section className='relative w-full md:min-h-[900px] 
+        <section 
+        ref={containerRef}
+        className='relative w-full md:min-h-[900px] 
         ss:min-h-[700px] min-h-[500px] mx-auto flex justify-center 
-        items-center'>
+        items-center' 
+        {...swipeHandlers}>
             <div className='absolute w-full max-w-[95rem] mx-auto flex 
             md:mb-5 ss:mb-5 mb-0 justify-center'>
                 <motion.div variants={textVariant()} 

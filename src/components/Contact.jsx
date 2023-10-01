@@ -7,7 +7,8 @@ import { SectionWrapper } from '../hoc';
 const Modal = ({ message, onClose, showOkButton }) => {
 
   const enableScroll = () => {
-    document.body.classList.remove('no-scroll');
+    document.body.style.overflow = 'auto';
+    document.body.style.top = '0';
   };
 
   const handleOkClick = () => {
@@ -51,13 +52,17 @@ const Contact = () => {
   const [Loading, setLoading] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const disableScroll = () => {
-    document.body.classList.add('no-scroll');
+    setScrollPosition(window.pageYOffset);
+    document.body.style.overflow = 'hidden';
+    document.body.style.top = `-${scrollPosition}px`;
   };
 
   const enableScroll = () => {
-    document.body.classList.remove('no-scroll');
+    document.body.style.overflow = 'auto';
+    document.body.style.top = '0';
   };
 
   const handleChange = (e) => {

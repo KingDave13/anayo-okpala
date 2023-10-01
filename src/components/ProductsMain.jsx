@@ -15,6 +15,7 @@ const Product = ({ index, name, description, image, link, images }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [circleIndex, setCircleIndex] = useState(0);
 
     const openModal = () => {
         setScrollPosition(window.pageYOffset);
@@ -39,6 +40,11 @@ const Product = ({ index, name, description, image, link, images }) => {
             prevIndex === images.length - 1 ? 0 : prevIndex + 1
           );
         }
+    };
+
+    const handleCircleClick = (index) => {
+        setCurrentImageIndex(index);
+        setCircleIndex(index);
     };
 
     const handlers = useSwipeable({
@@ -168,6 +174,18 @@ const Product = ({ index, name, description, image, link, images }) => {
                                 hover:text-opacity-100'
                                 onClick={closeModal}
                             />
+
+                            <div className='absolute bottom-0 flex'>
+                                {images.map((_, index) => (
+                                <div
+                                    key={index}
+                                    className={`rounded-full w-3 h-3 bg-primary 
+                                    ${circleIndex === index ? 
+                                    'bg-secondary' : ''}`}
+                                    onClick={() => handleCircleClick(index)}
+                                />
+                                ))}
+                            </div>
                         </div>
                     </motion.div>
                 )}

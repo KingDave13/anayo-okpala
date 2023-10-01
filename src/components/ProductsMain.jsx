@@ -41,8 +41,11 @@ const Product = ({ index, name, description, image, link, images }) => {
             prevIndex === images.length - 1 ? 0 : prevIndex + 1
           );
         }
-        setCircleIndex(currentImageIndex);
     };
+
+    useEffect(() => {
+        setCircleIndex(currentImageIndex);
+    }, [currentImageIndex]);
 
     const handleCircleClick = (index) => {
         setCurrentImageIndex(index);

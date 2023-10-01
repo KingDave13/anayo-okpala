@@ -169,8 +169,8 @@ const Product = ({ index, name, description, image, link, images }) => {
                             onClick={() => navigateImage('next')} />
 
                             <HiX 
-                                className='absolute md:w-10 ss:w-10 
-                                w-6 md:h-10 ss:h-10 h-6 rounded-full 
+                                className='absolute md:w-10 ss:w-12 
+                                w-7 md:h-10 ss:h-12 h-7 rounded-full 
                                 items-center justify-center bg-opacity-40 
                                 text-dimWhite flex hover:bg-opacity-70 
                                 md:right-6 ss:right-6 right-4 md:top-6
@@ -181,11 +181,13 @@ const Product = ({ index, name, description, image, link, images }) => {
                             />
 
                             <div className='absolute bottom-0 flex
-                            w-full items-center justify-center'>
+                            w-full items-center justify-center mb-1'>
                                 {images.map((_, index) => (
                                 <div
                                     key={index}
-                                    className={`rounded-full w-2 h-2 m-1 
+                                    className={`rounded-full md:w-2 ss:w-3 
+                                    w-2 md:h-2 ss:h-3 h-2 
+                                    md:m-[3px] ss:m-[3px] m-[2px] 
                                     bg-primary cursor-pointer
                                     ${circleIndex === index ? 
                                     'bg-secondary' : ''}`}

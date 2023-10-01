@@ -20,6 +20,7 @@ const Product = ({ index, name, description, image, link, images }) => {
     const openModal = () => {
         setScrollPosition(window.pageYOffset);
         setIsModalOpen(true);
+        setCircleIndex(currentImageIndex);
         document.body.style.overflow = 'hidden';
         document.body.style.top = `-${scrollPosition}px`;
     };
@@ -40,6 +41,7 @@ const Product = ({ index, name, description, image, link, images }) => {
             prevIndex === images.length - 1 ? 0 : prevIndex + 1
           );
         }
+        setCircleIndex(currentImageIndex);
     };
 
     const handleCircleClick = (index) => {
@@ -175,11 +177,13 @@ const Product = ({ index, name, description, image, link, images }) => {
                                 onClick={closeModal}
                             />
 
-                            <div className='absolute bottom-0 flex'>
+                            <div className='absolute bottom-0 flex
+                            w-full items-center justify-center'>
                                 {images.map((_, index) => (
                                 <div
                                     key={index}
-                                    className={`rounded-full w-3 h-3 bg-primary 
+                                    className={`rounded-full w-2 h-2 m-1 
+                                    bg-primary cursor-pointer
                                     ${circleIndex === index ? 
                                     'bg-secondary' : ''}`}
                                     onClick={() => handleCircleClick(index)}

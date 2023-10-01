@@ -179,7 +179,7 @@ const Product = ({ index, name, description, image, link, images }) => {
 const ProductsMain = () => {
   return (
     <section className='relative w-full min-h-[700px] mx-auto flex 
-    items-center flex flex-col mt-20 justify-center z-20'>
+    items-center flex flex-col mt-20 justify-center z-100'>
         <div className='relative justify-between w-full md:mb-12 ss:mb-12
         mb-8 max-w-[95rem] mx-auto flex flex-col md:gap-12 ss:gap-12 
         gap-8'>

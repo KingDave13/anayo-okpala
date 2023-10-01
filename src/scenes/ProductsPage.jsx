@@ -22,7 +22,7 @@ import {
         </div>
         
         <div className='bg-dimWhite'>
-            <ProductsMain className='z-5'/>
+            <ProductsMain />
         </div>
         
         <CTA />

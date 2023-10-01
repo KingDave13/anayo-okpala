@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { productsMain } from '../constants';
 import { motion } from 'framer-motion';
 import { fadeIn, slideIn, textVariant } from '../utils/motion';
@@ -14,15 +14,19 @@ const Product = ({ index, name, description, image, link, images }) => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [scrollPosition, setScrollPosition] = useState(0);
 
     const openModal = () => {
+        setScrollPosition(window.pageYOffset);
         setIsModalOpen(true);
-        document.body.classList.add('no-scroll');
+        document.body.style.overflow = 'hidden';
+        document.body.style.top = `-${scrollPosition}px`;
     };
-    
+
     const closeModal = () => {
         setIsModalOpen(false);
-        document.body.classList.remove('no-scroll');
+        document.body.style.overflow = 'auto';
+        document.body.style.top = '0';
     };
     
     const navigateImage = (direction) => {
@@ -47,7 +51,7 @@ const Product = ({ index, name, description, image, link, images }) => {
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (modalRef.current && !modalRef.current.contains(event.target)) {
-                setIsModalOpen(false);
+                closeModal();
             }
         };
 

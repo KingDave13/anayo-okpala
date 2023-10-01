@@ -148,6 +148,8 @@ const Product = ({ index, name, description, image, link, images }) => {
                         <div className="flex flex-col items-center 
                         justify-center md:w-[30%] ss:w-[70%] w-[85%] 
                         md:h-[60%] ss:h-[50%] h-[40%] relative">
+                            <div className="absolute inset-0 
+                            gradient-overlay" />
                             <img src={images[currentImageIndex]} 
                             alt={name} className='object-fill w-full 
                             h-full rounded-xl shadow-md' />

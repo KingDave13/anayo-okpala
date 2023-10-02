@@ -3,7 +3,8 @@ import {
     CTA, 
     Footer, 
     Hero4, 
-    ProductsMain } 
+    ProductsMain, 
+    Newsletter} 
     from '../components';
   import { img2 } from '../assets';
   
@@ -26,10 +27,12 @@ import {
         </div>
         
         <CTA />
-  
+
         <div className='bg-dimWhite'>
-          <Footer />
+          <Newsletter />
         </div>
+
+        <Footer />
       </div>
     )
   };

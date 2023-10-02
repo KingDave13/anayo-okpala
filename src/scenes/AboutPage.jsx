@@ -4,7 +4,8 @@ import {
   Footer, 
   Hero2, 
   AboutMain, 
-  Mission } 
+  Mission, 
+  Newsletter} 
   from '../components';
 import { product3 } from '../assets';
 
@@ -31,8 +32,10 @@ const AboutPage = () => {
       <CTA />
 
       <div className='bg-dimWhite'>
-        <Footer />
+        <Newsletter />
       </div>
+      
+      <Footer />
     </div>
   )
 };

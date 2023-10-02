@@ -2,7 +2,8 @@ import {
     NavbarAlt2,  
     Footer, 
     Hero3, 
-    Contact } 
+    Contact, 
+    Newsletter} 
     from '../components';
 import { product3 } from '../assets';
 
@@ -23,8 +24,10 @@ import { product3 } from '../assets';
         <Contact />
 
         <div className='bg-dimWhite'>
-          <Footer />
+          <Newsletter />
         </div>
+
+        <Footer />
       </div>
     )
   };

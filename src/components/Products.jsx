@@ -94,13 +94,12 @@ const Products = () => {
 
     const swipeHandlers = useSwipeable({
         delta: 30,
-
         onSwipedLeft: (event) => {
-            event.preventDefault();
+            event.event.preventDefault();
             navigateRight();
         },
         onSwipedRight: (event) => {
-            event.preventDefault();
+            event.event.preventDefault();
             navigateLeft();
         },
     });

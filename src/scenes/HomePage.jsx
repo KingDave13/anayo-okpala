@@ -1,5 +1,5 @@
 import 
-{ Navbar, Hero, About, Products, Values, Location, Testimonials, CTA, Footer } 
+{ Navbar, Hero, About, Products, Values, Location, Testimonials, CTA, Newsletter, Footer } 
 from '../components';
 
 const HomePage = () => {
@@ -29,10 +29,14 @@ const HomePage = () => {
         <Testimonials />
 
         <div className='bg-dimWhite'>
-          <CTA/>
+          <CTA />
         </div>
 
-        <Footer />
+        <Newsletter />
+
+        <div className='bg-dimWhite'>
+          <Footer />
+        </div>
     </div>
   )
 };

@@ -11,7 +11,7 @@ const Newsletter = () => {
         <motion.div variants={textVariant()} className='flex flex-col 
         relative w-full items-center'>
             <h1 className='text-primary font-bold md:text-[45px]
-                ss:text-[40px] text-[30px] tracking-tight'>
+                ss:text-[35px] text-[25px] tracking-tight'>
                 Subscribe to our newsletter
             </h1>
 
@@ -21,29 +21,30 @@ const Newsletter = () => {
             </div>
 
             <p className='font-medium md:text-[20px] ss:text-[18px] 
-            text-[15px] tracking-tight text-primary md:mt-5 ss:mt-5 mt-5'>
+            text-[14px] tracking-tight text-primary md:mt-5 ss:mt-5 mt-3'>
                 to stay up to date with the latest from us.
             </p>
         </motion.div>
 
         <motion.div variants={fadeIn('up', 'spring', 0.3)} 
         className='flex flex-col w-full items-center md:mt-10 ss:mt-5 
-        mt-5'>
+        mt-3'>
             <input
               type="email"
               name="email"
             //   value={form.email}
             //   onChange={handleChange}
               placeholder="Enter your email"
-              className="py-4 px-4 border-b-[2px] outline-none 
-              placeholder:text-black-100 text-black rounded-lg
-              md:placeholder:text-[16px] ss:placeholder:text-[14px]
-              placeholder:text-[14px] md:w-[650px] text-center"
+              className="md:py-4 ss:py-3 py-1 md:px-4 ss:px-4 px-2 
+              border-b-[2px] outline-none placeholder:text-black-100 
+              text-black rounded-lg md:placeholder:text-[16px] 
+              ss:placeholder:text-[14px] placeholder:text-[12px] 
+              md:w-[650px] ss:w-[430px] w-[300px] text-center"
             />
 
             <button className='bg-primary grow2 md:mt-5 ss:mt-5 mt-5
-            md:text-[16px] ss:text-[16px] text-[12px] md:py-3 
-            ss:py-3 py-2 md:px-14 ss:px-14 px-8 text-white text-center
+            md:text-[16px] ss:text-[14px] text-[11px] md:py-3 
+            ss:py-3 py-2 md:px-14 ss:px-12 px-8 text-white text-center
             rounded-[3px] font-medium border-none hover:text-primary
             hover:text-white'
             >

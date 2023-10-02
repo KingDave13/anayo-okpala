@@ -33,8 +33,8 @@ const CTA = () => {
 
                 <div className='md:mt-5 ss:mt-3 mt-3'>
                     <button className='bg-secondary grow2 md:text-[16px] 
-                    ss:text-[14px] text-[11px] md:py-2 ss:py-2 py-1 
-                    md:mr-5 ss:mr-3 mr-2 md:px-12 ss:px-5 px-5 
+                    ss:text-[14px] text-[10px] md:py-2 ss:py-2 py-2 
+                    md:mr-5 ss:mr-3 mr-2 md:px-12 ss:px-5 px-6 
                     text-primary rounded-[3px] font-normal border-none 
                     hover:text-white'
                     onClick={() => navigate('/contact')}>
@@ -43,8 +43,8 @@ const CTA = () => {
 
                     <button className='border-[1px] grow2 
                     border-secondary md:text-[16px] ss:text-[13px] 
-                    text-[11px] md:py-2 ss:py-2 py-1 md:px-12 ss:px-5 
-                    px-5 text-secondary rounded-[3px] font-normal
+                    text-[10px] md:py-2 ss:py-2 py-2 md:px-12 ss:px-5 
+                    px-6 text-secondary rounded-[3px] font-normal
                     hover:text-white'
                     onClick={() => navigate('/products')}>
                         View Products

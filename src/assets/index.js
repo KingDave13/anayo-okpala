@@ -58,6 +58,10 @@ import transparentA from './transparentA.jpg';
 import transparentB from './transparentB.jpg';
 import transparentC from './transparentC.jpg';
 
+import sewing1 from './sewing1.jpg';
+import sewing2 from './sewing2.jpg';
+import sewing3 from './sewing3.jpg';
+
 export {
     logo,
     menu,
@@ -113,4 +117,7 @@ export {
     transparentA,
     transparentB,
     transparentC,
+    sewing1,
+    sewing2,
+    sewing3
 }

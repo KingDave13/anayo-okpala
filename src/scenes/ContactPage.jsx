@@ -12,10 +12,10 @@ import { product3 } from '../assets';
       <div className='font-instrument-sans'>
         <NavbarAlt2 />
         <div className='relative flex items-center justify-center w-full 
-        md:max-h-[450px] ss:max-h-[450px] max-h-[300px] top-20'>
+        md:max-h-[450px] ss:max-h-[300px] max-h-[200px] top-20'>
           <img src={product3} alt='product3'
-          className='object-cover w-[150rem] md:h-[450px] ss:h-[450px]
-          h-[300px]' />
+          className='object-cover w-[150rem] md:h-[450px] ss:h-[300px]
+          h-[200px]' />
           <div className='absolute w-full'>
             <Hero3 />
           </div>

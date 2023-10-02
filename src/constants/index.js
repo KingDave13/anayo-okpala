@@ -38,9 +38,11 @@ import {
   LeatherC,
   tapeA,
   tapeB,
-  transparentA,
   transparentB,
   transparentC,
+  sewing1,
+  sewing2,
+  sewing3
 } from '../assets';
 
 import { BsTwitter, BsInstagram, BsFacebook } from 'react-icons/bs';
@@ -122,7 +124,8 @@ export const productsMain = [
     link: 'https://wa.link/n4v0ws',
     images: [ clothingA, clothingB, clothingC, clothingD, clothingE, 
     clothingF, clothingG, clothingH, clothingI, clothingJ, clothingK, 
-    clothingL, clothingM, clothingN, clothingO, clothingP, clothingQ ]
+    clothingL, clothingM, clothingN, clothingO, clothingP, clothingQ,
+    transparentB ]
   },
   {
     name: 'Tape',
@@ -133,31 +136,31 @@ export const productsMain = [
   },
   {
     name: 'PVC Transparent',
-    description: 'PVC Transparent description to be inserted here.',
+    description: 'PVC Transparent for different industrial and domestic applications.',
     image: img3,
     link: 'https://wa.link/gcvjmu',
-    images: [ transparentA, transparentB, transparentC ]
+    images: [ transparentC ]
   },
   {
     name: 'PVC Leather',
-    description: 'PVC Leather description to be inserted here.',
+    description: 'High quality and durable PVC leather for various applications.',
     image: img4,
     link: 'https://wa.link/2e948h',
     images: [ LeatherA, LeatherB, LeatherC ]
   },
   {
     name: 'Cellotape',
-    description: ' Cellotape description to be inserted here.',
+    description: ' Cellotape for various applications.',
     image: cellotapes,
     link: 'https://wa.link/nffx29',
     images: [ celloA, celloB ]
   },
   {
     name: 'Sewing Thread',
-    description: ' Sewing thread description to be inserted here.',
-    image: cellotapes,
+    description: ' Sewing thread in different colours and sizes for all purposes.',
+    image: sewing1,
     link: 'https://wa.link/oghwza',
-    images: []
+    images: [ sewing2, sewing3, sewing1 ]
   }
 ];
 

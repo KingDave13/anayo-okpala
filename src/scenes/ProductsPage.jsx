@@ -13,9 +13,9 @@ import {
       <div className='font-instrument-sans'>
         <NavbarAlt3 />
         <div className='relative flex items-center justify-center w-full 
-        md:max-h-[450px] ss:max-h-[450px] max-h-[200px] top-20'>
+        md:max-h-[450px] ss:max-h-[300px] max-h-[200px] top-20'>
           <img src={img2} alt='product3'
-          className='object-cover w-[150rem] md:h-[450px] ss:h-[450px]
+          className='object-cover w-[150rem] md:h-[450px] ss:h-[300px]
           h-[200px]' />
           <div className='absolute w-full'>
             <Hero4 />

@@ -83,7 +83,7 @@ const Product = ({ index, name, description, image, link, images }) => {
             className='md:mt-3 ss:mt-2 mt-1'>
                 <img src={image} alt='product'
                 className=' md:h-[300px] ss:h-[200px] h-[auto] md:w-auto
-                ss:w-auto w-full'
+                ss:w-auto w-full rounded-2xl'
                 />
             </motion.div>
 
@@ -146,8 +146,8 @@ const Product = ({ index, name, description, image, link, images }) => {
                     className="fixed inset-0 flex items-center 
                     justify-center bg-black bg-opacity-80 z-20">
                         <div className="flex flex-col items-center 
-                        justify-center md:w-[30%] ss:w-[70%] w-[85%] 
-                        md:h-[60%] ss:h-[50%] h-[40%] relative z-50"
+                        justify-center md:w-[30%] ss:w-[80%] w-[87%] 
+                        md:h-[60%] ss:h-[60%] h-[50%] relative z-50"
                         ref={modalRef}>
                             <div className="absolute inset-0 
                             gradient-overlay rounded-xl" />
@@ -174,7 +174,7 @@ const Product = ({ index, name, description, image, link, images }) => {
                             <HiX 
                                 className='absolute md:w-10 ss:w-12 
                                 w-7 md:h-10 ss:h-12 h-7 rounded-full 
-                                items-center justify-center bg-opacity-40 
+                                items-center justify-center bg-opacity-30 
                                 text-dimWhite flex hover:bg-opacity-70 
                                 md:right-6 ss:right-6 right-4 md:top-6
                                 ss:top-6 top-4 md:p-2 ss:p-2 p-1

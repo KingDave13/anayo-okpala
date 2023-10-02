@@ -28,38 +28,6 @@ const Hero = () => {
                     ss:text-[30px] text-[25px] text-white'/>
                     <p>Contact</p>
                 </div>
-
-                <div className='md:flex-col md:mt-10 ss:mt-7 mt-5 
-                text-center'>
-                  <div className='md:flex-row'>
-                    <p className='text-white font-normal md:text-[20px]
-                    ss:text-[20px] text-[13px]'>
-                      <span className='text-secondary font-bold'>Email:
-                      </span> Anasconigltd@yahoo.com
-                    </p>
-
-                    <p className='text-white font-normal md:text-[20px]
-                    ss:text-[19px] text-[12px] md:mt-2 ss:mt-1 mt-1'>
-                      <span className='text-secondary font-bold'>Phone:
-                      </span> 08037002296, 08035895253, 08134353345.
-                    </p>
-                  </div>
-
-                  <p className='text-white font-normal md:text-[20px]
-                  ss:text-[19px] text-[12px] leading-[17px] md:mt-3
-                  ss:mt-2 mt-1'>
-                    <span className='text-secondary font-bold'>Head Office:
-                    </span> No. 101 Ibrahim Taiwo Rd by Sani Ungogo,
-                    Kano State.
-                  </p>
-
-                  <p className='text-white font-normal md:text-[20px]
-                  ss:text-[19px] text-[12px] leading-[17px] md:mt-5
-                  ss:mt-4 mt-1'>
-                    <span className='text-secondary font-bold'>Branch Office:
-                    </span> No 9 Festing Rd, Sabon Gari, Kano State.
-                  </p>
-                </div>
               </motion.div>
           </div>
       </section>  

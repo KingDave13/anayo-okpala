@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { slideIn } from '../utils/motion';
+import { slideIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
 const Modal = ({ message, onClose, showOkButton }) => {
@@ -129,7 +129,7 @@ const Contact = () => {
 
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex 
+    <div className='xl:mt-12 flex-col flex 
     gap-10 overflow-hidden'>
 
       {modalOpen && (
@@ -141,9 +141,42 @@ const Contact = () => {
       />
       )}
 
+<motion.div variants={textVariant()} className='grid grid-cols-1 
+md:grid-cols-2 md:mt-10 ss:mt-14 mt-20 bg-dimWhite rounded sm:px-8 
+px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
+  <div className="flex flex-col justify-center">
+    <p className='text-primary font-medium md:text-[20px] ss:text-[18px] 
+    text-[13px]'>
+      <span className='text-secondary font-bold'>Email: </span> 
+      Anasconigltd@yahoo.com
+    </p>
+    <p className='text-primary font-medium md:text-[20px] ss:text-[18px] 
+    text-[12px] leading-[23px] md:mt-2 ss:mt-2 mt-0'>
+      <span className='text-secondary font-bold'>Phone: </span> 
+      08037002296, 08035895253, 08134353345.
+    </p>
+  </div>
+
+  <div className="flex flex-col justify-center">
+    <p className='text-primary font-medium md:text-[20px] ss:text-[18px] 
+    text-[12px] md:leading-[23px] ss:leading-[23px] leading-[17px]'>
+      <span className='text-secondary font-bold'>Head Office: </span> 
+      No. 101 Ibrahim Taiwo Rd by Sani Ungogo, Kano State.
+    </p>
+    <p className='text-primary font-medium md:text-[20px] ss:text-[18px] 
+    text-[12px] md:leading-[23px] ss:leading-[23px] leading-[17px] 
+    md:mt-3 ss:mt-2 mt-0'>
+      <span className='text-secondary font-bold'>Branch Office: </span> 
+      No 9 Festing Rd, Sabon Gari, Kano State.
+    </p>
+  </div>
+</motion.div>
+
+
+
       <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
-        className='flex-1 bg-dimWhite bg-opacity-40 p-8 md:mt-0 ss:mt-14
-        mt-14'>
+        className='flex-1 bg-dimWhite bg-opacity-40 p-8 md:mt-0 ss:mt-5
+        mt-0'>
         <form ref={formRef} onSubmit={handleSubmit}
         className="grid grid-cols-2 gap-8">
           <div className="flex flex-col">

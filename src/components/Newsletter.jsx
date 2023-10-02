@@ -17,7 +17,7 @@ const Newsletter = () => {
 
             <div className='flex relative'>
             <div className='bg-secondary md:w-[120px] ss:w-[120px]
-                w-[80px] md:h-[10px] ss:h-[10px] h-[8px]' />
+                w-[80px] md:h-[10px] ss:h-[10px] h-[6px]' />
             </div>
 
             <p className='font-medium md:text-[20px] ss:text-[18px] 
@@ -40,7 +40,7 @@ const Newsletter = () => {
               text-black rounded-lg md:placeholder:text-[16px] 
               ss:placeholder:text-[14px] placeholder:text-[12px] 
               md:w-[560px] ss:w-[450px] w-[300px] text-center
-              md:text-[18px] ss:text-[18px] text-[14px]"
+              md:text-[18px] ss:text-[18px] text-[14px] bg-transparent"
             />
 
             <button className='bg-primary grow2 md:mt-5 ss:mt-5 mt-5

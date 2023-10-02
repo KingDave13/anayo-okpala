@@ -139,12 +139,12 @@ const Product = ({ index, name, description, image, link, images }) => {
                 </div>
 
                 {isModalOpen && (
-                    <motion.div 
+                    <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     className="fixed inset-0 flex items-center 
-                    justify-center bg-black bg-opacity-80 z-50">
+                    justify-center bg-black bg-opacity-80 z-20">
                         <div className="flex flex-col items-center 
                         justify-center md:w-[30%] ss:w-[70%] w-[85%] 
                         md:h-[60%] ss:h-[50%] h-[40%] relative z-50"
@@ -179,7 +179,7 @@ const Product = ({ index, name, description, image, link, images }) => {
                                 md:right-6 ss:right-6 right-4 md:top-6
                                 ss:top-6 top-4 md:p-2 ss:p-2 p-1
                                 cursor-pointer text-opacity-70 
-                                hover:text-opacity-100'
+                                hover:text-opacity-100 ss:flex hidden'
                                 onClick={closeModal}
                             />
 
@@ -209,10 +209,10 @@ const Product = ({ index, name, description, image, link, images }) => {
 const ProductsMain = () => {
   return (
     <section className='relative w-full min-h-[700px] mx-auto flex 
-    items-center flex flex-col mt-20 justify-center z-60'>
+    items-center flex flex-col mt-20 justify-center'>
         <div className='relative justify-between w-full md:mb-12 ss:mb-12
         mb-8 max-w-[95rem] mx-auto flex flex-col md:gap-12 ss:gap-12 
-        gap-8 z-20'>
+        gap-8'>
             {productsMain.map((product, index) => (
                 <Product 
                     key={product.name} 

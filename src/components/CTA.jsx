@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const CTA = () => {
     const navigate = useNavigate();
   return (
-    <section className='relative w-full md:min-h-[500px] ss:min-h-[500px] 
+    <section className='w-full md:min-h-[500px] ss:min-h-[500px] 
     min-h-[250px] mx-auto flex items-center'>
         <div className={`${styles.padding} bg-primary flex md:max-w-[95rem] 
         ss:max-w-[95rem] mx-auto items-center w-full md:rounded-3xl 

@@ -225,6 +225,7 @@ export const footerLinks = [
       }, 
     ],
   },
+
   {
     title: "Legal",
     links: [
@@ -242,6 +243,35 @@ export const footerLinks = [
       },
       {
         name: "Terms of Use",
+        link: "",
+      },
+    ],
+  },
+  {
+    title: "Products",
+    links: [
+      {
+        name: "Clothing Materials",
+        link: "",
+      },
+      {
+        name: "Tape",
+        link: "",
+      },
+      {
+        name: "PVC Transparent",
+        link: "",
+      },
+      {
+        name: "PVC Leather",
+        link: "",
+      },
+      {
+        name: "Cellotape",
+        link: "",
+      },
+      {
+        name: "Sewing Thread",
         link: "",
       },
     ],

@@ -18,6 +18,7 @@ import Mission from './Mission';
 import Contact from './Contact';
 import ProductsMain from './ProductsMain';
 import Newsletter from './Newsletter';
+import Feedbacks from './Feedbacks';
 
 export { 
     Navbar, 
@@ -39,5 +40,6 @@ export {
     Mission,
     Contact,
     ProductsMain,
-    Newsletter
+    Newsletter,
+    Feedbacks
  }

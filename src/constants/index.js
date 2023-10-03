@@ -42,11 +42,14 @@ import {
   transparentC,
   sewing1,
   sewing2,
-  sewing3
+  sewing3,
+  transparentD,
+  transparentE,
+  transparentF
 } from '../assets';
 
-import { BsTwitter, BsInstagram, BsFacebook } from 'react-icons/bs';
-import { FaLinkedinIn } from 'react-icons/fa';
+import { BsWhatsapp } from 'react-icons/bs';
+import { GrMail } from 'react-icons/gr';
 
 export const navLinks = [
   {
@@ -139,7 +142,7 @@ export const productsMain = [
     description: 'PVC Transparent for different industrial and domestic applications.',
     image: img3,
     link: 'https://wa.link/gcvjmu',
-    images: [ transparentC ]
+    images: [ transparentC, transparentD, transparentE, transparentF ]
   },
   {
     name: 'PVC Leather',
@@ -194,24 +197,14 @@ export const testimonials = [
 export const socialMedia = [
   {
     id: "social-media-1",
-    Icon: BsTwitter,
-    link: ""
+    Icon: BsWhatsapp,
+    link: "http://wa.me/2348037002296"
   },
   {
     id: "social-media-2",
-    Icon: BsInstagram,
-    link: ""
-  },
-  {
-    id: "social-media-3",
-    Icon: BsFacebook,
-    link: ""
-  },
-  {
-    id: "social-media-4",
-    Icon: FaLinkedinIn,
-    link: ""
-  },
+    Icon: GrMail,
+    link: "mailto:Anasconigltd@yahoo.com"
+  }
 ];
 
 export const footerLinks = [

@@ -18,11 +18,12 @@ const Footer = () => {
             <img src={logo2} alt='logo' className='md:w-[200px] 
             ss:w-[180px] w-[150px] h-auto' />
             <p className='text-darkBlue md:text-[18px] ss:text-[18px] 
-            text-[14px] md:max-w-[640px] ss:max-w-[350px] max-w-[320px] 
+            text-[14px] md:max-w-[640px] ss:max-w-[400px] max-w-[320px] 
             md:mt-8 ss:mt-8 mt-5 md:leading-[25px] ss:leading-[26px] 
             leading-[20px]'>
-              Anayo Okpala Global Concept is a nationally recognized 
-              industrial materials supplier and retailer.
+              Anayo Okpala Global Concept is a leading supplier of 
+              high-quality foam cloth, tape edge, PVC, sewing thread, 
+              cellotape and other foam accessories for various industries.
             </p>
           </div>
           
@@ -55,11 +56,11 @@ const Footer = () => {
 
       <motion.div variants={textVariant()} className='relative flex 
       flex-col w-full'>
-        <div className='flex md:mt-0 ss:mt-5 mt-1 items-center'>
+        <div className='flex md:mt-3 ss:mt-5 mt-1 items-center'>
           {socialMedia.map((social, index) => (
-            <a target='_blank' rel="noreferrer" key={index}>
+            <a target='_blank' href={social.link} rel="noreferrer" key={index}>
               {React.createElement(social.Icon, {
-                className: `md:w-[20px] ss:w-[25px] w-[18px] h-[20px] 
+                className: `md:w-[30px] ss:w-[30px] w-[18px] h-[25px] 
                 object-contain cursor-pointer 
                 ${index !== socialMedia.length - 1 ? 'mr-3' : 'mr-0' }`,
               })}
@@ -67,7 +68,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className='flex md:mt-6 ss:mt-4 mt-3 items-center'>
+        <div className='flex md:mt-3 ss:mt-4 mt-3 items-center'>
           <BiCopyright className='sm:mr-2 mr-1 md:text-[20px] 
           ss:text-[20px] text-[15px] md:mt-0 ss:mt-0 mt-[3px]' />
           <p className='md:text-[18px] ss:text-[18px] text-[14px] 

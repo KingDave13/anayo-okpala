@@ -57,6 +57,9 @@ import tapeB from './tapeB.jpg';
 import transparentA from './transparentA.jpg';
 import transparentB from './transparentB.jpg';
 import transparentC from './transparentC.jpg';
+import transparentD from './transparentD.jpg';
+import transparentE from './transparentE.jpg';
+import transparentF from './transparentF.jpg';
 
 import sewing1 from './sewing1.jpg';
 import sewing2 from './sewing2.jpg';
@@ -117,6 +120,9 @@ export {
     transparentA,
     transparentB,
     transparentC,
+    transparentD,
+    transparentE,
+    transparentF,
     sewing1,
     sewing2,
     sewing3

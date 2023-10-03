@@ -17,8 +17,8 @@ const Footer = () => {
           <div className='flex flex-col flex-start relative w-full'>
             <img src={logo2} alt='logo' className='md:w-[200px] 
             ss:w-[180px] w-[150px] h-auto' />
-            <p className='text-darkBlue md:text-[18px] ss:text-[18px] 
-            text-[14px] md:max-w-[550px] ss:max-w-[230px] max-w-[320px] 
+            <p className='text-darkBlue md:text-[18px] ss:text-[16px] 
+            text-[14px] md:max-w-[550px] ss:max-w-[260px] max-w-[320px] 
             md:mt-8 ss:mt-8 mt-5 md:leading-[25px] ss:leading-[26px] 
             leading-[20px]'>
               Anayo Okpala Global Concept is a leading supplier of 
@@ -31,19 +31,19 @@ const Footer = () => {
           ss:justify-end'>
             {footerLinks.map((footerLink, index) => (
               <div key={index} className='flex flex-col my-4 md:min-w-[150px]
-              md:max-w-[200px] ss:min-w-[130px] max-w-[120px] w-full'>
-                <h4 className={`font-bold md:text-[21px] ss:text-[21px] 
-                text-[16px] text-primary 
-                  ${index !== footerLinks.length - 1 ? 'md:mr-10 ss:mr-20' : 'mr-0'}`}>
+              md:max-w-[200px] w-full'>
+                <h4 className={`font-bold md:text-[21px] ss:text-[18px] 
+                text-[15px] text-primary 
+                  ${index !== footerLinks.length - 1 ? 'md:mr-10 ss:mr-8 mr-8' : 'mr-12'}`}>
                   {footerLink.title}
                 </h4>
-                <ul className='list-none md:mt-4 ss:mt-4 mt-1'>
+                <ul className='list-none md:mt-4 ss:mt-3 mt-1 mr-5'>
                   {footerLink.links.map((Link, index) => (
                     <a href={Link.route} key={Link.name}>
-                      <li className={`md:text-[17px] ss:text-[17px] 
-                      text-[14px] md:leading-[17px] ss:leading-[17px] leading-[22px]
+                      <li className={`md:text-[17px] ss:text-[16px] 
+                      text-[14px] md:leading-[17px] ss:leading-[17px] leading-[14px]
                       text-primary hover:text-secondary cursor-pointer 
-                      ${index !== footerLink.links.length - 1 ? 'md:mb-4 ss:mb-3 mb-0' : 'mb-0'}`}>
+                      ${index !== footerLink.links.length - 1 ? 'md:mb-4 ss:mb-2 mb-2' : 'mb-0'}`}>
                         {Link.name}
                       </li>
                     </a>
@@ -55,24 +55,24 @@ const Footer = () => {
         </motion.div>
       </div>
 
-      <motion.div variants={textVariant()} className='absolute flex 
-      flex-col w-full md:bottom-10 '>
-        <div className='flex md:mt-3 ss:mt-5 mt-0 items-center'>
+      <motion.div variants={textVariant()} className='md:absolute flex 
+      flex-col w-full md:bottom-10 ss:bottom-0'>
+        <div className='flex md:mt-3 ss:mt-3 mt-0 items-center'>
           {socialMedia.map((social, index) => (
             <a target='_blank' href={social.link} rel="noreferrer" key={index}>
               {React.createElement(social.Icon, {
-                className: `md:w-[30px] ss:w-[30px] w-[18px] h-[25px] 
-                object-contain cursor-pointer 
+                className: `md:w-[30px] ss:w-[24px] w-[20px] md:h-[25px] 
+                ss:h-[20px] h-[30px] object-contain cursor-pointer 
                 ${index !== socialMedia.length - 1 ? 'mr-3' : 'mr-0' }`,
               })}
             </a>
           ))}
         </div>
 
-        <div className='flex md:mt-3 ss:mt-4 mt-3 items-center'>
+        <div className='flex md:mt-3 ss:mt-2 mt-1 items-center'>
           <BiCopyright className='sm:mr-2 mr-1 md:text-[20px] 
-          ss:text-[20px] text-[15px] md:mt-0 ss:mt-0 mt-[3px]' />
-          <p className='md:text-[18px] ss:text-[18px] text-[14px] 
+          ss:text-[18px] text-[15px] md:mt-0 ss:mt-1 mt-[3px]' />
+          <p className='md:text-[18px] ss:text-[16px] text-[14px] 
           text-darkBlue mt-1'>
             2023. All Rights Reserved.
           </p>

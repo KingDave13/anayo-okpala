@@ -35,7 +35,7 @@ const Location = () => {
                     </h1>
 
                     <div className='md:max-w-[1000px] ss:max-w-[650px] 
-                    max-w-[365px] md:max-h-[520px] ss:max-h-[450px] 
+                    max-w-[360px] md:max-h-[520px] ss:max-h-[450px] 
                     max-h-[260px] md:border-[7px] ss:border-[7px] 
                     border-[5px] border-[#99999] cursor-pointer 
                     overflow-hidden flex items-center justify-center

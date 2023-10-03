@@ -142,7 +142,7 @@ const handleSubmit = (e) => {
             </div>
 
             <p className='font-medium md:text-[20px] ss:text-[18px] 
-            text-[14px] tracking-tight text-primary md:mt-5 ss:mt-5 mt-3
+            text-[14px] tracking-tight text-primary md:mt-5 ss:mt-3 mt-3
             md:leading-[25px] ss:leading-[20px] leading-[15px] text-center'>
                 We'd love to know your thoughts about us and our products.
             </p>
@@ -158,13 +158,13 @@ const handleSubmit = (e) => {
         )}
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
-            className='flex bg-white bg-opacity-80 p-8 md:mt-10 ss:mt-5
+            className='flex bg-white bg-opacity-80 p-8 md:mt-10 ss:mt-10
             mt-5 rounded-2xl w-full'>
                 <form ref={formRef} onSubmit={handleSubmit}
                 className="grid grid-cols-2 gap-8 w-full">
                     <div className="flex flex-col">
                         <label className="text-primary font-bold md:mb-4
-                        ss:mb-4 mb-2 md:text-[20px] ss:text-[20px] 
+                        ss:mb-2 mb-2 md:text-[20px] ss:text-[18px] 
                         text-[14px]">
                         Name
                         </label>
@@ -183,7 +183,7 @@ const handleSubmit = (e) => {
 
                     <div className="flex flex-col">
                         <label className="text-primary font-bold md:mb-4
-                        ss:mb-4 mb-2 md:text-[20px] ss:text-[20px] 
+                        ss:mb-2 mb-2 md:text-[20px] ss:text-[18px] 
                         text-[14px]">
                         Phone Number
                         </label>
@@ -202,7 +202,7 @@ const handleSubmit = (e) => {
 
                     <div className="flex flex-col col-span-2">
                         <label className="text-primary font-bold md:mb-4
-                        ss:mb-4 mb-2 md:text-[20px] ss:text-[20px] 
+                        ss:mb-2 mb-2 md:text-[20px] ss:text-[18px] 
                         text-[14px]">
                         Email
                         </label>
@@ -221,9 +221,9 @@ const handleSubmit = (e) => {
 
                     <div className="col-span-2 flex flex-col">
                         <label className="text-primary font-bold md:mb-4
-                        ss:mb-4 mb-2 md:text-[20px] ss:text-[20px] 
+                        ss:mb-2 mb-2 md:text-[20px] ss:text-[18px] 
                         text-[14px]">
-                        Your thoughts
+                        Your Thoughts
                         </label>
                         <textarea
                         rows="5"

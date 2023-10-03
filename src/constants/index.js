@@ -198,7 +198,7 @@ export const socialMedia = [
   {
     id: "social-media-1",
     Icon: BsWhatsapp,
-    link: "http://wa.me/2348037002296"
+    link: "https://wa.me/2348037002296"
   },
   {
     id: "social-media-2",
@@ -213,27 +213,27 @@ export const footerLinks = [
     links: [
       {
         name: "Clothing Materials",
-        link: "",
+        route: "https://wa.link/n4v0ws",
       },
       {
         name: "Tape",
-        link: "",
+        route: "https://wa.link/2loufh",
       },
       {
         name: "PVC Transparent",
-        link: "",
+        route: "https://wa.link/gcvjmu",
       },
       {
         name: "PVC Leather",
-        link: "",
+        route: "https://wa.link/2e948h",
       },
       {
         name: "Cellotape",
-        link: "",
+        route: "https://wa.link/nffx29",
       },
       {
         name: "Sewing Thread",
-        link: "",
+        route: "https://wa.link/oghwza",
       },
     ],
   },

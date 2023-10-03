@@ -154,7 +154,7 @@ px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
     </p>
     <p className='text-primary font-bold md:text-[20px] ss:text-[20px] 
     text-[14px] md:leading-[23px] ss:leading-[23px] leading-[17px] 
-    md:mt-1 ss:mt-2 mt-1'>
+    md:mt-3 ss:mt-3 mt-2'>
       <span className='text-secondary font-bold'>Phone: </span> 
       <a href='http://wa.me/2348037002296' className='hover:text-secondary'>
         08037002296,</a> 08035895253, 
@@ -165,13 +165,13 @@ px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
   <div className="flex flex-col">
     <p className='text-primary font-bold md:text-[20px] ss:text-[20px] 
     text-[14px] md:leading-[23px] ss:leading-[23px] leading-[17px]
-    md:mt-0 ss:mt-0 mt-1'>
+    md:mt-0 ss:mt-1 mt-2'>
       <span className='text-secondary font-bold'>Head Office: </span> 
       No. 101 Ibrahim Taiwo Rd by Sani Ungogo, Kano State.
     </p>
     <p className='text-primary font-bold md:text-[20px] ss:text-[20px] 
     text-[14px] md:leading-[23px] ss:leading-[23px] leading-[17px] 
-    md:mt-1 ss:mt-2 mt-1'>
+    md:mt-3 ss:mt-3 mt-2'>
       <span className='text-secondary font-bold'>Branch Office: </span> 
       No 9 Festing Rd, Sabon Gari, Kano State.
     </p>

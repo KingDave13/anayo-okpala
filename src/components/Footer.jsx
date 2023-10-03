@@ -39,8 +39,8 @@ const Footer = () => {
                 </h4>
                 <ul className='list-none md:mt-4 ss:mt-3 mt-1 mr-5'>
                   {footerLink.links.map((Link, index) => (
-                    <a href={Link.route} key={Link.name}>
-                      <li className={`md:text-[17px] ss:text-[16px] 
+                    <a target='blank' href={Link.route} key={Link.name}>
+                      <li className={`md:text-[17px] ss:text-[16px] grow2
                       text-[14px] md:leading-[17px] ss:leading-[17px] leading-[14px]
                       text-primary hover:text-secondary cursor-pointer 
                       ${index !== footerLink.links.length - 1 ? 'md:mb-4 ss:mb-2 mb-2' : 'mb-0'}`}>
@@ -56,13 +56,13 @@ const Footer = () => {
       </div>
 
       <motion.div variants={textVariant()} className='md:absolute ss:absolute 
-      flex flex-col w-full md:bottom-10 ss:bottom-14'>
-        <div className='flex md:mt-3 ss:mt-3 mt-0 items-center'>
+      flex flex-col w-full md:bottom-10 ss:bottom-14 md:max-w-[600px] left-0'>
+        <div className='flex md:mt-3 ss:mt-3 mt-2 items-center'>
           {socialMedia.map((social, index) => (
             <a target='_blank' href={social.link} rel="noreferrer" key={index}>
               {React.createElement(social.Icon, {
                 className: `md:w-[27px] ss:w-[24px] w-[20px] md:h-[22px] 
-                ss:h-[20px] h-[30px] object-contain cursor-pointer 
+                ss:h-[20px] h-[30px] object-contain cursor-pointer grow2
                 ${index !== socialMedia.length - 1 ? 'mr-3' : 'mr-0' }`,
               })}
             </a>
@@ -85,7 +85,7 @@ const Footer = () => {
       pt-1'>
         <p className='md:text-[15px] ss:text-[14px] text-[12px]'>
           Designed and developed by
-            <span className='text-[#00563B] font-medium cursor-pointer'>
+            <span className='text-[#00563B] font-medium cursor-pointer grow3'>
               <a href='https://pluggresources.com/' target='blank'> Plugg Resources
               </a>
             </span>

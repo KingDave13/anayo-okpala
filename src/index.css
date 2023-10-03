@@ -117,3 +117,10 @@ body, html {
 .grow2:hover {
   transform: scale(1.02);
 }
+
+.grow3 {
+  transition: all .2s ease-in-out;
+}
+.grow3:hover {
+  transform: scale(1.01);
+}

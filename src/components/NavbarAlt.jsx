@@ -49,7 +49,7 @@ const Navbar = () => {
                                     location.pathname === link.route
                                         ? 'border-b-[4px] rounded-[1px] border-b-secondary text-primary'
                                         : 'text-primary'
-                                } hover:text-secondary text-[16px] 
+                                } hover:text-secondary text-[16px] grow3
                                 cursor-pointer py-2 font-medium`}
                             >
                                 <Link to={link.route}>{link.title}</Link>

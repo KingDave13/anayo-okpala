@@ -48,7 +48,7 @@ const Navbar = () => {
                                 active === link.title
                                 ? 'border-b-[4px] rounded-[1px] border-b-secondary text-white'
                                 : 'text-white'
-                            } hover:text-secondary text-[16px] 
+                            } hover:text-secondary grow3 text-[16px] 
                                 cursor-pointer py-2 font-medium`}
                                 onClick={() => {
                                     setActive(link.title);

@@ -223,7 +223,7 @@ const handleSubmit = (e) => {
                         <label className="text-primary font-bold md:mb-4
                         ss:mb-2 mb-2 md:text-[20px] ss:text-[18px] 
                         text-[14px]">
-                        Your Thoughts
+                        Feedback
                         </label>
                         <textarea
                         rows="5"

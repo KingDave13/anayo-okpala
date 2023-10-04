@@ -72,8 +72,7 @@ const handleChange = (e) => {
 const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!form.name || !form.email || !form.message || !form.phone 
-    || !form.subject ) {
+    if (!form.name || !form.email || !form.message || !form.phone ) {
     setModalMessage('Please fill out all the required fields.');
     setModalOpen(true);
     disableScroll();
@@ -84,7 +83,7 @@ const handleSubmit = (e) => {
 
     emailjs.send(
     'service_skvhseu',
-    'template_bu4q17u',
+    'template_s8htwoz',
     {
         from_name: form.name,
         to_name: 'Anayo Okpala Global Concept',

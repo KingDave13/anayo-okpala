@@ -167,13 +167,13 @@ px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
     text-[14px] md:leading-[23px] ss:leading-[23px] leading-[17px]
     md:mt-0 ss:mt-1 mt-2'>
       <span className='text-secondary font-bold'>Head Office: </span> 
-      No. 101 Ibrahim Taiwo Rd by Sani Ungogo, Kano State.
+      No. 101 Ibrahim Taiwo Road by Sani Ungogo, Kano State.
     </p>
     <p className='text-primary font-bold md:text-[20px] ss:text-[20px] 
     text-[14px] md:leading-[23px] ss:leading-[23px] leading-[17px] 
     md:mt-3 ss:mt-3 mt-2'>
       <span className='text-secondary font-bold'>Branch Office: </span> 
-      No 9 Festing Rd, Sabon Gari, Kano State.
+      No 9 Festing Road, Sabon Gari, Kano State.
     </p>
   </div>
 </motion.div>
@@ -186,7 +186,8 @@ px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
         <form ref={formRef} onSubmit={handleSubmit}
         className="grid grid-cols-2 gap-8">
           <div className="flex flex-col">
-            <label className="text-primary font-bold mb-4">
+            <label className="text-primary font-bold md:mb-4 ss:mb-2 mb-2 
+            md:text-[20px] ss:text-[18px] text-[14px]">
               Name
             </label>
             <input
@@ -195,15 +196,16 @@ px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
               value={form.name}
               onChange={handleChange}
               placeholder="Enter your name"
-              className="py-4 px-6 border-[1px] outline-none 
-              placeholder:text-black-100 text-black rounded-lg
-              md:placeholder:text-[16px] ss:placeholder:text-[14px]
-              placeholder:text-[14px]"
+              className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
+              outline-none text-black rounded-lg placeholder:text-black-100 
+              md:placeholder:text-[15px] ss:placeholder:text-[14px] 
+              placeholder:text-[12px]"
             />
           </div>
 
           <div className="flex flex-col">
-            <label className="text-primary font-bold mb-4">
+            <label className="text-primary font-bold md:mb-4 ss:mb-2 mb-2 
+            md:text-[20px] ss:text-[18px] text-[14px]">
               Email
             </label>
             <input
@@ -212,15 +214,16 @@ px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
               value={form.email}
               onChange={handleChange}
               placeholder="Enter your email"
-              className="py-4 px-6 border-[1px] outline-none 
-              placeholder:text-black-100 text-black rounded-lg
-              md:placeholder:text-[16px] ss:placeholder:text-[14px]
-              placeholder:text-[14px]"
+              className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
+              outline-none text-black rounded-lg placeholder:text-black-100 
+              md:placeholder:text-[15px] ss:placeholder:text-[14px] 
+              placeholder:text-[12px]"
             />
           </div>
 
           <div className="flex flex-col">
-            <label className="text-primary font-bold mb-4">
+            <label className="text-primary font-bold md:mb-4 ss:mb-2 mb-2 
+            md:text-[20px] ss:text-[18px] text-[14px]">
               Phone Number
             </label>
             <input
@@ -229,15 +232,16 @@ px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
               value={form.phone}
               onChange={handleChange}
               placeholder="Enter your phone(WhatsApp) number"
-              className="py-4 px-6 border-[1px] outline-none 
-              placeholder:text-black-100 text-black rounded-lg
-              md:placeholder:text-[16px] ss:placeholder:text-[14px]
-              placeholder:text-[13px]"
+              className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
+              outline-none text-black rounded-lg placeholder:text-black-100 
+              md:placeholder:text-[15px] ss:placeholder:text-[14px] 
+              placeholder:text-[12px]"
             />
           </div>
 
           <div className="flex flex-col">
-            <label className="text-primary font-bold mb-4">
+            <label className="text-primary font-bold md:mb-4 ss:mb-2 mb-2 
+            md:text-[20px] ss:text-[18px] text-[14px]">
               Subject
             </label>
             <input
@@ -246,15 +250,16 @@ px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
               value={form.subject}
               onChange={handleChange}
               placeholder="Enter a subject"
-              className="py-4 px-6 border-[1px] outline-none 
-              placeholder:text-black-100 text-black rounded-lg
-              md:placeholder:text-[16px] ss:placeholder:text-[14px]
-              placeholder:text-[14px]"
+              className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
+              outline-none text-black rounded-lg placeholder:text-black-100 
+              md:placeholder:text-[15px] ss:placeholder:text-[14px] 
+              placeholder:text-[12px]"
             />
           </div>
 
           <div className="col-span-2 flex flex-col">
-            <label className="text-primary font-bold mb-4">
+            <label className="text-primary font-bold md:mb-4 ss:mb-2 mb-2 
+            md:text-[20px] ss:text-[18px] text-[14px]">
               Message
             </label>
             <textarea
@@ -263,10 +268,10 @@ px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
               value={form.message}
               onChange={handleChange}
               placeholder="Your message"
-              className="py-4 px-6 border-[1px] outline-none 
-              placeholder:text-black-100 text-black rounded-lg
-              md:placeholder:text-[16px] ss:placeholder:text-[14px]
-              placeholder:text-[14px]"
+              className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
+              outline-none text-black rounded-lg placeholder:text-black-100 
+              md:placeholder:text-[15px] ss:placeholder:text-[14px] 
+              placeholder:text-[12px]"
             />
           </div>
 

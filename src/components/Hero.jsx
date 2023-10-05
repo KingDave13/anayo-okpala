@@ -119,7 +119,7 @@ const Hero = () => {
             >
                 <h1 className='text-secondary font-bold md:text-[65px]
                 ss:text-[50px] text-[40px] md:leading-[78px] 
-                ss:leading-[55px] leading-[50px]
+                ss:leading-[55px] leading-[45px]
                 tracking-tight md:max-w-[750px]'>
                     No. 1 <span className='text-white'>
                     foam accessories and general </span> 

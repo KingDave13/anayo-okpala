@@ -149,8 +149,11 @@ px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
     text-[15px] md:leading-[23px] ss:leading-[23px] leading-[18px]'>
       <span className='text-secondary font-bold'>Email: </span> 
       <a href='mailto:Anasconigltd@yahoo.com' 
-      className='hover:text-secondary'>Anasconigltd@yahoo.com, </a> 
-      contact@anayookpalaglobalconcept.com
+      className='hover:text-secondary'>Anasconigltd@yahoo.com, </a>
+      <a href='mailto:contact@anayookpalaglobalconcept.com' 
+      className='hover:text-secondary'>
+        contact@anayookpalaglobalconcept.com
+      </a>
     </p>
     <p className='text-primary font-bold md:text-[20px] ss:text-[20px] 
     text-[14px] md:leading-[23px] ss:leading-[23px] leading-[17px] 

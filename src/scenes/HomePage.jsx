@@ -1,5 +1,14 @@
 import 
-{ Navbar, Hero, About, Products, Values, Location, Testimonials, CTA, Newsletter, Feedbacks, Footer } 
+{ Navbar, 
+  Hero, 
+  About, 
+  Products, 
+  Values, 
+  Location, 
+  Testimonials, 
+  CTA, Newsletter, 
+  Feedbacks, 
+  Footer } 
 from '../components';
 
 const HomePage = () => {

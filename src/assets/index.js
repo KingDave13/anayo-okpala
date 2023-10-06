@@ -4,23 +4,30 @@ import menu from './menu.svg';
 import hero from './hero.png';
 import Ellipse from './Ellipse.png';
 import cloth from './cloth.png';
+
 import product1 from './product1.png';
 import product2 from './product2.png';
 import product3 from './product3.png';
+
 import vector from './Vector.png';
 import vector2 from './Vector2.png';
 import vector3 from './Vector3.png';
+
 import map from './map.png';
+
 import pic1 from './pic1.png';
 import pic2 from './pic2.png';
 import pic3 from './pic3.png';
 import pic4 from './pic4.png';
+
 import quote from './quote.png';
 import man from './man.png';
 import logo2 from './logo.svg';
 import frame from './frame.png';
+
 import cellotapes from './cellotapes.png';
 import cellotapes1 from './cellotapes1.png';
+
 import img1 from './img1.png';
 import img2 from './img2.png';
 import img3 from './img3.png';

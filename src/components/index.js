@@ -42,4 +42,4 @@ export {
     ProductsMain,
     Newsletter,
     Feedbacks
- }
+}

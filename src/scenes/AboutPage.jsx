@@ -5,7 +5,7 @@ import {
   Hero2, 
   AboutMain, 
   Mission, 
-  Newsletter} 
+  Newsletter } 
   from '../components';
 import { product3 } from '../assets';
 

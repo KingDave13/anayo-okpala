@@ -294,4 +294,5 @@ px-6 sm:py-8 py-6 md:gap-2 ss:gap-2 gap-0'>
   )
 };
 
+
 export default SectionWrapper(Contact, 'contact');

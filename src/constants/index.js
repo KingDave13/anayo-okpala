@@ -275,5 +275,5 @@ export const footerLinks = [
         link: "",
       },
     ],
-  }
+  },
 ];

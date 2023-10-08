@@ -274,6 +274,6 @@ export const footerLinks = [
         name: "Terms of Use",
         link: "",
       },
-    ],
+    ]
   }
 ];

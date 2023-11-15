@@ -33,10 +33,8 @@ import {
   celloA,
   celloB,
   clothingA,
-  clothingB,
   clothingC,
   clothingD,
-  clothingE,
   clothingF,
   clothingG,
   clothingH,
@@ -162,8 +160,8 @@ export const productsMain = [
     images: [ bedsheetA, bedsheetB, bedsheetC, bedsheetD, bedsheetE, 
       bedsheetF, bedsheetG, bedsheetH, bedsheetI, bedsheetJ, bedsheetK, 
       bedsheetL, bedsheetM, bedsheetN, bedsheetO, bedsheetP, clothingA,
-      clothingB, clothingC, clothingD, clothingE, clothingF, clothingG, 
-      clothingH, clothingI, clothingJ, clothingK, clothingL, clothingO 
+      clothingC, clothingD, clothingF, clothingG, clothingH, clothingI, 
+      clothingJ, clothingK, clothingL, clothingO 
     ]
   },
   {

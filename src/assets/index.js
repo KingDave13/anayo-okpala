@@ -96,6 +96,7 @@ import sewing1 from './sewing1.jpg';
 import sewing2 from './sewing2.jpg';
 import sewing3 from './sewing3.jpg';
 import sewing4 from './sewing4.jpg';
+import sewing5 from './sewing5.jpg';
 
 export {
     logo,
@@ -182,4 +183,5 @@ export {
     sewing2,
     sewing3,
     sewing4,
+    sewing5,
 }

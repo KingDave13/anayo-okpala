@@ -67,6 +67,7 @@ import {
   sewing2,
   sewing3,
   sewing4,
+  sewing5,
   transparentD,
   transparentE,
   transparentF
@@ -152,14 +153,17 @@ export const productsMain = [
     images: [ clothingA, clothingB, clothingC, clothingD, clothingE, 
     clothingF, clothingG, clothingH, clothingI, clothingJ, clothingK, 
     clothingL, clothingM, clothingN, clothingO, clothingP, clothingQ,
-    transparentB ]
+    transparentB, clothingR, clothingS, clothingT, clothingU, clothingV,
+    clothingW, clothingX ]
   },
   {
     name: 'Clothing Materials: Bedsheets',
     description: 'Top quality bedsheets in a variety of colours.',
-    image: sewing4,
+    image: bedsheetK,
     link: 'https://wa.link/n4v0ws',
-    images: []
+    images: [ bedsheetA, bedsheetB, bedsheetC, bedsheetD, bedsheetE, 
+      bedsheetF, bedsheetG, bedsheetH, bedsheetI, bedsheetJ, bedsheetK, 
+      bedsheetL, bedsheetM, bedsheetN, bedsheetO, bedsheetP ]
   },
   {
     name: 'Tape',
@@ -194,7 +198,7 @@ export const productsMain = [
     description: ' Sewing thread in different colours and sizes for all purposes.',
     image: sewing4,
     link: 'https://wa.link/oghwza',
-    images: [ sewing2, sewing3, sewing1 ]
+    images: [ sewing4, sewing5, sewing2, sewing1, sewing3]
   }
 ];
 

@@ -154,7 +154,7 @@ export const productsMain = [
   },
   {
     name: 'Clothing Materials: Bedsheets',
-    description: 'Top quality bedsheets in a variety of colours.',
+    description: 'Top quality bedsheets in a variety of designs, colours and textures.',
     image: bedsheetK,
     link: 'https://wa.link/n4v0ws',
     images: [ bedsheetA, bedsheetB, bedsheetC, bedsheetD, bedsheetE, 

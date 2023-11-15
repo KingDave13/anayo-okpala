@@ -150,9 +150,7 @@ export const productsMain = [
     description: 'Foam clothes for various industrial and domestic uses. We have over 500 different designs and colours of these.',
     image: img1,
     link: 'https://wa.link/n4v0ws',
-    images: [ clothingA, clothingB, clothingC, clothingD, clothingE, 
-    clothingF, clothingG, clothingH, clothingI, clothingJ, clothingK, 
-    clothingL, clothingM, clothingN, clothingO, clothingP, clothingQ,
+    images: [ clothingM, clothingN, clothingP, clothingQ,
     transparentB, clothingR, clothingS, clothingT, clothingU, clothingV,
     clothingW, clothingX ]
   },
@@ -163,7 +161,10 @@ export const productsMain = [
     link: 'https://wa.link/n4v0ws',
     images: [ bedsheetA, bedsheetB, bedsheetC, bedsheetD, bedsheetE, 
       bedsheetF, bedsheetG, bedsheetH, bedsheetI, bedsheetJ, bedsheetK, 
-      bedsheetL, bedsheetM, bedsheetN, bedsheetO, bedsheetP ]
+      bedsheetL, bedsheetM, bedsheetN, bedsheetO, bedsheetP, clothingA,
+      clothingB, clothingC, clothingD, clothingE, clothingF, clothingG, 
+      clothingH, clothingI, clothingJ, clothingK, clothingL, clothingO 
+    ]
   },
   {
     name: 'Tape',

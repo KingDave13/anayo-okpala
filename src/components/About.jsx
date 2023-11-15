@@ -32,8 +32,8 @@ const About = () => {
                 <p className='md:mt-12 ss:mt-8 mt-5 text-primary 
                 md:text-[18px] ss:text-[18px] text-[14px] max-w-[700px]'>
                 Anayo Okpala Global Concept is a leading supplier of 
-                high-quality foam cloth, tape edge, PVC, sewing thread, 
-                cellotape, and other foam accessories for various 
+                high-quality foam cloth, bedsheets, tape edge, PVC, sewing thread, 
+                cellotape and other foam accessories for various 
                 industries. With a commitment to providing top-notch 
                 products, we have built a solid reputation for delivering 
                 innovative solutions that meet the diverse needs of our 

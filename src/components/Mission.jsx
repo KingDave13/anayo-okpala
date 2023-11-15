@@ -31,7 +31,7 @@ const Mission = () => {
                     bring comfort and creativity to your everyday life 
                     with our range of foam accessories. We believe that 
                     everyone deserves a touch of softness and fun in their
-                    lives, and our friendly team is dedicated to 
+                    lives and our friendly team is dedicated to 
                     providing you with high-quality, affordable products 
                     that make a difference. Whether you're looking for 
                     cozy mattress cloth or versatile foam sheets, we've 

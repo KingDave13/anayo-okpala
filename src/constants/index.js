@@ -43,6 +43,7 @@ import {
   sewing1,
   sewing2,
   sewing3,
+  sewing4,
   transparentD,
   transparentE,
   transparentF
@@ -121,14 +122,21 @@ export const values = [
 
 export const productsMain = [
   {
-    name: 'Clothing Materials',
-    description: 'Clothing materials for various industrial and domestic uses. We have over 500 different designs and colours of these.',
+    name: 'Clothing Materials: Foam Cloth',
+    description: 'Foam clothes for various industrial and domestic uses. We have over 500 different designs and colours of these.',
     image: img1,
     link: 'https://wa.link/n4v0ws',
     images: [ clothingA, clothingB, clothingC, clothingD, clothingE, 
     clothingF, clothingG, clothingH, clothingI, clothingJ, clothingK, 
     clothingL, clothingM, clothingN, clothingO, clothingP, clothingQ,
     transparentB ]
+  },
+  {
+    name: 'Clothing Materials: Bedsheets',
+    description: 'Top quality bedsheets in a variety of colours.',
+    image: sewing4,
+    link: 'https://wa.link/n4v0ws',
+    images: []
   },
   {
     name: 'Tape',
@@ -161,7 +169,7 @@ export const productsMain = [
   {
     name: 'Sewing Thread',
     description: ' Sewing thread in different colours and sizes for all purposes.',
-    image: sewing1,
+    image: sewing4,
     link: 'https://wa.link/oghwza',
     images: [ sewing2, sewing3, sewing1 ]
   }

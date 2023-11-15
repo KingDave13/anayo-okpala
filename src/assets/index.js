@@ -33,6 +33,23 @@ import img2 from './img2.png';
 import img3 from './img3.png';
 import img4 from './img4.png';
 
+import bedsheetA from './bedsheetA.jpg';
+import bedsheetB from './bedsheetB.jpg';
+import bedsheetC from './bedsheetC.jpg';
+import bedsheetD from './bedsheetD.jpg';
+import bedsheetE from './bedsheetE.jpg';
+import bedsheetF from './bedsheetF.jpg';
+import bedsheetG from './bedsheetG.jpg';
+import bedsheetH from './bedsheetH.jpg';
+import bedsheetI from './bedsheetI.jpg';
+import bedsheetJ from './bedsheetJ.jpg';
+import bedsheetK from './bedsheetK.jpg';
+import bedsheetL from './bedsheetL.jpg';
+import bedsheetM from './bedsheetM.jpg';
+import bedsheetN from './bedsheetN.jpg';
+import bedsheetO from './bedsheetO.jpg';
+import bedsheetP from './bedsheetP.jpg';
+
 import clothingA from './clothingA.jpg';
 import clothingB from './clothingB.jpg';
 import clothingC from './clothingC.jpg';
@@ -50,6 +67,13 @@ import clothingN from './clothingN.jpg';
 import clothingO from './clothingO.jpg';
 import clothingP from './clothingP.jpg';
 import clothingQ from './clothingQ.jpg';
+import clothingR from './clothingR.jpg';
+import clothingS from './clothingS.jpg';
+import clothingT from './clothingT.jpg';
+import clothingU from './clothingU.jpg';
+import clothingV from './clothingV.jpg';
+import clothingW from './clothingW.jpg';
+import clothingX from './clothingX.jpg';
 
 import celloA from './celloA.jpg';
 import celloB from './celloB.jpg';
@@ -71,6 +95,7 @@ import transparentF from './transparentF.jpg';
 import sewing1 from './sewing1.jpg';
 import sewing2 from './sewing2.jpg';
 import sewing3 from './sewing3.jpg';
+import sewing4 from './sewing4.jpg';
 
 export {
     logo,
@@ -132,5 +157,6 @@ export {
     transparentF,
     sewing1,
     sewing2,
-    sewing3
+    sewing3,
+    sewing4,
 }

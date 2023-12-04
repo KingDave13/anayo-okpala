@@ -197,7 +197,7 @@ export const productsMain = [
     description: ' Sewing thread in different colours and sizes for all purposes.',
     image: sewing4,
     link: 'https://wa.link/oghwza',
-    images: [ sewing4, sewing5, sewing2, sewing1, sewing3]
+    images: [ sewing4, sewing5]
   }
 ];
 
